@@ -1,0 +1,206 @@
+2022-07-21 19:18:26.388423: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-07-21 19:18:26.388558: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+W0721 19:19:00.393586 23364248996736 dataset_builder.py:764] Found a different version of the requested dataset:
+1.0.2
+Using ~/tensorflow_datasets/cifar10/3.0.2 instead.
+I0721 19:19:00.395776 23364248996736 dataset_info.py:491] Load dataset info from ~/tensorflow_datasets/cifar10/3.0.2
+I0721 19:19:00.419863 23364248996736 dataset_builder.py:383] Reusing dataset cifar10 (~/tensorflow_datasets/cifar10/3.0.2)
+I0721 19:19:00.420100 23364248996736 run.py:482] # train examples: 50000
+I0721 19:19:00.420312 23364248996736 run.py:483] # train_steps: 3125001
+I0721 19:19:00.420367 23364248996736 run.py:484] # eval examples: 10000
+I0721 19:19:00.420417 23364248996736 run.py:485] # eval steps: 40
+2022-07-21 19:19:00.423102: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-07-21 19:19:00.641850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:1c:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-21 19:19:00.642548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:1d:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-21 19:19:00.643390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: 
+pciBusID: 0000:1e:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-21 19:19:00.643986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: 
+pciBusID: 0000:89:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-21 19:19:00.644227: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.644389: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.644516: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.644641: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.644780: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.644906: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.645033: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.647363: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2022-07-21 19:19:00.647404: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-07-21 19:19:00.648189: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-07-21 19:19:00.650543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-07-21 19:19:00.650598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      
+WARNING:tensorflow:There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+W0721 19:19:00.653587 23364248996736 cross_device_ops.py:1387] There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+W0721 19:19:00.653835 23364248996736 mirrored_strategy.py:379] Collective ops is not configured at program startup. Some performance features may not be enabled.
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+I0721 19:19:00.791375 23364248996736 mirrored_strategy.py:369] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+I0721 19:19:00.792056 23364248996736 run.py:507] Running using MirroredStrategy on 1 replicas
+I0721 19:19:01.022145 23364248996736 data.py:46] Global batch size: 16
+I0721 19:19:01.022332 23364248996736 data.py:47] Per-replica batch size: 16
+I0721 19:19:01.022437 23364248996736 data.py:64] num_input_pipelines: 1
+I0721 19:19:01.022552 23364248996736 logging_logger.py:44] Constructing tf.data.Dataset cifar10 for split train, from ~/tensorflow_datasets/cifar10/3.0.2
+2022-07-21 19:19:02.734004: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-07-21 19:19:02.779151: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2100000000 Hz
+WARNING:tensorflow:From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+W0721 19:19:03.560176 23358106224384 deprecation.py:528] From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+I0721 19:19:07.384586 23358106224384 api.py:446] Trainable variables:
+I0721 19:19:08.670611 23358106224384 api.py:446] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0721 19:19:08.697965 23358106224384 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0721 19:19:08.724737 23358106224384 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0721 19:19:08.751320 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0721 19:19:08.778936 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0721 19:19:08.806585 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0721 19:19:08.834340 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0721 19:19:08.861356 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0721 19:19:08.888176 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0721 19:19:08.917243 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0721 19:19:08.945930 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0721 19:19:08.973559 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0721 19:19:09.000670 23358106224384 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0721 19:19:09.028341 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0721 19:19:09.056015 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0721 19:19:09.084226 23358106224384 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0721 19:19:09.111292 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0721 19:19:09.138281 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0721 19:19:09.165374 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0721 19:19:09.194054 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0721 19:19:09.222773 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0721 19:19:09.250064 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0721 19:19:09.276874 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0721 19:19:09.303946 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0721 19:19:09.332384 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0721 19:19:09.360039 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0721 19:19:09.387137 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0721 19:19:09.414127 23358106224384 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0721 19:19:09.442612 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0721 19:19:09.470424 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0721 19:19:09.498500 23358106224384 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0721 19:19:09.526455 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0721 19:19:09.554205 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0721 19:19:09.581210 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0721 19:19:09.608567 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0721 19:19:09.635927 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0721 19:19:09.664957 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0721 19:19:09.695121 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0721 19:19:09.722414 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0721 19:19:09.750220 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0721 19:19:09.777484 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0721 19:19:09.804743 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0721 19:19:09.839205 23358106224384 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0721 19:19:09.874667 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0721 19:19:09.901864 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0721 19:19:09.928725 23358106224384 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0721 19:19:09.955933 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0721 19:19:09.982961 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0721 19:19:10.010694 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0721 19:19:10.036381 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0721 19:19:10.061473 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0721 19:19:10.086896 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0721 19:19:10.121219 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0721 19:19:10.149709 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0721 19:19:10.177110 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0721 19:19:10.205135 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0721 19:19:10.232633 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0721 19:19:10.259424 23358106224384 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0721 19:19:10.285539 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0721 19:19:10.313202 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0721 19:19:10.341231 23358106224384 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0721 19:19:10.369410 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0721 19:19:10.397528 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0721 19:19:10.425300 23358106224384 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0721 19:19:10.452122 23358106224384 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0721 19:19:10.478859 23358106224384 api.py:446] projection_head/nl_0/dense/kernel:0
+I0721 19:19:10.506899 23358106224384 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0721 19:19:10.535577 23358106224384 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0721 19:19:10.565132 23358106224384 api.py:446] projection_head/nl_1/dense_1/kernel:0
+I0721 19:19:10.592790 23358106224384 api.py:446] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0721 19:19:10.620093 23358106224384 api.py:446] projection_head/nl_2/dense_2/kernel:0
+I0721 19:19:10.648163 23358106224384 api.py:446] head_supervised/linear_layer/dense_3/kernel:0
+I0721 19:19:10.675726 23358106224384 api.py:446] head_supervised/linear_layer/dense_3/bias:0
+I0721 19:19:15.629588 23358106224384 api.py:446] Trainable variables:
+I0721 19:19:15.660009 23358106224384 api.py:446] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0721 19:19:15.686475 23358106224384 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0721 19:19:15.712916 23358106224384 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0721 19:19:15.739321 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0721 19:19:15.766164 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0721 19:19:15.793926 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0721 19:19:15.821681 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0721 19:19:15.847898 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0721 19:19:15.874112 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0721 19:19:15.900844 23358106224384 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0721 19:19:15.928052 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0721 19:19:15.953958 23358106224384 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0721 19:19:15.979792 23358106224384 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0721 19:19:16.017725 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0721 19:19:16.061305 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0721 19:19:16.087410 23358106224384 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0721 19:19:16.114120 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0721 19:19:16.140730 23358106224384 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0721 19:19:16.172626 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0721 19:19:16.198847 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0721 19:19:16.224887 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0721 19:19:16.251506 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0721 19:19:16.279103 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0721 19:19:16.306665 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0721 19:19:16.333601 23358106224384 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0721 19:19:16.360512 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0721 19:19:16.386616 23358106224384 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0721 19:19:16.412744 23358106224384 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0721 19:19:16.440487 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0721 19:19:16.468393 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0721 19:19:16.496144 23358106224384 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0721 19:19:16.523214 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0721 19:19:16.550336 23358106224384 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0721 19:19:16.576663 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0721 19:19:16.602945 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0721 19:19:16.630116 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0721 19:19:16.657439 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0721 19:19:16.684208 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0721 19:19:16.710533 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0721 19:19:16.736690 23358106224384 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0721 19:19:16.762836 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0721 19:19:16.789509 23358106224384 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0721 19:19:16.816421 23358106224384 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0721 19:19:16.843064 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0721 19:19:16.868857 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0721 19:19:16.894671 23358106224384 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0721 19:19:16.921185 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0721 19:19:16.947609 23358106224384 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0721 19:19:16.974997 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0721 19:19:17.000156 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0721 19:19:17.026572 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0721 19:19:17.053389 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0721 19:19:17.080087 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0721 19:19:17.104767 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0721 19:19:17.129365 23358106224384 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0721 19:19:17.155214 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0721 19:19:17.181918 23358106224384 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0721 19:19:17.209453 23358106224384 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0721 19:19:17.235799 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0721 19:19:17.262857 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0721 19:19:17.289505 23358106224384 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0721 19:19:17.316232 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0721 19:19:17.342648 23358106224384 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0721 19:19:17.368906 23358106224384 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0721 19:19:17.396239 23358106224384 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0721 19:19:17.423012 23358106224384 api.py:446] projection_head/nl_0/dense/kernel:0
+I0721 19:19:17.449065 23358106224384 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0721 19:19:17.475224 23358106224384 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0721 19:19:17.501412 23358106224384 api.py:446] projection_head/nl_1/dense_1/kernel:0
+I0721 19:19:17.527896 23358106224384 api.py:446] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0721 19:19:17.555098 23358106224384 api.py:446] projection_head/nl_2/dense_2/kernel:0
+I0721 19:19:17.581485 23358106224384 api.py:446] head_supervised/linear_layer/dense_3/kernel:0
+I0721 19:19:17.607541 23358106224384 api.py:446] head_supervised/linear_layer/dense_3/bias:0
+=>> PBS: job killed: ncpus 17.07 exceeded limit 16 (sum)

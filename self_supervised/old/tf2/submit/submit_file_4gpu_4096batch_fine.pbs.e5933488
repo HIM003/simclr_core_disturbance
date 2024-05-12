@@ -1,0 +1,722 @@
+2022-07-23 22:40:04.572622: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+W0723 22:40:52.080256 23324564010816 dataset_builder.py:764] Found a different version of the requested dataset:
+1.0.2
+Using ~/tensorflow_datasets/cifar10/3.0.2 instead.
+I0723 22:40:52.086671 23324564010816 dataset_info.py:491] Load dataset info from ~/tensorflow_datasets/cifar10/3.0.2
+I0723 22:40:52.115619 23324564010816 dataset_builder.py:383] Reusing dataset cifar10 (~/tensorflow_datasets/cifar10/3.0.2)
+I0723 22:40:52.115708 23324564010816 run.py:482] # train examples: 50000
+I0723 22:40:52.115795 23324564010816 run.py:483] # train_steps: 9766
+I0723 22:40:52.115836 23324564010816 run.py:484] # eval examples: 10000
+I0723 22:40:52.115870 23324564010816 run.py:485] # eval steps: 40
+2022-07-23 22:40:52.116101: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-07-23 22:40:52.136694: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-07-23 22:40:52.225230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:81:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-23 22:40:52.225315: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-07-23 22:40:52.474336: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-07-23 22:40:52.474374: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-07-23 22:40:52.600473: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-07-23 22:40:52.741419: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-07-23 22:40:52.912293: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-07-23 22:40:53.127444: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-07-23 22:40:53.310559: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-07-23 22:40:53.312521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-07-23 22:40:53.313131: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-07-23 22:40:53.337524: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-07-23 22:40:53.338738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:81:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-23 22:40:53.338778: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-07-23 22:40:53.338807: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-07-23 22:40:53.338824: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-07-23 22:40:53.342802: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-07-23 22:40:53.342818: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-07-23 22:40:53.342837: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-07-23 22:40:53.342848: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-07-23 22:40:53.342861: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-07-23 22:40:53.344554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-07-23 22:40:53.344671: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-07-23 22:40:57.458185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-07-23 22:40:57.458295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2022-07-23 22:40:57.458316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2022-07-23 22:40:57.461566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22476 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:81:00.0, compute capability: 7.5)
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+I0723 22:40:57.531496 23324564010816 mirrored_strategy.py:350] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+I0723 22:40:57.532184 23324564010816 run.py:507] Running using MirroredStrategy on 1 replicas
+I0723 22:40:57.914655 23324564010816 data.py:46] Global batch size: 512
+I0723 22:40:57.933807 23324564010816 data.py:47] Per-replica batch size: 512
+I0723 22:40:57.933979 23324564010816 data.py:64] num_input_pipelines: 1
+I0723 22:40:57.934081 23324564010816 logging_logger.py:44] Constructing tf.data.Dataset cifar10 for split train, from ~/tensorflow_datasets/cifar10/3.0.2
+WARNING:tensorflow:AutoGraph could not transform <function crop_and_resize at 0x153663154a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:40:58.279350 23324564010816 ag_logging.py:146] AutoGraph could not transform <function crop_and_resize at 0x153663154a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.329944 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.442525 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.444291 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.444737 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.448637 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.449095 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.449921 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.450337 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.454079 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.454513 23324564010816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0723 22:40:58.461837 23324564010816 run.py:323] Restoring from given checkpoint: /rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch/ckpt-12216
+I0723 22:40:58.588509 23324564010816 run.py:332] Initializing output layer parameters [] to zero
+2022-07-23 22:40:58.609419: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-07-23 22:40:58.624947: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2250040000 Hz
+WARNING:tensorflow:AutoGraph could not transform <function main.<locals>.single_step at 0x153661a76310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:40:58.973164 23287199340288 ag_logging.py:146] AutoGraph could not transform <function main.<locals>.single_step at 0x153661a76310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:605: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+W0723 22:40:58.990224 23287199340288 deprecation.py:531] From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:605: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:AutoGraph could not transform <bound method ProjectionHead.call of <model.ProjectionHead object at 0x15366011d0d0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:41:01.202029 23287199340288 ag_logging.py:146] AutoGraph could not transform <bound method ProjectionHead.call of <model.ProjectionHead object at 0x15366011d0d0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+I0723 22:41:01.590435 23287199340288 run.py:618] Trainable variables:
+I0723 22:41:01.591320 23287199340288 run.py:620] projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0
+I0723 22:41:01.591375 23287199340288 run.py:620] projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0
+I0723 22:41:01.591413 23287199340288 run.py:620] projection_head/nl_0/dense/kernel:0
+I0723 22:41:01.591447 23287199340288 run.py:620] projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0
+I0723 22:41:01.591480 23287199340288 run.py:620] projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0
+I0723 22:41:01.591513 23287199340288 run.py:620] projection_head/nl_1/dense_1/kernel:0
+I0723 22:41:01.591548 23287199340288 run.py:620] projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0
+I0723 22:41:01.591581 23287199340288 run.py:620] projection_head/nl_2/dense_2/kernel:0
+I0723 22:41:01.591613 23287199340288 run.py:620] head_supervised/linear_layer/dense_3/kernel:0
+I0723 22:41:01.591646 23287199340288 run.py:620] head_supervised/linear_layer/dense_3/bias:0
+WARNING:tensorflow:Gradients do not exist for variables ['projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0', 'projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0', 'projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0'] when minimizing the loss.
+W0723 22:41:01.611875 23287199340288 utils.py:81] Gradients do not exist for variables ['projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0', 'projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0', 'projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0'] when minimizing the loss.
+I0723 22:41:03.411978 23287199340288 run.py:618] Trainable variables:
+I0723 22:41:03.412507 23287199340288 run.py:620] projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0
+I0723 22:41:03.412559 23287199340288 run.py:620] projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0
+I0723 22:41:03.412595 23287199340288 run.py:620] projection_head/nl_0/dense/kernel:0
+I0723 22:41:03.412629 23287199340288 run.py:620] projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0
+I0723 22:41:03.412661 23287199340288 run.py:620] projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0
+I0723 22:41:03.412693 23287199340288 run.py:620] projection_head/nl_1/dense_1/kernel:0
+I0723 22:41:03.412725 23287199340288 run.py:620] projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0
+I0723 22:41:03.412757 23287199340288 run.py:620] projection_head/nl_2/dense_2/kernel:0
+I0723 22:41:03.412789 23287199340288 run.py:620] head_supervised/linear_layer/dense_3/kernel:0
+I0723 22:41:03.412828 23287199340288 run.py:620] head_supervised/linear_layer/dense_3/bias:0
+WARNING:tensorflow:Gradients do not exist for variables ['projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0', 'projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0', 'projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0'] when minimizing the loss.
+W0723 22:41:03.429516 23287199340288 utils.py:81] Gradients do not exist for variables ['projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/gamma:0', 'projection_head/nl_0/batch_norm_relu_21/batch_normalization_21/beta:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/gamma:0', 'projection_head/nl_1/batch_norm_relu_22/batch_normalization_22/beta:0', 'projection_head/nl_2/batch_norm_relu_23/batch_normalization_23/gamma:0'] when minimizing the loss.
+2022-07-23 22:41:05.479462: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-07-23 22:41:06.882649: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-07-23 22:41:11.437360: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2022-07-23 22:41:11.507845: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+I0723 22:41:34.511814 23324564010816 run.py:650] Completed: 98 / 9766 steps
+I0723 22:41:34.516788 23324564010816 metrics.py:73] Step: [98] train/weight_decay = 0.000000
+I0723 22:41:34.519362 23324564010816 metrics.py:73] Step: [98] train/total_loss = 0.318859
+I0723 22:41:34.520929 23324564010816 metrics.py:73] Step: [98] train/supervised_loss = 0.318859
+I0723 22:41:34.522303 23324564010816 metrics.py:73] Step: [98] train/supervised_acc = 0.889967
+I0723 22:41:40.408834 23324564010816 run.py:650] Completed: 196 / 9766 steps
+I0723 22:41:40.411246 23324564010816 metrics.py:73] Step: [196] train/weight_decay = 0.000000
+I0723 22:41:40.413303 23324564010816 metrics.py:73] Step: [196] train/total_loss = 0.318247
+I0723 22:41:40.414914 23324564010816 metrics.py:73] Step: [196] train/supervised_loss = 0.318247
+I0723 22:41:40.416386 23324564010816 metrics.py:73] Step: [196] train/supervised_acc = 0.891781
+I0723 22:41:46.098544 23324564010816 run.py:650] Completed: 294 / 9766 steps
+I0723 22:41:46.100061 23324564010816 metrics.py:73] Step: [294] train/weight_decay = 0.000000
+I0723 22:41:46.101516 23324564010816 metrics.py:73] Step: [294] train/total_loss = 0.317257
+I0723 22:41:46.102875 23324564010816 metrics.py:73] Step: [294] train/supervised_loss = 0.317257
+I0723 22:41:46.104187 23324564010816 metrics.py:73] Step: [294] train/supervised_acc = 0.892658
+I0723 22:41:51.797696 23324564010816 run.py:650] Completed: 392 / 9766 steps
+I0723 22:41:51.799799 23324564010816 metrics.py:73] Step: [392] train/weight_decay = 0.000000
+I0723 22:41:51.801618 23324564010816 metrics.py:73] Step: [392] train/total_loss = 0.320417
+I0723 22:41:51.803002 23324564010816 metrics.py:73] Step: [392] train/supervised_loss = 0.320417
+I0723 22:41:51.804337 23324564010816 metrics.py:73] Step: [392] train/supervised_acc = 0.890705
+I0723 22:41:57.488434 23324564010816 run.py:650] Completed: 490 / 9766 steps
+I0723 22:41:57.489870 23324564010816 metrics.py:73] Step: [490] train/weight_decay = 0.000000
+I0723 22:41:57.491344 23324564010816 metrics.py:73] Step: [490] train/total_loss = 0.318012
+I0723 22:41:57.492684 23324564010816 metrics.py:73] Step: [490] train/supervised_loss = 0.318012
+I0723 22:41:57.493982 23324564010816 metrics.py:73] Step: [490] train/supervised_acc = 0.890525
+I0723 22:42:03.195095 23324564010816 run.py:650] Completed: 588 / 9766 steps
+I0723 22:42:03.196911 23324564010816 metrics.py:73] Step: [588] train/weight_decay = 0.000000
+I0723 22:42:03.198638 23324564010816 metrics.py:73] Step: [588] train/total_loss = 0.320766
+I0723 22:42:03.200023 23324564010816 metrics.py:73] Step: [588] train/supervised_loss = 0.320766
+I0723 22:42:03.201352 23324564010816 metrics.py:73] Step: [588] train/supervised_acc = 0.890784
+I0723 22:42:08.943114 23324564010816 run.py:650] Completed: 686 / 9766 steps
+I0723 22:42:08.945940 23324564010816 metrics.py:73] Step: [686] train/weight_decay = 0.000000
+I0723 22:42:08.948341 23324564010816 metrics.py:73] Step: [686] train/total_loss = 0.316248
+I0723 22:42:08.950131 23324564010816 metrics.py:73] Step: [686] train/supervised_loss = 0.316248
+I0723 22:42:08.951609 23324564010816 metrics.py:73] Step: [686] train/supervised_acc = 0.891721
+I0723 22:42:14.688281 23324564010816 run.py:650] Completed: 784 / 9766 steps
+I0723 22:42:14.690019 23324564010816 metrics.py:73] Step: [784] train/weight_decay = 0.000000
+I0723 22:42:14.691569 23324564010816 metrics.py:73] Step: [784] train/total_loss = 0.313905
+I0723 22:42:14.692966 23324564010816 metrics.py:73] Step: [784] train/supervised_loss = 0.313905
+I0723 22:42:14.694303 23324564010816 metrics.py:73] Step: [784] train/supervised_acc = 0.891661
+I0723 22:42:20.433974 23324564010816 run.py:650] Completed: 882 / 9766 steps
+I0723 22:42:20.436552 23324564010816 metrics.py:73] Step: [882] train/weight_decay = 0.000000
+I0723 22:42:20.439204 23324564010816 metrics.py:73] Step: [882] train/total_loss = 0.319070
+I0723 22:42:20.441343 23324564010816 metrics.py:73] Step: [882] train/supervised_loss = 0.319070
+I0723 22:42:20.443465 23324564010816 metrics.py:73] Step: [882] train/supervised_acc = 0.890844
+I0723 22:42:26.218323 23324564010816 run.py:650] Completed: 980 / 9766 steps
+I0723 22:42:26.221189 23324564010816 metrics.py:73] Step: [980] train/weight_decay = 0.000000
+I0723 22:42:26.223582 23324564010816 metrics.py:73] Step: [980] train/total_loss = 0.321619
+I0723 22:42:26.225478 23324564010816 metrics.py:73] Step: [980] train/supervised_loss = 0.321619
+I0723 22:42:26.227027 23324564010816 metrics.py:73] Step: [980] train/supervised_acc = 0.889828
+I0723 22:42:31.975439 23324564010816 run.py:650] Completed: 1078 / 9766 steps
+I0723 22:42:31.977076 23324564010816 metrics.py:73] Step: [1078] train/weight_decay = 0.000000
+I0723 22:42:31.978636 23324564010816 metrics.py:73] Step: [1078] train/total_loss = 0.314454
+I0723 22:42:31.980068 23324564010816 metrics.py:73] Step: [1078] train/supervised_loss = 0.314454
+I0723 22:42:31.981438 23324564010816 metrics.py:73] Step: [1078] train/supervised_acc = 0.892738
+I0723 22:42:37.723053 23324564010816 run.py:650] Completed: 1176 / 9766 steps
+I0723 22:42:37.724963 23324564010816 metrics.py:73] Step: [1176] train/weight_decay = 0.000000
+I0723 22:42:37.726625 23324564010816 metrics.py:73] Step: [1176] train/total_loss = 0.315734
+I0723 22:42:37.728060 23324564010816 metrics.py:73] Step: [1176] train/supervised_loss = 0.315734
+I0723 22:42:37.729412 23324564010816 metrics.py:73] Step: [1176] train/supervised_acc = 0.892299
+I0723 22:42:43.488384 23324564010816 run.py:650] Completed: 1274 / 9766 steps
+I0723 22:42:43.489950 23324564010816 metrics.py:73] Step: [1274] train/weight_decay = 0.000000
+I0723 22:42:43.491443 23324564010816 metrics.py:73] Step: [1274] train/total_loss = 0.315953
+I0723 22:42:43.492838 23324564010816 metrics.py:73] Step: [1274] train/supervised_loss = 0.315953
+I0723 22:42:43.494167 23324564010816 metrics.py:73] Step: [1274] train/supervised_acc = 0.890426
+I0723 22:42:49.235623 23324564010816 run.py:650] Completed: 1372 / 9766 steps
+I0723 22:42:49.237278 23324564010816 metrics.py:73] Step: [1372] train/weight_decay = 0.000000
+I0723 22:42:49.238830 23324564010816 metrics.py:73] Step: [1372] train/total_loss = 0.316655
+I0723 22:42:49.240237 23324564010816 metrics.py:73] Step: [1372] train/supervised_loss = 0.316655
+I0723 22:42:49.241587 23324564010816 metrics.py:73] Step: [1372] train/supervised_acc = 0.890147
+I0723 22:42:55.003977 23324564010816 run.py:650] Completed: 1470 / 9766 steps
+I0723 22:42:55.006845 23324564010816 metrics.py:73] Step: [1470] train/weight_decay = 0.000000
+I0723 22:42:55.009243 23324564010816 metrics.py:73] Step: [1470] train/total_loss = 0.315759
+I0723 22:42:55.011222 23324564010816 metrics.py:73] Step: [1470] train/supervised_loss = 0.315759
+I0723 22:42:55.012903 23324564010816 metrics.py:73] Step: [1470] train/supervised_acc = 0.891024
+I0723 22:43:00.775700 23324564010816 run.py:650] Completed: 1568 / 9766 steps
+I0723 22:43:00.777349 23324564010816 metrics.py:73] Step: [1568] train/weight_decay = 0.000000
+I0723 22:43:00.778918 23324564010816 metrics.py:73] Step: [1568] train/total_loss = 0.315725
+I0723 22:43:00.780318 23324564010816 metrics.py:73] Step: [1568] train/supervised_loss = 0.315725
+I0723 22:43:00.781670 23324564010816 metrics.py:73] Step: [1568] train/supervised_acc = 0.892100
+I0723 22:43:06.562892 23324564010816 run.py:650] Completed: 1666 / 9766 steps
+I0723 22:43:06.565168 23324564010816 metrics.py:73] Step: [1666] train/weight_decay = 0.000000
+I0723 22:43:06.567109 23324564010816 metrics.py:73] Step: [1666] train/total_loss = 0.318697
+I0723 22:43:06.568626 23324564010816 metrics.py:73] Step: [1666] train/supervised_loss = 0.318697
+I0723 22:43:06.569971 23324564010816 metrics.py:73] Step: [1666] train/supervised_acc = 0.889927
+I0723 22:43:12.317058 23324564010816 run.py:650] Completed: 1764 / 9766 steps
+I0723 22:43:12.318687 23324564010816 metrics.py:73] Step: [1764] train/weight_decay = 0.000000
+I0723 22:43:12.320259 23324564010816 metrics.py:73] Step: [1764] train/total_loss = 0.314806
+I0723 22:43:12.321656 23324564010816 metrics.py:73] Step: [1764] train/supervised_loss = 0.314806
+I0723 22:43:12.323022 23324564010816 metrics.py:73] Step: [1764] train/supervised_acc = 0.891940
+I0723 22:43:18.075913 23324564010816 run.py:650] Completed: 1862 / 9766 steps
+I0723 22:43:18.077788 23324564010816 metrics.py:73] Step: [1862] train/weight_decay = 0.000000
+I0723 22:43:18.079434 23324564010816 metrics.py:73] Step: [1862] train/total_loss = 0.318003
+I0723 22:43:18.081039 23324564010816 metrics.py:73] Step: [1862] train/supervised_loss = 0.318003
+I0723 22:43:18.082424 23324564010816 metrics.py:73] Step: [1862] train/supervised_acc = 0.891342
+I0723 22:43:23.845065 23324564010816 run.py:650] Completed: 1960 / 9766 steps
+I0723 22:43:23.847447 23324564010816 metrics.py:73] Step: [1960] train/weight_decay = 0.000000
+I0723 22:43:23.849039 23324564010816 metrics.py:73] Step: [1960] train/total_loss = 0.316875
+I0723 22:43:23.850438 23324564010816 metrics.py:73] Step: [1960] train/supervised_loss = 0.316875
+I0723 22:43:23.851779 23324564010816 metrics.py:73] Step: [1960] train/supervised_acc = 0.892518
+I0723 22:43:29.597415 23324564010816 run.py:650] Completed: 2058 / 9766 steps
+I0723 22:43:29.599079 23324564010816 metrics.py:73] Step: [2058] train/weight_decay = 0.000000
+I0723 22:43:29.600634 23324564010816 metrics.py:73] Step: [2058] train/total_loss = 0.313560
+I0723 22:43:29.602037 23324564010816 metrics.py:73] Step: [2058] train/supervised_loss = 0.313560
+I0723 22:43:29.603368 23324564010816 metrics.py:73] Step: [2058] train/supervised_acc = 0.892359
+I0723 22:43:35.367498 23324564010816 run.py:650] Completed: 2156 / 9766 steps
+I0723 22:43:35.370225 23324564010816 metrics.py:73] Step: [2156] train/weight_decay = 0.000000
+I0723 22:43:35.372737 23324564010816 metrics.py:73] Step: [2156] train/total_loss = 0.314599
+I0723 22:43:35.374691 23324564010816 metrics.py:73] Step: [2156] train/supervised_loss = 0.314599
+I0723 22:43:35.376343 23324564010816 metrics.py:73] Step: [2156] train/supervised_acc = 0.892399
+I0723 22:43:41.132000 23324564010816 run.py:650] Completed: 2254 / 9766 steps
+I0723 22:43:41.133607 23324564010816 metrics.py:73] Step: [2254] train/weight_decay = 0.000000
+I0723 22:43:41.135154 23324564010816 metrics.py:73] Step: [2254] train/total_loss = 0.315907
+I0723 22:43:41.136574 23324564010816 metrics.py:73] Step: [2254] train/supervised_loss = 0.315907
+I0723 22:43:41.137930 23324564010816 metrics.py:73] Step: [2254] train/supervised_acc = 0.892738
+I0723 22:43:46.886708 23324564010816 run.py:650] Completed: 2352 / 9766 steps
+I0723 22:43:46.889294 23324564010816 metrics.py:73] Step: [2352] train/weight_decay = 0.000000
+I0723 22:43:46.891656 23324564010816 metrics.py:73] Step: [2352] train/total_loss = 0.317605
+I0723 22:43:46.893536 23324564010816 metrics.py:73] Step: [2352] train/supervised_loss = 0.317605
+I0723 22:43:46.895141 23324564010816 metrics.py:73] Step: [2352] train/supervised_acc = 0.890027
+I0723 22:43:52.666521 23324564010816 run.py:650] Completed: 2450 / 9766 steps
+I0723 22:43:52.668683 23324564010816 metrics.py:73] Step: [2450] train/weight_decay = 0.000000
+I0723 22:43:52.670617 23324564010816 metrics.py:73] Step: [2450] train/total_loss = 0.315594
+I0723 22:43:52.672136 23324564010816 metrics.py:73] Step: [2450] train/supervised_loss = 0.315594
+I0723 22:43:52.673674 23324564010816 metrics.py:73] Step: [2450] train/supervised_acc = 0.891163
+I0723 22:43:58.445362 23324564010816 run.py:650] Completed: 2548 / 9766 steps
+I0723 22:43:58.447270 23324564010816 metrics.py:73] Step: [2548] train/weight_decay = 0.000000
+I0723 22:43:58.448926 23324564010816 metrics.py:73] Step: [2548] train/total_loss = 0.318961
+I0723 22:43:58.450341 23324564010816 metrics.py:73] Step: [2548] train/supervised_loss = 0.318961
+I0723 22:43:58.451731 23324564010816 metrics.py:73] Step: [2548] train/supervised_acc = 0.889947
+I0723 22:44:04.196957 23324564010816 run.py:650] Completed: 2646 / 9766 steps
+I0723 22:44:04.198575 23324564010816 metrics.py:73] Step: [2646] train/weight_decay = 0.000000
+I0723 22:44:04.200116 23324564010816 metrics.py:73] Step: [2646] train/total_loss = 0.313733
+I0723 22:44:04.201520 23324564010816 metrics.py:73] Step: [2646] train/supervised_loss = 0.313733
+I0723 22:44:04.202875 23324564010816 metrics.py:73] Step: [2646] train/supervised_acc = 0.892538
+I0723 22:44:09.960255 23324564010816 run.py:650] Completed: 2744 / 9766 steps
+I0723 22:44:09.961763 23324564010816 metrics.py:73] Step: [2744] train/weight_decay = 0.000000
+I0723 22:44:09.963251 23324564010816 metrics.py:73] Step: [2744] train/total_loss = 0.316329
+I0723 22:44:09.964624 23324564010816 metrics.py:73] Step: [2744] train/supervised_loss = 0.316329
+I0723 22:44:09.965962 23324564010816 metrics.py:73] Step: [2744] train/supervised_acc = 0.892100
+I0723 22:44:15.707078 23324564010816 run.py:650] Completed: 2842 / 9766 steps
+I0723 22:44:15.708764 23324564010816 metrics.py:73] Step: [2842] train/weight_decay = 0.000000
+I0723 22:44:15.710334 23324564010816 metrics.py:73] Step: [2842] train/total_loss = 0.318290
+I0723 22:44:15.711723 23324564010816 metrics.py:73] Step: [2842] train/supervised_loss = 0.318290
+I0723 22:44:15.713078 23324564010816 metrics.py:73] Step: [2842] train/supervised_acc = 0.890944
+I0723 22:44:21.461488 23324564010816 run.py:650] Completed: 2940 / 9766 steps
+I0723 22:44:21.463778 23324564010816 metrics.py:73] Step: [2940] train/weight_decay = 0.000000
+I0723 22:44:21.465665 23324564010816 metrics.py:73] Step: [2940] train/total_loss = 0.320883
+I0723 22:44:21.467200 23324564010816 metrics.py:73] Step: [2940] train/supervised_loss = 0.320883
+I0723 22:44:21.468789 23324564010816 metrics.py:73] Step: [2940] train/supervised_acc = 0.889748
+I0723 22:44:27.209919 23324564010816 run.py:650] Completed: 3038 / 9766 steps
+I0723 22:44:27.211551 23324564010816 metrics.py:73] Step: [3038] train/weight_decay = 0.000000
+I0723 22:44:27.213119 23324564010816 metrics.py:73] Step: [3038] train/total_loss = 0.316176
+I0723 22:44:27.214519 23324564010816 metrics.py:73] Step: [3038] train/supervised_loss = 0.316176
+I0723 22:44:27.215859 23324564010816 metrics.py:73] Step: [3038] train/supervised_acc = 0.889987
+I0723 22:44:32.958026 23324564010816 run.py:650] Completed: 3136 / 9766 steps
+I0723 22:44:32.960516 23324564010816 metrics.py:73] Step: [3136] train/weight_decay = 0.000000
+I0723 22:44:32.962594 23324564010816 metrics.py:73] Step: [3136] train/total_loss = 0.316297
+I0723 22:44:32.964401 23324564010816 metrics.py:73] Step: [3136] train/supervised_loss = 0.316297
+I0723 22:44:32.966116 23324564010816 metrics.py:73] Step: [3136] train/supervised_acc = 0.892399
+I0723 22:44:38.744619 23324564010816 run.py:650] Completed: 3234 / 9766 steps
+I0723 22:44:38.747171 23324564010816 metrics.py:73] Step: [3234] train/weight_decay = 0.000000
+I0723 22:44:38.749122 23324564010816 metrics.py:73] Step: [3234] train/total_loss = 0.312913
+I0723 22:44:38.750782 23324564010816 metrics.py:73] Step: [3234] train/supervised_loss = 0.312913
+I0723 22:44:38.752257 23324564010816 metrics.py:73] Step: [3234] train/supervised_acc = 0.892180
+I0723 22:44:44.513430 23324564010816 run.py:650] Completed: 3332 / 9766 steps
+I0723 22:44:44.515860 23324564010816 metrics.py:73] Step: [3332] train/weight_decay = 0.000000
+I0723 22:44:44.518072 23324564010816 metrics.py:73] Step: [3332] train/total_loss = 0.313507
+I0723 22:44:44.520039 23324564010816 metrics.py:73] Step: [3332] train/supervised_loss = 0.313507
+I0723 22:44:44.521806 23324564010816 metrics.py:73] Step: [3332] train/supervised_acc = 0.892399
+I0723 22:44:50.268103 23324564010816 run.py:650] Completed: 3430 / 9766 steps
+I0723 22:44:50.269933 23324564010816 metrics.py:73] Step: [3430] train/weight_decay = 0.000000
+I0723 22:44:50.271587 23324564010816 metrics.py:73] Step: [3430] train/total_loss = 0.314681
+I0723 22:44:50.272999 23324564010816 metrics.py:73] Step: [3430] train/supervised_loss = 0.314681
+I0723 22:44:50.274338 23324564010816 metrics.py:73] Step: [3430] train/supervised_acc = 0.891881
+I0723 22:44:56.038115 23324564010816 run.py:650] Completed: 3528 / 9766 steps
+I0723 22:44:56.040268 23324564010816 metrics.py:73] Step: [3528] train/weight_decay = 0.000000
+I0723 22:44:56.042179 23324564010816 metrics.py:73] Step: [3528] train/total_loss = 0.313734
+I0723 22:44:56.043798 23324564010816 metrics.py:73] Step: [3528] train/supervised_loss = 0.313734
+I0723 22:44:56.045373 23324564010816 metrics.py:73] Step: [3528] train/supervised_acc = 0.892379
+I0723 22:45:01.790068 23324564010816 run.py:650] Completed: 3626 / 9766 steps
+I0723 22:45:01.791685 23324564010816 metrics.py:73] Step: [3626] train/weight_decay = 0.000000
+I0723 22:45:01.793192 23324564010816 metrics.py:73] Step: [3626] train/total_loss = 0.314881
+I0723 22:45:01.794562 23324564010816 metrics.py:73] Step: [3626] train/supervised_loss = 0.314881
+I0723 22:45:01.795887 23324564010816 metrics.py:73] Step: [3626] train/supervised_acc = 0.891881
+I0723 22:45:07.547948 23324564010816 run.py:650] Completed: 3724 / 9766 steps
+I0723 22:45:07.550052 23324564010816 metrics.py:73] Step: [3724] train/weight_decay = 0.000000
+I0723 22:45:07.551776 23324564010816 metrics.py:73] Step: [3724] train/total_loss = 0.320046
+I0723 22:45:07.553384 23324564010816 metrics.py:73] Step: [3724] train/supervised_loss = 0.320046
+I0723 22:45:07.554945 23324564010816 metrics.py:73] Step: [3724] train/supervised_acc = 0.891741
+I0723 22:45:13.310136 23324564010816 run.py:650] Completed: 3822 / 9766 steps
+I0723 22:45:13.311763 23324564010816 metrics.py:73] Step: [3822] train/weight_decay = 0.000000
+I0723 22:45:13.313344 23324564010816 metrics.py:73] Step: [3822] train/total_loss = 0.315745
+I0723 22:45:13.314727 23324564010816 metrics.py:73] Step: [3822] train/supervised_loss = 0.315745
+I0723 22:45:13.316043 23324564010816 metrics.py:73] Step: [3822] train/supervised_acc = 0.891602
+I0723 22:45:19.082373 23324564010816 run.py:650] Completed: 3920 / 9766 steps
+I0723 22:45:19.084391 23324564010816 metrics.py:73] Step: [3920] train/weight_decay = 0.000000
+I0723 22:45:19.086353 23324564010816 metrics.py:73] Step: [3920] train/total_loss = 0.315852
+I0723 22:45:19.087996 23324564010816 metrics.py:73] Step: [3920] train/supervised_loss = 0.315852
+I0723 22:45:19.089509 23324564010816 metrics.py:73] Step: [3920] train/supervised_acc = 0.891462
+I0723 22:45:24.847441 23324564010816 run.py:650] Completed: 4018 / 9766 steps
+I0723 22:45:24.849512 23324564010816 metrics.py:73] Step: [4018] train/weight_decay = 0.000000
+I0723 22:45:24.851395 23324564010816 metrics.py:73] Step: [4018] train/total_loss = 0.316320
+I0723 22:45:24.853019 23324564010816 metrics.py:73] Step: [4018] train/supervised_loss = 0.316320
+I0723 22:45:24.854479 23324564010816 metrics.py:73] Step: [4018] train/supervised_acc = 0.891482
+I0723 22:45:30.614869 23324564010816 run.py:650] Completed: 4116 / 9766 steps
+I0723 22:45:30.617760 23324564010816 metrics.py:73] Step: [4116] train/weight_decay = 0.000000
+I0723 22:45:30.620222 23324564010816 metrics.py:73] Step: [4116] train/total_loss = 0.315072
+I0723 22:45:30.622001 23324564010816 metrics.py:73] Step: [4116] train/supervised_loss = 0.315072
+I0723 22:45:30.623556 23324564010816 metrics.py:73] Step: [4116] train/supervised_acc = 0.892259
+I0723 22:45:36.360951 23324564010816 run.py:650] Completed: 4214 / 9766 steps
+I0723 22:45:36.362470 23324564010816 metrics.py:73] Step: [4214] train/weight_decay = 0.000000
+I0723 22:45:36.363954 23324564010816 metrics.py:73] Step: [4214] train/total_loss = 0.316430
+I0723 22:45:36.365324 23324564010816 metrics.py:73] Step: [4214] train/supervised_loss = 0.316430
+I0723 22:45:36.366630 23324564010816 metrics.py:73] Step: [4214] train/supervised_acc = 0.890924
+I0723 22:45:42.119025 23324564010816 run.py:650] Completed: 4312 / 9766 steps
+I0723 22:45:42.120970 23324564010816 metrics.py:73] Step: [4312] train/weight_decay = 0.000000
+I0723 22:45:42.122727 23324564010816 metrics.py:73] Step: [4312] train/total_loss = 0.314755
+I0723 22:45:42.124206 23324564010816 metrics.py:73] Step: [4312] train/supervised_loss = 0.314755
+I0723 22:45:42.125534 23324564010816 metrics.py:73] Step: [4312] train/supervised_acc = 0.891681
+I0723 22:45:47.878362 23324564010816 run.py:650] Completed: 4410 / 9766 steps
+I0723 22:45:47.880108 23324564010816 metrics.py:73] Step: [4410] train/weight_decay = 0.000000
+I0723 22:45:47.881711 23324564010816 metrics.py:73] Step: [4410] train/total_loss = 0.315694
+I0723 22:45:47.883088 23324564010816 metrics.py:73] Step: [4410] train/supervised_loss = 0.315694
+I0723 22:45:47.884390 23324564010816 metrics.py:73] Step: [4410] train/supervised_acc = 0.891821
+I0723 22:45:53.619627 23324564010816 run.py:650] Completed: 4508 / 9766 steps
+I0723 22:45:53.621445 23324564010816 metrics.py:73] Step: [4508] train/weight_decay = 0.000000
+I0723 22:45:53.623054 23324564010816 metrics.py:73] Step: [4508] train/total_loss = 0.316019
+I0723 22:45:53.624438 23324564010816 metrics.py:73] Step: [4508] train/supervised_loss = 0.316019
+I0723 22:45:53.625768 23324564010816 metrics.py:73] Step: [4508] train/supervised_acc = 0.892459
+I0723 22:45:59.370701 23324564010816 run.py:650] Completed: 4606 / 9766 steps
+I0723 22:45:59.372437 23324564010816 metrics.py:73] Step: [4606] train/weight_decay = 0.000000
+I0723 22:45:59.373989 23324564010816 metrics.py:73] Step: [4606] train/total_loss = 0.318970
+I0723 22:45:59.375351 23324564010816 metrics.py:73] Step: [4606] train/supervised_loss = 0.318970
+I0723 22:45:59.376664 23324564010816 metrics.py:73] Step: [4606] train/supervised_acc = 0.891841
+I0723 22:46:05.133359 23324564010816 run.py:650] Completed: 4704 / 9766 steps
+I0723 22:46:05.136304 23324564010816 metrics.py:73] Step: [4704] train/weight_decay = 0.000000
+I0723 22:46:05.138846 23324564010816 metrics.py:73] Step: [4704] train/total_loss = 0.310849
+I0723 22:46:05.140896 23324564010816 metrics.py:73] Step: [4704] train/supervised_loss = 0.310849
+I0723 22:46:05.142814 23324564010816 metrics.py:73] Step: [4704] train/supervised_acc = 0.893495
+I0723 22:46:10.917686 23324564010816 run.py:650] Completed: 4802 / 9766 steps
+I0723 22:46:10.920064 23324564010816 metrics.py:73] Step: [4802] train/weight_decay = 0.000000
+I0723 22:46:10.921713 23324564010816 metrics.py:73] Step: [4802] train/total_loss = 0.318478
+I0723 22:46:10.923367 23324564010816 metrics.py:73] Step: [4802] train/supervised_loss = 0.318478
+I0723 22:46:10.924773 23324564010816 metrics.py:73] Step: [4802] train/supervised_acc = 0.891163
+I0723 22:46:16.670519 23324564010816 run.py:650] Completed: 4900 / 9766 steps
+I0723 22:46:16.672247 23324564010816 metrics.py:73] Step: [4900] train/weight_decay = 0.000000
+I0723 22:46:16.673781 23324564010816 metrics.py:73] Step: [4900] train/total_loss = 0.314147
+I0723 22:46:16.675167 23324564010816 metrics.py:73] Step: [4900] train/supervised_loss = 0.314147
+I0723 22:46:16.676470 23324564010816 metrics.py:73] Step: [4900] train/supervised_acc = 0.892000
+I0723 22:46:22.421747 23324564010816 run.py:650] Completed: 4998 / 9766 steps
+I0723 22:46:22.423939 23324564010816 metrics.py:73] Step: [4998] train/weight_decay = 0.000000
+I0723 22:46:22.425720 23324564010816 metrics.py:73] Step: [4998] train/total_loss = 0.316922
+I0723 22:46:22.427248 23324564010816 metrics.py:73] Step: [4998] train/supervised_loss = 0.316922
+I0723 22:46:22.428662 23324564010816 metrics.py:73] Step: [4998] train/supervised_acc = 0.890944
+I0723 22:46:28.161896 23324564010816 run.py:650] Completed: 5096 / 9766 steps
+I0723 22:46:28.163564 23324564010816 metrics.py:73] Step: [5096] train/weight_decay = 0.000000
+I0723 22:46:28.165143 23324564010816 metrics.py:73] Step: [5096] train/total_loss = 0.314343
+I0723 22:46:28.166572 23324564010816 metrics.py:73] Step: [5096] train/supervised_loss = 0.314343
+I0723 22:46:28.167936 23324564010816 metrics.py:73] Step: [5096] train/supervised_acc = 0.892279
+I0723 22:46:33.930930 23324564010816 run.py:650] Completed: 5194 / 9766 steps
+I0723 22:46:33.933495 23324564010816 metrics.py:73] Step: [5194] train/weight_decay = 0.000000
+I0723 22:46:33.935762 23324564010816 metrics.py:73] Step: [5194] train/total_loss = 0.309804
+I0723 22:46:33.937674 23324564010816 metrics.py:73] Step: [5194] train/supervised_loss = 0.309804
+I0723 22:46:33.939390 23324564010816 metrics.py:73] Step: [5194] train/supervised_acc = 0.893395
+I0723 22:46:39.674668 23324564010816 run.py:650] Completed: 5292 / 9766 steps
+I0723 22:46:39.676515 23324564010816 metrics.py:73] Step: [5292] train/weight_decay = 0.000000
+I0723 22:46:39.678167 23324564010816 metrics.py:73] Step: [5292] train/total_loss = 0.320513
+I0723 22:46:39.679541 23324564010816 metrics.py:73] Step: [5292] train/supervised_loss = 0.320513
+I0723 22:46:39.680868 23324564010816 metrics.py:73] Step: [5292] train/supervised_acc = 0.890824
+I0723 22:46:45.426121 23324564010816 run.py:650] Completed: 5390 / 9766 steps
+I0723 22:46:45.428309 23324564010816 metrics.py:73] Step: [5390] train/weight_decay = 0.000000
+I0723 22:46:45.430310 23324564010816 metrics.py:73] Step: [5390] train/total_loss = 0.312200
+I0723 22:46:45.431924 23324564010816 metrics.py:73] Step: [5390] train/supervised_loss = 0.312200
+I0723 22:46:45.433457 23324564010816 metrics.py:73] Step: [5390] train/supervised_acc = 0.894113
+I0723 22:46:51.177927 23324564010816 run.py:650] Completed: 5488 / 9766 steps
+I0723 22:46:51.179612 23324564010816 metrics.py:73] Step: [5488] train/weight_decay = 0.000000
+I0723 22:46:51.181185 23324564010816 metrics.py:73] Step: [5488] train/total_loss = 0.315439
+I0723 22:46:51.182616 23324564010816 metrics.py:73] Step: [5488] train/supervised_loss = 0.315439
+I0723 22:46:51.184007 23324564010816 metrics.py:73] Step: [5488] train/supervised_acc = 0.892439
+I0723 22:46:56.935346 23324564010816 run.py:650] Completed: 5586 / 9766 steps
+I0723 22:46:56.937198 23324564010816 metrics.py:73] Step: [5586] train/weight_decay = 0.000000
+I0723 22:46:56.938872 23324564010816 metrics.py:73] Step: [5586] train/total_loss = 0.313417
+I0723 22:46:56.940373 23324564010816 metrics.py:73] Step: [5586] train/supervised_loss = 0.313417
+I0723 22:46:56.941788 23324564010816 metrics.py:73] Step: [5586] train/supervised_acc = 0.892738
+I0723 22:47:02.686354 23324564010816 run.py:650] Completed: 5684 / 9766 steps
+I0723 22:47:02.688454 23324564010816 metrics.py:73] Step: [5684] train/weight_decay = 0.000000
+I0723 22:47:02.690152 23324564010816 metrics.py:73] Step: [5684] train/total_loss = 0.314945
+I0723 22:47:02.691637 23324564010816 metrics.py:73] Step: [5684] train/supervised_loss = 0.314945
+I0723 22:47:02.693039 23324564010816 metrics.py:73] Step: [5684] train/supervised_acc = 0.892698
+I0723 22:47:08.443023 23324564010816 run.py:650] Completed: 5782 / 9766 steps
+I0723 22:47:08.444674 23324564010816 metrics.py:73] Step: [5782] train/weight_decay = 0.000000
+I0723 22:47:08.446240 23324564010816 metrics.py:73] Step: [5782] train/total_loss = 0.311432
+I0723 22:47:08.447664 23324564010816 metrics.py:73] Step: [5782] train/supervised_loss = 0.311432
+I0723 22:47:08.449057 23324564010816 metrics.py:73] Step: [5782] train/supervised_acc = 0.894491
+I0723 22:47:14.182477 23324564010816 run.py:650] Completed: 5880 / 9766 steps
+I0723 22:47:14.184679 23324564010816 metrics.py:73] Step: [5880] train/weight_decay = 0.000000
+I0723 22:47:14.186448 23324564010816 metrics.py:73] Step: [5880] train/total_loss = 0.314685
+I0723 22:47:14.188030 23324564010816 metrics.py:73] Step: [5880] train/supervised_loss = 0.314685
+I0723 22:47:14.189500 23324564010816 metrics.py:73] Step: [5880] train/supervised_acc = 0.891841
+I0723 22:47:19.927951 23324564010816 run.py:650] Completed: 5978 / 9766 steps
+I0723 22:47:19.930432 23324564010816 metrics.py:73] Step: [5978] train/weight_decay = 0.000000
+I0723 22:47:19.932766 23324564010816 metrics.py:73] Step: [5978] train/total_loss = 0.313026
+I0723 22:47:19.934725 23324564010816 metrics.py:73] Step: [5978] train/supervised_loss = 0.313026
+I0723 22:47:19.936366 23324564010816 metrics.py:73] Step: [5978] train/supervised_acc = 0.893176
+I0723 22:47:25.694524 23324564010816 run.py:650] Completed: 6076 / 9766 steps
+I0723 22:47:25.696996 23324564010816 metrics.py:73] Step: [6076] train/weight_decay = 0.000000
+I0723 22:47:25.699336 23324564010816 metrics.py:73] Step: [6076] train/total_loss = 0.311042
+I0723 22:47:25.701447 23324564010816 metrics.py:73] Step: [6076] train/supervised_loss = 0.311042
+I0723 22:47:25.703222 23324564010816 metrics.py:73] Step: [6076] train/supervised_acc = 0.893196
+I0723 22:47:31.457593 23324564010816 run.py:650] Completed: 6174 / 9766 steps
+I0723 22:47:31.459177 23324564010816 metrics.py:73] Step: [6174] train/weight_decay = 0.000000
+I0723 22:47:31.460684 23324564010816 metrics.py:73] Step: [6174] train/total_loss = 0.314065
+I0723 22:47:31.462114 23324564010816 metrics.py:73] Step: [6174] train/supervised_loss = 0.314065
+I0723 22:47:31.463481 23324564010816 metrics.py:73] Step: [6174] train/supervised_acc = 0.892080
+I0723 22:47:37.201574 23324564010816 run.py:650] Completed: 6272 / 9766 steps
+I0723 22:47:37.203295 23324564010816 metrics.py:73] Step: [6272] train/weight_decay = 0.000000
+I0723 22:47:37.204881 23324564010816 metrics.py:73] Step: [6272] train/total_loss = 0.308729
+I0723 22:47:37.206321 23324564010816 metrics.py:73] Step: [6272] train/supervised_loss = 0.308729
+I0723 22:47:37.207706 23324564010816 metrics.py:73] Step: [6272] train/supervised_acc = 0.895229
+I0723 22:47:42.952768 23324564010816 run.py:650] Completed: 6370 / 9766 steps
+I0723 22:47:42.954603 23324564010816 metrics.py:73] Step: [6370] train/weight_decay = 0.000000
+I0723 22:47:42.956203 23324564010816 metrics.py:73] Step: [6370] train/total_loss = 0.312360
+I0723 22:47:42.957668 23324564010816 metrics.py:73] Step: [6370] train/supervised_loss = 0.312360
+I0723 22:47:42.959102 23324564010816 metrics.py:73] Step: [6370] train/supervised_acc = 0.892977
+I0723 22:47:48.696550 23324564010816 run.py:650] Completed: 6468 / 9766 steps
+I0723 22:47:48.698304 23324564010816 metrics.py:73] Step: [6468] train/weight_decay = 0.000000
+I0723 22:47:48.699990 23324564010816 metrics.py:73] Step: [6468] train/total_loss = 0.313039
+I0723 22:47:48.701376 23324564010816 metrics.py:73] Step: [6468] train/supervised_loss = 0.313039
+I0723 22:47:48.702693 23324564010816 metrics.py:73] Step: [6468] train/supervised_acc = 0.892498
+I0723 22:47:54.433921 23324564010816 run.py:650] Completed: 6566 / 9766 steps
+I0723 22:47:54.435440 23324564010816 metrics.py:73] Step: [6566] train/weight_decay = 0.000000
+I0723 22:47:54.436927 23324564010816 metrics.py:73] Step: [6566] train/total_loss = 0.312373
+I0723 22:47:54.438297 23324564010816 metrics.py:73] Step: [6566] train/supervised_loss = 0.312373
+I0723 22:47:54.439618 23324564010816 metrics.py:73] Step: [6566] train/supervised_acc = 0.893216
+I0723 22:48:00.188757 23324564010816 run.py:650] Completed: 6664 / 9766 steps
+I0723 22:48:00.190728 23324564010816 metrics.py:73] Step: [6664] train/weight_decay = 0.000000
+I0723 22:48:00.192346 23324564010816 metrics.py:73] Step: [6664] train/total_loss = 0.311744
+I0723 22:48:00.193760 23324564010816 metrics.py:73] Step: [6664] train/supervised_loss = 0.311744
+I0723 22:48:00.195123 23324564010816 metrics.py:73] Step: [6664] train/supervised_acc = 0.892618
+I0723 22:48:05.921847 23324564010816 run.py:650] Completed: 6762 / 9766 steps
+I0723 22:48:05.923344 23324564010816 metrics.py:73] Step: [6762] train/weight_decay = 0.000000
+I0723 22:48:05.924837 23324564010816 metrics.py:73] Step: [6762] train/total_loss = 0.313983
+I0723 22:48:05.926189 23324564010816 metrics.py:73] Step: [6762] train/supervised_loss = 0.313983
+I0723 22:48:05.927506 23324564010816 metrics.py:73] Step: [6762] train/supervised_acc = 0.892937
+I0723 22:48:11.668891 23324564010816 run.py:650] Completed: 6860 / 9766 steps
+I0723 22:48:11.670597 23324564010816 metrics.py:73] Step: [6860] train/weight_decay = 0.000000
+I0723 22:48:11.672261 23324564010816 metrics.py:73] Step: [6860] train/total_loss = 0.317585
+I0723 22:48:11.673658 23324564010816 metrics.py:73] Step: [6860] train/supervised_loss = 0.317585
+I0723 22:48:11.675016 23324564010816 metrics.py:73] Step: [6860] train/supervised_acc = 0.890505
+I0723 22:48:17.412772 23324564010816 run.py:650] Completed: 6958 / 9766 steps
+I0723 22:48:17.414321 23324564010816 metrics.py:73] Step: [6958] train/weight_decay = 0.000000
+I0723 22:48:17.415810 23324564010816 metrics.py:73] Step: [6958] train/total_loss = 0.312788
+I0723 22:48:17.417197 23324564010816 metrics.py:73] Step: [6958] train/supervised_loss = 0.312788
+I0723 22:48:17.418514 23324564010816 metrics.py:73] Step: [6958] train/supervised_acc = 0.892518
+I0723 22:48:23.178576 23324564010816 run.py:650] Completed: 7056 / 9766 steps
+I0723 22:48:23.180400 23324564010816 metrics.py:73] Step: [7056] train/weight_decay = 0.000000
+I0723 22:48:23.182474 23324564010816 metrics.py:73] Step: [7056] train/total_loss = 0.310140
+I0723 22:48:23.185103 23324564010816 metrics.py:73] Step: [7056] train/supervised_loss = 0.310140
+I0723 22:48:23.187497 23324564010816 metrics.py:73] Step: [7056] train/supervised_acc = 0.892618
+I0723 22:48:28.928666 23324564010816 run.py:650] Completed: 7154 / 9766 steps
+I0723 22:48:28.930985 23324564010816 metrics.py:73] Step: [7154] train/weight_decay = 0.000000
+I0723 22:48:28.932976 23324564010816 metrics.py:73] Step: [7154] train/total_loss = 0.312492
+I0723 22:48:28.934781 23324564010816 metrics.py:73] Step: [7154] train/supervised_loss = 0.312492
+I0723 22:48:28.936463 23324564010816 metrics.py:73] Step: [7154] train/supervised_acc = 0.892558
+I0723 22:48:34.682298 23324564010816 run.py:650] Completed: 7252 / 9766 steps
+I0723 22:48:34.684632 23324564010816 metrics.py:73] Step: [7252] train/weight_decay = 0.000000
+I0723 22:48:34.686707 23324564010816 metrics.py:73] Step: [7252] train/total_loss = 0.311044
+I0723 22:48:34.688219 23324564010816 metrics.py:73] Step: [7252] train/supervised_loss = 0.311044
+I0723 22:48:34.689627 23324564010816 metrics.py:73] Step: [7252] train/supervised_acc = 0.893076
+I0723 22:48:40.443698 23324564010816 run.py:650] Completed: 7350 / 9766 steps
+I0723 22:48:40.446267 23324564010816 metrics.py:73] Step: [7350] train/weight_decay = 0.000000
+I0723 22:48:40.448791 23324564010816 metrics.py:73] Step: [7350] train/total_loss = 0.305846
+I0723 22:48:40.450970 23324564010816 metrics.py:73] Step: [7350] train/supervised_loss = 0.305846
+I0723 22:48:40.453063 23324564010816 metrics.py:73] Step: [7350] train/supervised_acc = 0.895249
+I0723 22:48:46.186163 23324564010816 run.py:650] Completed: 7448 / 9766 steps
+I0723 22:48:46.187749 23324564010816 metrics.py:73] Step: [7448] train/weight_decay = 0.000000
+I0723 22:48:46.189234 23324564010816 metrics.py:73] Step: [7448] train/total_loss = 0.310006
+I0723 22:48:46.190600 23324564010816 metrics.py:73] Step: [7448] train/supervised_loss = 0.310006
+I0723 22:48:46.191931 23324564010816 metrics.py:73] Step: [7448] train/supervised_acc = 0.893515
+I0723 22:48:51.930581 23324564010816 run.py:650] Completed: 7546 / 9766 steps
+I0723 22:48:51.932117 23324564010816 metrics.py:73] Step: [7546] train/weight_decay = 0.000000
+I0723 22:48:51.933595 23324564010816 metrics.py:73] Step: [7546] train/total_loss = 0.310562
+I0723 22:48:51.934951 23324564010816 metrics.py:73] Step: [7546] train/supervised_loss = 0.310562
+I0723 22:48:51.936254 23324564010816 metrics.py:73] Step: [7546] train/supervised_acc = 0.893475
+I0723 22:48:57.675305 23324564010816 run.py:650] Completed: 7644 / 9766 steps
+I0723 22:48:57.677540 23324564010816 metrics.py:73] Step: [7644] train/weight_decay = 0.000000
+I0723 22:48:57.679423 23324564010816 metrics.py:73] Step: [7644] train/total_loss = 0.309261
+I0723 22:48:57.680947 23324564010816 metrics.py:73] Step: [7644] train/supervised_loss = 0.309261
+I0723 22:48:57.682433 23324564010816 metrics.py:73] Step: [7644] train/supervised_acc = 0.894810
+I0723 22:49:03.413002 23324564010816 run.py:650] Completed: 7742 / 9766 steps
+I0723 22:49:03.414655 23324564010816 metrics.py:73] Step: [7742] train/weight_decay = 0.000000
+I0723 22:49:03.416165 23324564010816 metrics.py:73] Step: [7742] train/total_loss = 0.316819
+I0723 22:49:03.417516 23324564010816 metrics.py:73] Step: [7742] train/supervised_loss = 0.316819
+I0723 22:49:03.418833 23324564010816 metrics.py:73] Step: [7742] train/supervised_acc = 0.891442
+I0723 22:49:09.157517 23324564010816 run.py:650] Completed: 7840 / 9766 steps
+I0723 22:49:09.160022 23324564010816 metrics.py:73] Step: [7840] train/weight_decay = 0.000000
+I0723 22:49:09.162122 23324564010816 metrics.py:73] Step: [7840] train/total_loss = 0.308470
+I0723 22:49:09.163475 23324564010816 metrics.py:73] Step: [7840] train/supervised_loss = 0.308470
+I0723 22:49:09.164768 23324564010816 metrics.py:73] Step: [7840] train/supervised_acc = 0.894870
+I0723 22:49:14.902592 23324564010816 run.py:650] Completed: 7938 / 9766 steps
+I0723 22:49:14.904978 23324564010816 metrics.py:73] Step: [7938] train/weight_decay = 0.000000
+I0723 22:49:14.907047 23324564010816 metrics.py:73] Step: [7938] train/total_loss = 0.314273
+I0723 22:49:14.908637 23324564010816 metrics.py:73] Step: [7938] train/supervised_loss = 0.314273
+I0723 22:49:14.910124 23324564010816 metrics.py:73] Step: [7938] train/supervised_acc = 0.891243
+I0723 22:49:20.641534 23324564010816 run.py:650] Completed: 8036 / 9766 steps
+I0723 22:49:20.643608 23324564010816 metrics.py:73] Step: [8036] train/weight_decay = 0.000000
+I0723 22:49:20.645456 23324564010816 metrics.py:73] Step: [8036] train/total_loss = 0.314286
+I0723 22:49:20.646931 23324564010816 metrics.py:73] Step: [8036] train/supervised_loss = 0.314286
+I0723 22:49:20.648328 23324564010816 metrics.py:73] Step: [8036] train/supervised_acc = 0.891801
+I0723 22:49:26.388379 23324564010816 run.py:650] Completed: 8134 / 9766 steps
+I0723 22:49:26.390717 23324564010816 metrics.py:73] Step: [8134] train/weight_decay = 0.000000
+I0723 22:49:26.392769 23324564010816 metrics.py:73] Step: [8134] train/total_loss = 0.312431
+I0723 22:49:26.394562 23324564010816 metrics.py:73] Step: [8134] train/supervised_loss = 0.312431
+I0723 22:49:26.396256 23324564010816 metrics.py:73] Step: [8134] train/supervised_acc = 0.892757
+I0723 22:49:32.122085 23324564010816 run.py:650] Completed: 8232 / 9766 steps
+I0723 22:49:32.123681 23324564010816 metrics.py:73] Step: [8232] train/weight_decay = 0.000000
+I0723 22:49:32.125174 23324564010816 metrics.py:73] Step: [8232] train/total_loss = 0.306979
+I0723 22:49:32.126539 23324564010816 metrics.py:73] Step: [8232] train/supervised_loss = 0.306979
+I0723 22:49:32.127852 23324564010816 metrics.py:73] Step: [8232] train/supervised_acc = 0.895229
+I0723 22:49:37.870589 23324564010816 run.py:650] Completed: 8330 / 9766 steps
+I0723 22:49:37.872981 23324564010816 metrics.py:73] Step: [8330] train/weight_decay = 0.000000
+I0723 22:49:37.875064 23324564010816 metrics.py:73] Step: [8330] train/total_loss = 0.309991
+I0723 22:49:37.876897 23324564010816 metrics.py:73] Step: [8330] train/supervised_loss = 0.309991
+I0723 22:49:37.878503 23324564010816 metrics.py:73] Step: [8330] train/supervised_acc = 0.893495
+I0723 22:49:43.601211 23324564010816 run.py:650] Completed: 8428 / 9766 steps
+I0723 22:49:43.602875 23324564010816 metrics.py:73] Step: [8428] train/weight_decay = 0.000000
+I0723 22:49:43.604378 23324564010816 metrics.py:73] Step: [8428] train/total_loss = 0.311690
+I0723 22:49:43.605733 23324564010816 metrics.py:73] Step: [8428] train/supervised_loss = 0.311690
+I0723 22:49:43.607059 23324564010816 metrics.py:73] Step: [8428] train/supervised_acc = 0.892000
+I0723 22:49:49.336988 23324564010816 run.py:650] Completed: 8526 / 9766 steps
+I0723 22:49:49.338751 23324564010816 metrics.py:73] Step: [8526] train/weight_decay = 0.000000
+I0723 22:49:49.340410 23324564010816 metrics.py:73] Step: [8526] train/total_loss = 0.311474
+I0723 22:49:49.341870 23324564010816 metrics.py:73] Step: [8526] train/supervised_loss = 0.311474
+I0723 22:49:49.343241 23324564010816 metrics.py:73] Step: [8526] train/supervised_acc = 0.893475
+I0723 22:49:55.098251 23324564010816 run.py:650] Completed: 8624 / 9766 steps
+I0723 22:49:55.100962 23324564010816 metrics.py:73] Step: [8624] train/weight_decay = 0.000000
+I0723 22:49:55.103287 23324564010816 metrics.py:73] Step: [8624] train/total_loss = 0.307215
+I0723 22:49:55.105026 23324564010816 metrics.py:73] Step: [8624] train/supervised_loss = 0.307215
+I0723 22:49:55.106490 23324564010816 metrics.py:73] Step: [8624] train/supervised_acc = 0.894432
+I0723 22:50:00.831548 23324564010816 run.py:650] Completed: 8722 / 9766 steps
+I0723 22:50:00.833072 23324564010816 metrics.py:73] Step: [8722] train/weight_decay = 0.000000
+I0723 22:50:00.834547 23324564010816 metrics.py:73] Step: [8722] train/total_loss = 0.315431
+I0723 22:50:00.835917 23324564010816 metrics.py:73] Step: [8722] train/supervised_loss = 0.315431
+I0723 22:50:00.837218 23324564010816 metrics.py:73] Step: [8722] train/supervised_acc = 0.892518
+I0723 22:50:06.559716 23324564010816 run.py:650] Completed: 8820 / 9766 steps
+I0723 22:50:06.561791 23324564010816 metrics.py:73] Step: [8820] train/weight_decay = 0.000000
+I0723 22:50:06.563462 23324564010816 metrics.py:73] Step: [8820] train/total_loss = 0.313339
+I0723 22:50:06.564930 23324564010816 metrics.py:73] Step: [8820] train/supervised_loss = 0.313339
+I0723 22:50:06.566337 23324564010816 metrics.py:73] Step: [8820] train/supervised_acc = 0.892060
+I0723 22:50:12.312889 23324564010816 run.py:650] Completed: 8918 / 9766 steps
+I0723 22:50:12.314973 23324564010816 metrics.py:73] Step: [8918] train/weight_decay = 0.000000
+I0723 22:50:12.316850 23324564010816 metrics.py:73] Step: [8918] train/total_loss = 0.309552
+I0723 22:50:12.318289 23324564010816 metrics.py:73] Step: [8918] train/supervised_loss = 0.309552
+I0723 22:50:12.319888 23324564010816 metrics.py:73] Step: [8918] train/supervised_acc = 0.893355
+I0723 22:50:18.038743 23324564010816 run.py:650] Completed: 9016 / 9766 steps
+I0723 22:50:18.040304 23324564010816 metrics.py:73] Step: [9016] train/weight_decay = 0.000000
+I0723 22:50:18.041810 23324564010816 metrics.py:73] Step: [9016] train/total_loss = 0.311248
+I0723 22:50:18.043172 23324564010816 metrics.py:73] Step: [9016] train/supervised_loss = 0.311248
+I0723 22:50:18.044475 23324564010816 metrics.py:73] Step: [9016] train/supervised_acc = 0.894033
+I0723 22:50:23.785047 23324564010816 run.py:650] Completed: 9114 / 9766 steps
+I0723 22:50:23.786612 23324564010816 metrics.py:73] Step: [9114] train/weight_decay = 0.000000
+I0723 22:50:23.788064 23324564010816 metrics.py:73] Step: [9114] train/total_loss = 0.307573
+I0723 22:50:23.789427 23324564010816 metrics.py:73] Step: [9114] train/supervised_loss = 0.307573
+I0723 22:50:23.790742 23324564010816 metrics.py:73] Step: [9114] train/supervised_acc = 0.894272
+I0723 22:50:29.531333 23324564010816 run.py:650] Completed: 9212 / 9766 steps
+I0723 22:50:29.533254 23324564010816 metrics.py:73] Step: [9212] train/weight_decay = 0.000000
+I0723 22:50:29.535118 23324564010816 metrics.py:73] Step: [9212] train/total_loss = 0.313292
+I0723 22:50:29.536681 23324564010816 metrics.py:73] Step: [9212] train/supervised_loss = 0.313292
+I0723 22:50:29.538256 23324564010816 metrics.py:73] Step: [9212] train/supervised_acc = 0.891801
+I0723 22:50:35.262753 23324564010816 run.py:650] Completed: 9310 / 9766 steps
+I0723 22:50:35.264325 23324564010816 metrics.py:73] Step: [9310] train/weight_decay = 0.000000
+I0723 22:50:35.265810 23324564010816 metrics.py:73] Step: [9310] train/total_loss = 0.309340
+I0723 22:50:35.267205 23324564010816 metrics.py:73] Step: [9310] train/supervised_loss = 0.309340
+I0723 22:50:35.268519 23324564010816 metrics.py:73] Step: [9310] train/supervised_acc = 0.894013
+I0723 22:50:41.011990 23324564010816 run.py:650] Completed: 9408 / 9766 steps
+I0723 22:50:41.014049 23324564010816 metrics.py:73] Step: [9408] train/weight_decay = 0.000000
+I0723 22:50:41.015772 23324564010816 metrics.py:73] Step: [9408] train/total_loss = 0.313697
+I0723 22:50:41.017284 23324564010816 metrics.py:73] Step: [9408] train/supervised_loss = 0.313697
+I0723 22:50:41.018713 23324564010816 metrics.py:73] Step: [9408] train/supervised_acc = 0.893754
+I0723 22:50:46.746759 23324564010816 run.py:650] Completed: 9506 / 9766 steps
+I0723 22:50:46.748306 23324564010816 metrics.py:73] Step: [9506] train/weight_decay = 0.000000
+I0723 22:50:46.749796 23324564010816 metrics.py:73] Step: [9506] train/total_loss = 0.315749
+I0723 22:50:46.751175 23324564010816 metrics.py:73] Step: [9506] train/supervised_loss = 0.315749
+I0723 22:50:46.752501 23324564010816 metrics.py:73] Step: [9506] train/supervised_acc = 0.892000
+I0723 22:50:52.492401 23324564010816 run.py:650] Completed: 9604 / 9766 steps
+I0723 22:50:52.494240 23324564010816 metrics.py:73] Step: [9604] train/weight_decay = 0.000000
+I0723 22:50:52.495772 23324564010816 metrics.py:73] Step: [9604] train/total_loss = 0.311506
+I0723 22:50:52.497205 23324564010816 metrics.py:73] Step: [9604] train/supervised_loss = 0.311506
+I0723 22:50:52.498602 23324564010816 metrics.py:73] Step: [9604] train/supervised_acc = 0.893734
+I0723 22:50:58.241599 23324564010816 run.py:650] Completed: 9702 / 9766 steps
+I0723 22:50:58.243225 23324564010816 metrics.py:73] Step: [9702] train/weight_decay = 0.000000
+I0723 22:50:58.244804 23324564010816 metrics.py:73] Step: [9702] train/total_loss = 0.308780
+I0723 22:50:58.246284 23324564010816 metrics.py:73] Step: [9702] train/supervised_loss = 0.308780
+I0723 22:50:58.247698 23324564010816 metrics.py:73] Step: [9702] train/supervised_acc = 0.893913
+I0723 22:51:03.996649 23324564010816 run.py:650] Completed: 9800 / 9766 steps
+I0723 22:51:03.998273 23324564010816 metrics.py:73] Step: [9800] train/weight_decay = 0.000000
+I0723 22:51:03.999782 23324564010816 metrics.py:73] Step: [9800] train/total_loss = 0.308208
+I0723 22:51:04.001182 23324564010816 metrics.py:73] Step: [9800] train/supervised_loss = 0.308208
+I0723 22:51:04.002494 23324564010816 metrics.py:73] Step: [9800] train/supervised_acc = 0.894292
+I0723 22:51:04.008442 23324564010816 run.py:659] Training complete...
+I0723 22:51:04.008735 23324564010816 data.py:46] Global batch size: 256
+I0723 22:51:04.008787 23324564010816 data.py:47] Per-replica batch size: 256
+I0723 22:51:04.008914 23324564010816 data.py:64] num_input_pipelines: 1
+I0723 22:51:04.009071 23324564010816 logging_logger.py:44] Constructing tf.data.Dataset cifar10 for split test, from ~/tensorflow_datasets/cifar10/3.0.2
+I0723 22:51:04.101274 23324564010816 run.py:370] Restoring from /rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft/ckpt-9800
+I0723 22:51:04.153530 23324564010816 run.py:375] Performing eval at step 9800
+WARNING:tensorflow:AutoGraph could not transform <function perform_evaluation.<locals>.single_step at 0x15348418cdc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:51:04.272616 23252166412032 ag_logging.py:146] AutoGraph could not transform <function perform_evaluation.<locals>.single_step at 0x15348418cdc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+I0723 22:51:15.854111 23324564010816 run.py:398] Completed eval for 1 / 40 steps
+I0723 22:51:15.905639 23324564010816 run.py:398] Completed eval for 2 / 40 steps
+I0723 22:51:15.933107 23324564010816 run.py:398] Completed eval for 3 / 40 steps
+I0723 22:51:15.960468 23324564010816 run.py:398] Completed eval for 4 / 40 steps
+I0723 22:51:15.987762 23324564010816 run.py:398] Completed eval for 5 / 40 steps
+I0723 22:51:16.015137 23324564010816 run.py:398] Completed eval for 6 / 40 steps
+I0723 22:51:16.042166 23324564010816 run.py:398] Completed eval for 7 / 40 steps
+I0723 22:51:16.069287 23324564010816 run.py:398] Completed eval for 8 / 40 steps
+I0723 22:51:16.097100 23324564010816 run.py:398] Completed eval for 9 / 40 steps
+I0723 22:51:16.122140 23324564010816 run.py:398] Completed eval for 10 / 40 steps
+I0723 22:51:16.147109 23324564010816 run.py:398] Completed eval for 11 / 40 steps
+I0723 22:51:16.172005 23324564010816 run.py:398] Completed eval for 12 / 40 steps
+I0723 22:51:16.197289 23324564010816 run.py:398] Completed eval for 13 / 40 steps
+I0723 22:51:16.222600 23324564010816 run.py:398] Completed eval for 14 / 40 steps
+I0723 22:51:16.248057 23324564010816 run.py:398] Completed eval for 15 / 40 steps
+I0723 22:51:16.274649 23324564010816 run.py:398] Completed eval for 16 / 40 steps
+I0723 22:51:16.300238 23324564010816 run.py:398] Completed eval for 17 / 40 steps
+I0723 22:51:16.326560 23324564010816 run.py:398] Completed eval for 18 / 40 steps
+I0723 22:51:16.352557 23324564010816 run.py:398] Completed eval for 19 / 40 steps
+I0723 22:51:16.378461 23324564010816 run.py:398] Completed eval for 20 / 40 steps
+I0723 22:51:16.404449 23324564010816 run.py:398] Completed eval for 21 / 40 steps
+I0723 22:51:16.429665 23324564010816 run.py:398] Completed eval for 22 / 40 steps
+I0723 22:51:16.454806 23324564010816 run.py:398] Completed eval for 23 / 40 steps
+I0723 22:51:16.480154 23324564010816 run.py:398] Completed eval for 24 / 40 steps
+I0723 22:51:16.505783 23324564010816 run.py:398] Completed eval for 25 / 40 steps
+I0723 22:51:16.531838 23324564010816 run.py:398] Completed eval for 26 / 40 steps
+I0723 22:51:16.556101 23324564010816 run.py:398] Completed eval for 27 / 40 steps
+I0723 22:51:16.580662 23324564010816 run.py:398] Completed eval for 28 / 40 steps
+I0723 22:51:16.605220 23324564010816 run.py:398] Completed eval for 29 / 40 steps
+I0723 22:51:16.630456 23324564010816 run.py:398] Completed eval for 30 / 40 steps
+I0723 22:51:16.655296 23324564010816 run.py:398] Completed eval for 31 / 40 steps
+I0723 22:51:16.681370 23324564010816 run.py:398] Completed eval for 32 / 40 steps
+I0723 22:51:16.706299 23324564010816 run.py:398] Completed eval for 33 / 40 steps
+I0723 22:51:16.731110 23324564010816 run.py:398] Completed eval for 34 / 40 steps
+I0723 22:51:16.755891 23324564010816 run.py:398] Completed eval for 35 / 40 steps
+I0723 22:51:16.781007 23324564010816 run.py:398] Completed eval for 36 / 40 steps
+I0723 22:51:16.806121 23324564010816 run.py:398] Completed eval for 37 / 40 steps
+I0723 22:51:16.831288 23324564010816 run.py:398] Completed eval for 38 / 40 steps
+I0723 22:51:16.857014 23324564010816 run.py:398] Completed eval for 39 / 40 steps
+I0723 22:51:26.938559 23324564010816 run.py:398] Completed eval for 40 / 40 steps
+I0723 22:51:26.938948 23324564010816 run.py:399] Finished eval for /rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft/ckpt-9800
+I0723 22:51:26.940048 23324564010816 run.py:403] Writing summaries for 9800 step
+I0723 22:51:26.941948 23324564010816 metrics.py:73] Step: [9800] eval/regularization_loss = 0.000000
+I0723 22:51:26.943843 23324564010816 metrics.py:73] Step: [9800] eval/label_top_1_accuracy = 0.911800
+I0723 22:51:26.945494 23324564010816 metrics.py:73] Step: [9800] eval/label_top_5_accuracy = 0.997400
+I0723 22:51:26.949498 23324564010816 run.py:412] {'eval/regularization_loss': 0.0, 'eval/label_top_1_accuracy': 0.9118, 'eval/label_top_5_accuracy': 0.9974, 'global_step': 9800}
+WARNING:tensorflow:AutoGraph could not transform <model.Model object at 0x153661a7b310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:51:26.988169 23324564010816 ag_logging.py:146] AutoGraph could not transform <model.Model object at 0x153661a7b310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function get_salient_tensors_dict at 0x1536ab1cb280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0723 22:51:27.447594 23324564010816 ag_logging.py:146] AutoGraph could not transform <function get_salient_tensors_dict at 0x1536ab1cb280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2022-07-23 22:51:27.815004: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:Skipping full serialization of Keras layer <model.Model object at 0x153661a7b310>, because it is not built.
+W0723 22:51:27.869391 23324564010816 save_impl.py:77] Skipping full serialization of Keras layer <model.Model object at 0x153661a7b310>, because it is not built.
+W0723 22:51:31.797268 23324564010816 save.py:236] Found untraced functions such as resnet_layer_call_and_return_conditional_losses, resnet_layer_call_fn, projection_head_layer_call_and_return_conditional_losses, projection_head_layer_call_fn, head_supervised_layer_call_and_return_conditional_losses while saving (showing 5 of 485). These functions will not be directly callable after loading.
+W0723 22:51:31.978922 23324564010816 save.py:236] Found untraced functions such as resnet_layer_call_and_return_conditional_losses, resnet_layer_call_fn, projection_head_layer_call_and_return_conditional_losses, projection_head_layer_call_fn, head_supervised_layer_call_and_return_conditional_losses while saving (showing 5 of 485). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft/saved_model/9800/assets
+I0723 22:51:32.889852 23324564010816 builder_impl.py:774] Assets written to: /rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft/saved_model/9800/assets

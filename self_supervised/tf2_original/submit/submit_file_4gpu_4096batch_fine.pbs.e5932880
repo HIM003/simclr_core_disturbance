@@ -1,0 +1,28 @@
+2022-07-23 18:53:57.138540: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-07-23 18:54:40.385806: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Failed precondition: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+I0723 18:56:10.058930 23324462724928 dataset_builder.py:437] Generating dataset imagenet2012 (~/tensorflow_datasets/imagenet2012/5.1.0)
+Traceback (most recent call last):
+  File "run.py", line 671, in <module>
+    app.run(main)
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "run.py", line 472, in main
+    builder.download_and_prepare()
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow_datasets/core/dataset_builder.py", line 481, in download_and_prepare
+    self._download_and_prepare(
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow_datasets/core/dataset_builder.py", line 1184, in _download_and_prepare
+    split_generators = self._split_generators(  # pylint: disable=unexpected-keyword-arg
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow_datasets/image_classification/imagenet.py", line 223, in _split_generators
+    train_path = os.path.join(dl_manager.manual_dir, 'ILSVRC2012_img_train.tar')
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 168, in __get__
+    cached = self.fget(obj)  # pytype: disable=attribute-error
+  File "/rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow_datasets/core/download/download_manager.py", line 648, in manual_dir
+    raise AssertionError(
+AssertionError: Manual directory /rds/general/user/hm808/home/tensorflow_datasets/downloads/manual does not exist or is empty. Create it and download/extract dataset artifacts in there using instructions:
+manual_dir should contain two files: ILSVRC2012_img_train.tar and
+ILSVRC2012_img_val.tar.
+You need to register on https://image-net.org/download-images in order
+to get the link to download the dataset.
+/var/spool/PBS/mom_priv/jobs/5932880.pbs.SC: line 26: --optimizer=momentum: command not found

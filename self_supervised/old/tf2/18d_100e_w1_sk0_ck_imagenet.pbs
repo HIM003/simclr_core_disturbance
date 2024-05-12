@@ -1,0 +1,63 @@
+#PBS -l walltime=48:00:00
+#PBS -l select=1:ncpus=64:mem=48gb:ngpus=2:gpu_type=RTX6000
+#
+#
+module load anaconda3/personal
+conda init bash
+. ~/.bashrc
+
+conda activate simclr2
+#
+cd $PBS_O_WORKDIR
+#
+#
+python run_old.py --mode=train --train_mode=pretrain \
+  --train_batch_size=128 --train_epochs=100 --sk_ratio=0 \
+  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+  --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=18 \
+  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 \
+  --model_dir=/rds/general/user/hm808/home/repos/18d_128b_100e_w1_sk0_imagenet \
+  --checkpoint=/rds/general/user/hm808/home/repos/18d_128b_100e_w1_sk0_imagenet/ckpt-350315 \
+  --use_tpu=False
+
+
+
+#--checkpoint=/rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch/ckpt-12216 \
+#--model_dir=/rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft
+
+#python run.py --mode=train_then_eval --train_mode=pretrain \
+#  --train_batch_size=256 --train_epochs=100 --sk_ratio=0\
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=224 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1\
+#  --model_dir=/rds/general/user/hm808/home/repos/18d_256b_100e_w1_sk0_rand --use_tpu=False
+
+#python run.py --mode=train_then_eval --train_mode=pretrain \
+#  --train_batch_size=512 --train_epochs=100 --sk_ratio=0\
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=224 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1\
+#  --model_dir=/rds/general/user/hm808/home/repos/18d_512b_100e_w1_sk0 --use_tpu=False
+
+#python run.py --mode=train_then_eval --train_mode=pretrain \
+#  --train_batch_size=1024 --train_epochs=100 --sk_ratio=0\
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=224 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1\
+#  --model_dir=/rds/general/user/hm808/home/repos/18d_1024b_100e_w1_sk0 --use_tpu=False
+
+#python run.py --mode=train_then_eval --train_mode=pretrain \
+#  --train_batch_size=2048 --train_epochs=100 --sk_ratio=0\
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=224 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1\
+#  --model_dir=/rds/general/user/hm808/home/repos/18d_2048b_100e_w1_sk0 --use_tpu=False
+
+#python run.py --mode=train_then_eval --train_mode=pretrain \
+#  --train_batch_size=4096 --train_epochs=100 --sk_ratio=0\
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=224 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1\
+#  --model_dir=/rds/general/user/hm808/home/repos/18d_4096b_100e_w1_sk0 --use_tpu=False
+
+

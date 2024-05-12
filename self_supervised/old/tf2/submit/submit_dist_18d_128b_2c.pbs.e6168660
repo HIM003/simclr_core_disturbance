@@ -1,0 +1,964 @@
+2022-09-24 11:59:45.417210: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-24 12:00:16.899551: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-24 12:00:16.902588: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-09-24 12:00:16.991381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1b:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-09-24 12:00:16.992078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:1d:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-09-24 12:00:16.992105: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-24 12:00:17.248185: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-24 12:00:17.248291: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-09-24 12:00:17.329249: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-24 12:00:17.471518: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-24 12:00:17.602265: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-24 12:00:17.698714: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-09-24 12:00:17.916661: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-24 12:00:17.919153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-09-24 12:00:17.919863: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-09-24 12:00:17.922215: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-24 12:00:18.193865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1b:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-09-24 12:00:18.194531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:1d:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-09-24 12:00:18.194567: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-24 12:00:18.194599: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-24 12:00:18.194614: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-09-24 12:00:18.194627: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-24 12:00:18.197194: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-24 12:00:18.197213: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-24 12:00:18.197228: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-09-24 12:00:18.197242: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-24 12:00:18.199564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1
+2022-09-24 12:00:18.199637: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-24 12:00:22.013733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-09-24 12:00:22.013833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 
+2022-09-24 12:00:22.013883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N Y 
+2022-09-24 12:00:22.013893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   Y N 
+2022-09-24 12:00:22.016443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22473 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:1b:00.0, compute capability: 7.5)
+2022-09-24 12:00:22.114404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22476 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:1d:00.0, compute capability: 7.5)
+I0924 12:00:22.151953 22532193106816 run.py:494] # train examples: 12827
+I0924 12:00:22.152354 22532193106816 run.py:495] # train_steps: 10022
+I0924 12:00:22.152442 22532193106816 run.py:496] # eval examples: 12827
+I0924 12:00:22.152509 22532193106816 run.py:497] # eval steps: 51
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1')
+I0924 12:00:22.156074 22532193106816 mirrored_strategy.py:350] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1')
+I0924 12:00:22.156345 22532193106816 run.py:519] Running using MirroredStrategy on 2 replicas
+I0924 12:00:22.916271 22532193106816 data.py:59] Global batch size: 128
+I0924 12:00:22.916447 22532193106816 data.py:60] Per-replica batch size: 64
+I0924 12:00:23.221186 22532193106816 data.py:91] num_input_pipelines: 1
+WARNING:tensorflow:AutoGraph could not transform <function crop_and_resize at 0x147de37c4a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:00:23.537430 22532193106816 ag_logging.py:146] AutoGraph could not transform <function crop_and_resize at 0x147de37c4a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function color_jitter_rand at 0x147de37c4dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:00:23.748741 22532193106816 ag_logging.py:146] AutoGraph could not transform <function color_jitter_rand at 0x147de37c4dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.143729 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.145509 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.147871 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.148600 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.153876 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.154602 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.156239 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.156937 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.162121 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.162832 22532193106816 cross_device_ops.py:563] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I0924 12:00:24.198510 22532193106816 run.py:320] Restoring from latest checkpoint: /rds/general/user/hm808/home/repos/dist_18d_128b_2c/ckpt-4800
+2022-09-24 12:00:24.369705: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-09-24 12:00:24.412416: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2100000000 Hz
+WARNING:tensorflow:AutoGraph could not transform <function main.<locals>.single_step at 0x147de1eff670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:00:24.960648 22530882017024 ag_logging.py:146] AutoGraph could not transform <function main.<locals>.single_step at 0x147de1eff670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:605: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+W0924 12:00:24.980622 22530882017024 deprecation.py:531] From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:605: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.393093 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.411696 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.429173 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.731459 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.770284 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:25.796081 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:26.056948 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:26.078114 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:26.100457 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+INFO:tensorflow:batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+I0924 12:00:26.214739 22532193106816 cross_device_ops.py:844] batch_all_reduce: 1 all-reduces with algorithm = nccl, num_packs = 1
+WARNING:tensorflow:AutoGraph could not transform <bound method ProjectionHead.call of <model.ProjectionHead object at 0x147de1d4a250>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:00:29.305773 22530882017024 ag_logging.py:146] AutoGraph could not transform <bound method ProjectionHead.call of <model.ProjectionHead object at 0x147de1d4a250>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+I0924 12:00:30.128032 22530882017024 run.py:630] Trainable variables:
+I0924 12:00:30.129415 22530882017024 run.py:632] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0924 12:00:30.129495 22530882017024 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0924 12:00:30.129542 22530882017024 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0924 12:00:30.129581 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0924 12:00:30.129618 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0924 12:00:30.129655 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0924 12:00:30.129691 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0924 12:00:30.129726 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0924 12:00:30.129760 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0924 12:00:30.129814 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0924 12:00:30.129851 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0924 12:00:30.129888 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0924 12:00:30.129925 22530882017024 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0924 12:00:30.129962 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0924 12:00:30.129999 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0924 12:00:30.130041 22530882017024 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0924 12:00:30.130078 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0924 12:00:30.130115 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0924 12:00:30.130151 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0924 12:00:30.130188 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0924 12:00:30.130224 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0924 12:00:30.130260 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0924 12:00:30.130297 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0924 12:00:30.130334 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0924 12:00:30.130370 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0924 12:00:30.130407 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0924 12:00:30.130443 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0924 12:00:30.130480 22530882017024 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0924 12:00:30.130517 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0924 12:00:30.130553 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0924 12:00:30.130590 22530882017024 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0924 12:00:30.130628 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0924 12:00:30.130665 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0924 12:00:30.130701 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0924 12:00:30.130737 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0924 12:00:30.130773 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0924 12:00:30.130809 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0924 12:00:30.130846 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0924 12:00:30.130882 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0924 12:00:30.130928 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0924 12:00:30.130963 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0924 12:00:30.130997 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0924 12:00:30.131035 22530882017024 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0924 12:00:30.131070 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0924 12:00:30.131104 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0924 12:00:30.131138 22530882017024 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0924 12:00:30.131172 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0924 12:00:30.131206 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0924 12:00:30.131241 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0924 12:00:30.131275 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0924 12:00:30.131309 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0924 12:00:30.131343 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0924 12:00:30.131377 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0924 12:00:30.131412 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0924 12:00:30.131446 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0924 12:00:30.131479 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0924 12:00:30.131513 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0924 12:00:30.131548 22530882017024 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0924 12:00:30.131582 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0924 12:00:30.131616 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0924 12:00:30.131650 22530882017024 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0924 12:00:30.131684 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0924 12:00:30.131718 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0924 12:00:30.131752 22530882017024 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0924 12:00:30.131786 22530882017024 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0924 12:00:30.131820 22530882017024 run.py:632] projection_head/nl_0/dense/kernel:0
+I0924 12:00:30.131854 22530882017024 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0924 12:00:30.131888 22530882017024 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0924 12:00:30.131922 22530882017024 run.py:632] projection_head/nl_1/dense_1/kernel:0
+I0924 12:00:30.131956 22530882017024 run.py:632] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0924 12:00:30.131990 22530882017024 run.py:632] projection_head/nl_2/dense_2/kernel:0
+I0924 12:00:30.132029 22530882017024 run.py:632] head_supervised/linear_layer/dense_3/kernel:0
+I0924 12:00:30.132064 22530882017024 run.py:632] head_supervised/linear_layer/dense_3/bias:0
+I0924 12:00:30.290774 22530879915776 run.py:630] Trainable variables:
+I0924 12:00:30.292088 22530879915776 run.py:632] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0924 12:00:30.292173 22530879915776 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0924 12:00:30.292220 22530879915776 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0924 12:00:30.292259 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0924 12:00:30.292296 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0924 12:00:30.292332 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0924 12:00:30.292368 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0924 12:00:30.292402 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0924 12:00:30.292437 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0924 12:00:30.292471 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0924 12:00:30.292506 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0924 12:00:30.292539 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0924 12:00:30.292573 22530879915776 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0924 12:00:30.292607 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0924 12:00:30.292641 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0924 12:00:30.292674 22530879915776 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0924 12:00:30.292708 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0924 12:00:30.292742 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0924 12:00:30.292776 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0924 12:00:30.292810 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0924 12:00:30.292844 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0924 12:00:30.292877 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0924 12:00:30.292911 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0924 12:00:30.292945 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0924 12:00:30.292979 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0924 12:00:30.293013 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0924 12:00:30.293052 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0924 12:00:30.293086 22530879915776 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0924 12:00:30.293120 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0924 12:00:30.293154 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0924 12:00:30.293188 22530879915776 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0924 12:00:30.293221 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0924 12:00:30.293255 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0924 12:00:30.293288 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0924 12:00:30.293322 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0924 12:00:30.293356 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0924 12:00:30.293389 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0924 12:00:30.293423 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0924 12:00:30.293457 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0924 12:00:30.293491 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0924 12:00:30.293524 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0924 12:00:30.293558 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0924 12:00:30.293591 22530879915776 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0924 12:00:30.293625 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0924 12:00:30.293658 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0924 12:00:30.293692 22530879915776 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0924 12:00:30.293725 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0924 12:00:30.293759 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0924 12:00:30.293792 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0924 12:00:30.293826 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0924 12:00:30.293860 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0924 12:00:30.293893 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0924 12:00:30.293927 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0924 12:00:30.293960 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0924 12:00:30.293993 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0924 12:00:30.294029 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0924 12:00:30.294063 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0924 12:00:30.294097 22530879915776 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0924 12:00:30.294131 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0924 12:00:30.294164 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0924 12:00:30.294198 22530879915776 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0924 12:00:30.294232 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0924 12:00:30.294266 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0924 12:00:30.294301 22530879915776 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0924 12:00:30.294335 22530879915776 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0924 12:00:30.294369 22530879915776 run.py:632] projection_head/nl_0/dense/kernel:0
+I0924 12:00:30.294403 22530879915776 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0924 12:00:30.294437 22530879915776 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0924 12:00:30.294471 22530879915776 run.py:632] projection_head/nl_1/dense_1/kernel:0
+I0924 12:00:30.294505 22530879915776 run.py:632] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0924 12:00:30.294539 22530879915776 run.py:632] projection_head/nl_2/dense_2/kernel:0
+I0924 12:00:30.294572 22530879915776 run.py:632] head_supervised/linear_layer/dense_3/kernel:0
+I0924 12:00:30.294605 22530879915776 run.py:632] head_supervised/linear_layer/dense_3/bias:0
+I0924 12:00:41.441078 22530879915776 run.py:630] Trainable variables:
+I0924 12:00:41.442455 22530879915776 run.py:632] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0924 12:00:41.442539 22530879915776 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0924 12:00:41.442588 22530879915776 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0924 12:00:41.442628 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0924 12:00:41.442666 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0924 12:00:41.442702 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0924 12:00:41.442738 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0924 12:00:41.442773 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0924 12:00:41.442807 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0924 12:00:41.442842 22530879915776 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0924 12:00:41.442877 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0924 12:00:41.442912 22530879915776 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0924 12:00:41.442946 22530879915776 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0924 12:00:41.442980 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0924 12:00:41.443014 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0924 12:00:41.443053 22530879915776 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0924 12:00:41.443088 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0924 12:00:41.443122 22530879915776 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0924 12:00:41.443156 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0924 12:00:41.443190 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0924 12:00:41.443224 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0924 12:00:41.443258 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0924 12:00:41.443291 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0924 12:00:41.443325 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0924 12:00:41.443359 22530879915776 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0924 12:00:41.443393 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0924 12:00:41.443427 22530879915776 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0924 12:00:41.443461 22530879915776 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0924 12:00:41.443495 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0924 12:00:41.443529 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0924 12:00:41.443563 22530879915776 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0924 12:00:41.443597 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0924 12:00:41.443631 22530879915776 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0924 12:00:41.443665 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0924 12:00:41.443699 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0924 12:00:41.443732 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0924 12:00:41.443766 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0924 12:00:41.443800 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0924 12:00:41.443834 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0924 12:00:41.443868 22530879915776 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0924 12:00:41.443902 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0924 12:00:41.443936 22530879915776 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0924 12:00:41.443970 22530879915776 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0924 12:00:41.444004 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0924 12:00:41.444041 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0924 12:00:41.444075 22530879915776 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0924 12:00:41.444109 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0924 12:00:41.444143 22530879915776 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0924 12:00:41.444177 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0924 12:00:41.444211 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0924 12:00:41.444244 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0924 12:00:41.444277 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0924 12:00:41.444311 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0924 12:00:41.444345 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0924 12:00:41.444378 22530879915776 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0924 12:00:41.444412 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0924 12:00:41.444445 22530879915776 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0924 12:00:41.444479 22530879915776 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0924 12:00:41.444514 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0924 12:00:41.444547 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0924 12:00:41.444581 22530879915776 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0924 12:00:41.444615 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0924 12:00:41.444648 22530879915776 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0924 12:00:41.444682 22530879915776 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0924 12:00:41.444716 22530879915776 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0924 12:00:41.444750 22530879915776 run.py:632] projection_head/nl_0/dense/kernel:0
+I0924 12:00:41.444784 22530879915776 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0924 12:00:41.444818 22530879915776 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0924 12:00:41.444852 22530879915776 run.py:632] projection_head/nl_1/dense_1/kernel:0
+I0924 12:00:41.444886 22530879915776 run.py:632] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0924 12:00:41.444919 22530879915776 run.py:632] projection_head/nl_2/dense_2/kernel:0
+I0924 12:00:41.444953 22530879915776 run.py:632] head_supervised/linear_layer/dense_3/kernel:0
+I0924 12:00:41.444987 22530879915776 run.py:632] head_supervised/linear_layer/dense_3/bias:0
+I0924 12:00:41.611641 22530882017024 run.py:630] Trainable variables:
+I0924 12:00:41.612900 22530882017024 run.py:632] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0924 12:00:41.612982 22530882017024 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0924 12:00:41.613034 22530882017024 run.py:632] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0924 12:00:41.613075 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0924 12:00:41.613111 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0924 12:00:41.613148 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0924 12:00:41.613184 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0924 12:00:41.613219 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0924 12:00:41.613254 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0924 12:00:41.613288 22530882017024 run.py:632] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0924 12:00:41.613323 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0924 12:00:41.613358 22530882017024 run.py:632] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0924 12:00:41.613392 22530882017024 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0924 12:00:41.613426 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0924 12:00:41.613460 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0924 12:00:41.613494 22530882017024 run.py:632] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0924 12:00:41.613529 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0924 12:00:41.613563 22530882017024 run.py:632] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0924 12:00:41.613596 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0924 12:00:41.613631 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0924 12:00:41.613665 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0924 12:00:41.613699 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0924 12:00:41.613734 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0924 12:00:41.613768 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0924 12:00:41.613802 22530882017024 run.py:632] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0924 12:00:41.613836 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0924 12:00:41.613870 22530882017024 run.py:632] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0924 12:00:41.613905 22530882017024 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0924 12:00:41.613939 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0924 12:00:41.613973 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0924 12:00:41.614007 22530882017024 run.py:632] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0924 12:00:41.614045 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0924 12:00:41.614080 22530882017024 run.py:632] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0924 12:00:41.614114 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0924 12:00:41.614149 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0924 12:00:41.614183 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0924 12:00:41.614217 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0924 12:00:41.614251 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0924 12:00:41.614286 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0924 12:00:41.614320 22530882017024 run.py:632] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0924 12:00:41.614354 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0924 12:00:41.614388 22530882017024 run.py:632] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0924 12:00:41.614422 22530882017024 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0924 12:00:41.614456 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0924 12:00:41.614490 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0924 12:00:41.614524 22530882017024 run.py:632] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0924 12:00:41.614557 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0924 12:00:41.614591 22530882017024 run.py:632] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0924 12:00:41.614625 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0924 12:00:41.614659 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0924 12:00:41.614692 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0924 12:00:41.614726 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0924 12:00:41.614759 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0924 12:00:41.614793 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0924 12:00:41.614827 22530882017024 run.py:632] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0924 12:00:41.614861 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0924 12:00:41.614894 22530882017024 run.py:632] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0924 12:00:41.614928 22530882017024 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0924 12:00:41.614963 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0924 12:00:41.614997 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0924 12:00:41.615034 22530882017024 run.py:632] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0924 12:00:41.615068 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0924 12:00:41.615103 22530882017024 run.py:632] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0924 12:00:41.615136 22530882017024 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0924 12:00:41.615170 22530882017024 run.py:632] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0924 12:00:41.615204 22530882017024 run.py:632] projection_head/nl_0/dense/kernel:0
+I0924 12:00:41.615238 22530882017024 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0924 12:00:41.615272 22530882017024 run.py:632] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0924 12:00:41.615305 22530882017024 run.py:632] projection_head/nl_1/dense_1/kernel:0
+I0924 12:00:41.615339 22530882017024 run.py:632] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0924 12:00:41.615373 22530882017024 run.py:632] projection_head/nl_2/dense_2/kernel:0
+I0924 12:00:41.615407 22530882017024 run.py:632] head_supervised/linear_layer/dense_3/kernel:0
+I0924 12:00:41.615441 22530882017024 run.py:632] head_supervised/linear_layer/dense_3/bias:0
+2022-09-24 12:00:53.393482: W tensorflow/core/grappler/optimizers/loop_optimizer.cc:906] Skipping loop optimization for Merge node with control input: while/body/_1/replica_1/image/write_summary/summary_cond/branch_executed/_1753
+2022-09-24 12:00:57.523126: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-24 12:00:59.103911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-24 12:01:03.662698: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2022-09-24 12:01:03.773203: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+I0924 12:03:53.004344 22532193106816 run.py:662] Completed: 4900 / 10022 steps
+I0924 12:03:53.009273 22532193106816 metrics.py:73] Step: [4900] train/weight_decay = 0.028461
+I0924 12:03:53.013391 22532193106816 metrics.py:73] Step: [4900] train/total_loss = 9.582642
+I0924 12:03:53.016136 22532193106816 metrics.py:73] Step: [4900] train/contrast_loss = 7.896186
+I0924 12:03:53.018804 22532193106816 metrics.py:73] Step: [4900] train/contrast_acc = 0.659219
+I0924 12:03:53.022905 22532193106816 metrics.py:73] Step: [4900] train/contrast_entropy = 4.634760
+I0924 12:03:53.027834 22532193106816 metrics.py:73] Step: [4900] train/supervised_loss = 1.657995
+I0924 12:03:53.033101 22532193106816 metrics.py:73] Step: [4900] train/supervised_acc = 0.692695
+I0924 12:04:29.194814 22532193106816 run.py:662] Completed: 5000 / 10022 steps
+I0924 12:04:29.197573 22532193106816 metrics.py:73] Step: [5000] train/weight_decay = 0.027388
+I0924 12:04:29.200311 22532193106816 metrics.py:73] Step: [5000] train/total_loss = 9.506044
+I0924 12:04:29.202646 22532193106816 metrics.py:73] Step: [5000] train/contrast_loss = 7.902720
+I0924 12:04:29.204923 22532193106816 metrics.py:73] Step: [5000] train/contrast_acc = 0.665781
+I0924 12:04:29.207193 22532193106816 metrics.py:73] Step: [5000] train/contrast_entropy = 4.633407
+I0924 12:04:29.209441 22532193106816 metrics.py:73] Step: [5000] train/supervised_loss = 1.575934
+I0924 12:04:29.211688 22532193106816 metrics.py:73] Step: [5000] train/supervised_acc = 0.694492
+I0924 12:05:04.288884 22532193106816 run.py:662] Completed: 5100 / 10022 steps
+I0924 12:05:04.291554 22532193106816 metrics.py:73] Step: [5100] train/weight_decay = 0.026862
+I0924 12:05:04.294288 22532193106816 metrics.py:73] Step: [5100] train/total_loss = 9.455421
+I0924 12:05:04.296551 22532193106816 metrics.py:73] Step: [5100] train/contrast_loss = 7.891747
+I0924 12:05:04.298779 22532193106816 metrics.py:73] Step: [5100] train/contrast_acc = 0.664453
+I0924 12:05:04.301007 22532193106816 metrics.py:73] Step: [5100] train/contrast_entropy = 4.634101
+I0924 12:05:04.303218 22532193106816 metrics.py:73] Step: [5100] train/supervised_loss = 1.536812
+I0924 12:05:04.305405 22532193106816 metrics.py:73] Step: [5100] train/supervised_acc = 0.691055
+I0924 12:05:38.978767 22532193106816 run.py:662] Completed: 5200 / 10022 steps
+I0924 12:05:38.981507 22532193106816 metrics.py:73] Step: [5200] train/weight_decay = 0.027401
+I0924 12:05:38.984241 22532193106816 metrics.py:73] Step: [5200] train/total_loss = 9.640922
+I0924 12:05:38.986502 22532193106816 metrics.py:73] Step: [5200] train/contrast_loss = 7.882963
+I0924 12:05:38.988759 22532193106816 metrics.py:73] Step: [5200] train/contrast_acc = 0.672422
+I0924 12:05:38.991028 22532193106816 metrics.py:73] Step: [5200] train/contrast_entropy = 4.635409
+I0924 12:05:38.993268 22532193106816 metrics.py:73] Step: [5200] train/supervised_loss = 1.730559
+I0924 12:05:38.995477 22532193106816 metrics.py:73] Step: [5200] train/supervised_acc = 0.692187
+I0924 12:06:14.072158 22532193106816 run.py:662] Completed: 5300 / 10022 steps
+I0924 12:06:14.074952 22532193106816 metrics.py:73] Step: [5300] train/weight_decay = 0.026212
+I0924 12:06:14.077703 22532193106816 metrics.py:73] Step: [5300] train/total_loss = 9.299299
+I0924 12:06:14.079972 22532193106816 metrics.py:73] Step: [5300] train/contrast_loss = 7.889448
+I0924 12:06:14.082211 22532193106816 metrics.py:73] Step: [5300] train/contrast_acc = 0.668828
+I0924 12:06:14.084418 22532193106816 metrics.py:73] Step: [5300] train/contrast_entropy = 4.635879
+I0924 12:06:14.086636 22532193106816 metrics.py:73] Step: [5300] train/supervised_loss = 1.383640
+I0924 12:06:14.088829 22532193106816 metrics.py:73] Step: [5300] train/supervised_acc = 0.704727
+I0924 12:06:48.890543 22532193106816 run.py:662] Completed: 5400 / 10022 steps
+I0924 12:06:48.893255 22532193106816 metrics.py:73] Step: [5400] train/weight_decay = 0.024750
+I0924 12:06:48.895989 22532193106816 metrics.py:73] Step: [5400] train/total_loss = 9.323442
+I0924 12:06:48.898278 22532193106816 metrics.py:73] Step: [5400] train/contrast_loss = 7.877110
+I0924 12:06:48.900568 22532193106816 metrics.py:73] Step: [5400] train/contrast_acc = 0.679141
+I0924 12:06:48.902812 22532193106816 metrics.py:73] Step: [5400] train/contrast_entropy = 4.637242
+I0924 12:06:48.905059 22532193106816 metrics.py:73] Step: [5400] train/supervised_loss = 1.421582
+I0924 12:06:48.907280 22532193106816 metrics.py:73] Step: [5400] train/supervised_acc = 0.697930
+I0924 12:07:22.781084 22532193106816 run.py:662] Completed: 5500 / 10022 steps
+I0924 12:07:22.783763 22532193106816 metrics.py:73] Step: [5500] train/weight_decay = 0.024462
+I0924 12:07:22.786519 22532193106816 metrics.py:73] Step: [5500] train/total_loss = 9.228075
+I0924 12:07:22.788851 22532193106816 metrics.py:73] Step: [5500] train/contrast_loss = 7.879516
+I0924 12:07:22.791126 22532193106816 metrics.py:73] Step: [5500] train/contrast_acc = 0.668516
+I0924 12:07:22.793567 22532193106816 metrics.py:73] Step: [5500] train/contrast_entropy = 4.636704
+I0924 12:07:22.796354 22532193106816 metrics.py:73] Step: [5500] train/supervised_loss = 1.324097
+I0924 12:07:22.798662 22532193106816 metrics.py:73] Step: [5500] train/supervised_acc = 0.704648
+I0924 12:07:57.041232 22532193106816 run.py:662] Completed: 5600 / 10022 steps
+I0924 12:07:57.043901 22532193106816 metrics.py:73] Step: [5600] train/weight_decay = 0.023333
+I0924 12:07:57.046639 22532193106816 metrics.py:73] Step: [5600] train/total_loss = 9.030025
+I0924 12:07:57.048917 22532193106816 metrics.py:73] Step: [5600] train/contrast_loss = 7.874274
+I0924 12:07:57.051238 22532193106816 metrics.py:73] Step: [5600] train/contrast_acc = 0.672656
+I0924 12:07:57.053486 22532193106816 metrics.py:73] Step: [5600] train/contrast_entropy = 4.636167
+I0924 12:07:57.055729 22532193106816 metrics.py:73] Step: [5600] train/supervised_loss = 1.132417
+I0924 12:07:57.057979 22532193106816 metrics.py:73] Step: [5600] train/supervised_acc = 0.718437
+I0924 12:08:31.454818 22532193106816 run.py:662] Completed: 5700 / 10022 steps
+I0924 12:08:31.457549 22532193106816 metrics.py:73] Step: [5700] train/weight_decay = 0.022223
+I0924 12:08:31.460243 22532193106816 metrics.py:73] Step: [5700] train/total_loss = 9.005676
+I0924 12:08:31.462491 22532193106816 metrics.py:73] Step: [5700] train/contrast_loss = 7.866366
+I0924 12:08:31.464712 22532193106816 metrics.py:73] Step: [5700] train/contrast_acc = 0.680234
+I0924 12:08:31.466939 22532193106816 metrics.py:73] Step: [5700] train/contrast_entropy = 4.638503
+I0924 12:08:31.469173 22532193106816 metrics.py:73] Step: [5700] train/supervised_loss = 1.117086
+I0924 12:08:31.471350 22532193106816 metrics.py:73] Step: [5700] train/supervised_acc = 0.711523
+I0924 12:09:05.245887 22532193106816 run.py:662] Completed: 5800 / 10022 steps
+I0924 12:09:05.248624 22532193106816 metrics.py:73] Step: [5800] train/weight_decay = 0.021557
+I0924 12:09:05.251407 22532193106816 metrics.py:73] Step: [5800] train/total_loss = 9.033023
+I0924 12:09:05.253698 22532193106816 metrics.py:73] Step: [5800] train/contrast_loss = 7.862433
+I0924 12:09:05.255945 22532193106816 metrics.py:73] Step: [5800] train/contrast_acc = 0.685078
+I0924 12:09:05.258212 22532193106816 metrics.py:73] Step: [5800] train/contrast_entropy = 4.639567
+I0924 12:09:05.260447 22532193106816 metrics.py:73] Step: [5800] train/supervised_loss = 1.149034
+I0924 12:09:05.262698 22532193106816 metrics.py:73] Step: [5800] train/supervised_acc = 0.714297
+I0924 12:09:39.549042 22532193106816 run.py:662] Completed: 5900 / 10022 steps
+I0924 12:09:39.551776 22532193106816 metrics.py:73] Step: [5900] train/weight_decay = 0.020799
+I0924 12:09:39.554547 22532193106816 metrics.py:73] Step: [5900] train/total_loss = 8.793648
+I0924 12:09:39.556828 22532193106816 metrics.py:73] Step: [5900] train/contrast_loss = 7.846599
+I0924 12:09:39.559084 22532193106816 metrics.py:73] Step: [5900] train/contrast_acc = 0.699453
+I0924 12:09:39.561337 22532193106816 metrics.py:73] Step: [5900] train/contrast_entropy = 4.641319
+I0924 12:09:39.563574 22532193106816 metrics.py:73] Step: [5900] train/supervised_loss = 0.926250
+I0924 12:09:39.565810 22532193106816 metrics.py:73] Step: [5900] train/supervised_acc = 0.732969
+I0924 12:10:13.715145 22532193106816 run.py:662] Completed: 6000 / 10022 steps
+I0924 12:10:13.718033 22532193106816 metrics.py:73] Step: [6000] train/weight_decay = 0.020142
+I0924 12:10:13.721013 22532193106816 metrics.py:73] Step: [6000] train/total_loss = 8.924148
+I0924 12:10:13.723545 22532193106816 metrics.py:73] Step: [6000] train/contrast_loss = 7.854434
+I0924 12:10:13.726545 22532193106816 metrics.py:73] Step: [6000] train/contrast_acc = 0.693516
+I0924 12:10:13.729125 22532193106816 metrics.py:73] Step: [6000] train/contrast_entropy = 4.640105
+I0924 12:10:13.731589 22532193106816 metrics.py:73] Step: [6000] train/supervised_loss = 1.049574
+I0924 12:10:13.734005 22532193106816 metrics.py:73] Step: [6000] train/supervised_acc = 0.721992
+I0924 12:10:47.705201 22532193106816 run.py:662] Completed: 6100 / 10022 steps
+I0924 12:10:47.708005 22532193106816 metrics.py:73] Step: [6100] train/weight_decay = 0.019641
+I0924 12:10:47.710820 22532193106816 metrics.py:73] Step: [6100] train/total_loss = 8.895270
+I0924 12:10:47.713168 22532193106816 metrics.py:73] Step: [6100] train/contrast_loss = 7.849916
+I0924 12:10:47.715519 22532193106816 metrics.py:73] Step: [6100] train/contrast_acc = 0.697266
+I0924 12:10:47.717821 22532193106816 metrics.py:73] Step: [6100] train/contrast_entropy = 4.641760
+I0924 12:10:47.720115 22532193106816 metrics.py:73] Step: [6100] train/supervised_loss = 1.025713
+I0924 12:10:47.722401 22532193106816 metrics.py:73] Step: [6100] train/supervised_acc = 0.718477
+I0924 12:11:22.044323 22532193106816 run.py:662] Completed: 6200 / 10022 steps
+I0924 12:11:22.048058 22532193106816 metrics.py:73] Step: [6200] train/weight_decay = 0.019444
+I0924 12:11:22.051052 22532193106816 metrics.py:73] Step: [6200] train/total_loss = 8.896006
+I0924 12:11:22.054180 22532193106816 metrics.py:73] Step: [6200] train/contrast_loss = 7.846749
+I0924 12:11:22.057331 22532193106816 metrics.py:73] Step: [6200] train/contrast_acc = 0.695078
+I0924 12:11:22.060495 22532193106816 metrics.py:73] Step: [6200] train/contrast_entropy = 4.641477
+I0924 12:11:22.063632 22532193106816 metrics.py:73] Step: [6200] train/supervised_loss = 1.029811
+I0924 12:11:22.067075 22532193106816 metrics.py:73] Step: [6200] train/supervised_acc = 0.721406
+I0924 12:11:56.309554 22532193106816 run.py:662] Completed: 6300 / 10022 steps
+I0924 12:11:56.313562 22532193106816 metrics.py:73] Step: [6300] train/weight_decay = 0.018877
+I0924 12:11:56.317276 22532193106816 metrics.py:73] Step: [6300] train/total_loss = 8.844390
+I0924 12:11:56.320388 22532193106816 metrics.py:73] Step: [6300] train/contrast_loss = 7.847335
+I0924 12:11:56.323559 22532193106816 metrics.py:73] Step: [6300] train/contrast_acc = 0.692344
+I0924 12:11:56.326748 22532193106816 metrics.py:73] Step: [6300] train/contrast_entropy = 4.642829
+I0924 12:11:56.330280 22532193106816 metrics.py:73] Step: [6300] train/supervised_loss = 0.978174
+I0924 12:11:56.334686 22532193106816 metrics.py:73] Step: [6300] train/supervised_acc = 0.725117
+I0924 12:12:31.175143 22532193106816 run.py:662] Completed: 6400 / 10022 steps
+I0924 12:12:31.179648 22532193106816 metrics.py:73] Step: [6400] train/weight_decay = 0.018412
+I0924 12:12:31.184038 22532193106816 metrics.py:73] Step: [6400] train/total_loss = 8.865111
+I0924 12:12:31.187878 22532193106816 metrics.py:73] Step: [6400] train/contrast_loss = 7.852076
+I0924 12:12:31.192402 22532193106816 metrics.py:73] Step: [6400] train/contrast_acc = 0.694531
+I0924 12:12:31.196584 22532193106816 metrics.py:73] Step: [6400] train/contrast_entropy = 4.641557
+I0924 12:12:31.200502 22532193106816 metrics.py:73] Step: [6400] train/supervised_loss = 0.994624
+I0924 12:12:31.204470 22532193106816 metrics.py:73] Step: [6400] train/supervised_acc = 0.721836
+I0924 12:13:04.977303 22532193106816 run.py:662] Completed: 6500 / 10022 steps
+I0924 12:13:04.985421 22532193106816 metrics.py:73] Step: [6500] train/weight_decay = 0.017923
+I0924 12:13:04.991309 22532193106816 metrics.py:73] Step: [6500] train/total_loss = 8.872992
+I0924 12:13:04.996243 22532193106816 metrics.py:73] Step: [6500] train/contrast_loss = 7.840840
+I0924 12:13:04.999727 22532193106816 metrics.py:73] Step: [6500] train/contrast_acc = 0.706875
+I0924 12:13:05.002672 22532193106816 metrics.py:73] Step: [6500] train/contrast_entropy = 4.642592
+I0924 12:13:05.005291 22532193106816 metrics.py:73] Step: [6500] train/supervised_loss = 1.014228
+I0924 12:13:05.007851 22532193106816 metrics.py:73] Step: [6500] train/supervised_acc = 0.721406
+I0924 12:13:39.114185 22532193106816 run.py:662] Completed: 6600 / 10022 steps
+I0924 12:13:39.118572 22532193106816 metrics.py:73] Step: [6600] train/weight_decay = 0.017621
+I0924 12:13:39.124273 22532193106816 metrics.py:73] Step: [6600] train/total_loss = 8.767287
+I0924 12:13:39.129563 22532193106816 metrics.py:73] Step: [6600] train/contrast_loss = 7.829922
+I0924 12:13:39.135801 22532193106816 metrics.py:73] Step: [6600] train/contrast_acc = 0.704219
+I0924 12:13:39.141596 22532193106816 metrics.py:73] Step: [6600] train/contrast_entropy = 4.642984
+I0924 12:13:39.145825 22532193106816 metrics.py:73] Step: [6600] train/supervised_loss = 0.919743
+I0924 12:13:39.149365 22532193106816 metrics.py:73] Step: [6600] train/supervised_acc = 0.731680
+I0924 12:14:12.283201 22532193106816 run.py:662] Completed: 6700 / 10022 steps
+I0924 12:14:12.286668 22532193106816 metrics.py:73] Step: [6700] train/weight_decay = 0.017257
+I0924 12:14:12.290179 22532193106816 metrics.py:73] Step: [6700] train/total_loss = 8.731231
+I0924 12:14:12.293221 22532193106816 metrics.py:73] Step: [6700] train/contrast_loss = 7.824332
+I0924 12:14:12.297724 22532193106816 metrics.py:73] Step: [6700] train/contrast_acc = 0.700312
+I0924 12:14:12.301674 22532193106816 metrics.py:73] Step: [6700] train/contrast_entropy = 4.643415
+I0924 12:14:12.305320 22532193106816 metrics.py:73] Step: [6700] train/supervised_loss = 0.889641
+I0924 12:14:12.309323 22532193106816 metrics.py:73] Step: [6700] train/supervised_acc = 0.734609
+I0924 12:14:46.011956 22532193106816 run.py:662] Completed: 6800 / 10022 steps
+I0924 12:14:46.016131 22532193106816 metrics.py:73] Step: [6800] train/weight_decay = 0.016778
+I0924 12:14:46.022557 22532193106816 metrics.py:73] Step: [6800] train/total_loss = 8.623041
+I0924 12:14:46.027996 22532193106816 metrics.py:73] Step: [6800] train/contrast_loss = 7.826798
+I0924 12:14:46.035026 22532193106816 metrics.py:73] Step: [6800] train/contrast_acc = 0.708438
+I0924 12:14:46.041504 22532193106816 metrics.py:73] Step: [6800] train/contrast_entropy = 4.643826
+I0924 12:14:46.045889 22532193106816 metrics.py:73] Step: [6800] train/supervised_loss = 0.779464
+I0924 12:14:46.048987 22532193106816 metrics.py:73] Step: [6800] train/supervised_acc = 0.743906
+I0924 12:15:20.167554 22532193106816 run.py:662] Completed: 6900 / 10022 steps
+I0924 12:15:20.171187 22532193106816 metrics.py:73] Step: [6900] train/weight_decay = 0.016309
+I0924 12:15:20.175885 22532193106816 metrics.py:73] Step: [6900] train/total_loss = 8.671649
+I0924 12:15:20.180612 22532193106816 metrics.py:73] Step: [6900] train/contrast_loss = 7.828253
+I0924 12:15:20.184805 22532193106816 metrics.py:73] Step: [6900] train/contrast_acc = 0.705000
+I0924 12:15:20.189156 22532193106816 metrics.py:73] Step: [6900] train/contrast_entropy = 4.644719
+I0924 12:15:20.196622 22532193106816 metrics.py:73] Step: [6900] train/supervised_loss = 0.827087
+I0924 12:15:20.202848 22532193106816 metrics.py:73] Step: [6900] train/supervised_acc = 0.738828
+I0924 12:16:00.518772 22532193106816 run.py:662] Completed: 7000 / 10022 steps
+I0924 12:16:00.522561 22532193106816 metrics.py:73] Step: [7000] train/weight_decay = 0.016183
+I0924 12:16:00.528620 22532193106816 metrics.py:73] Step: [7000] train/total_loss = 8.744381
+I0924 12:16:00.533199 22532193106816 metrics.py:73] Step: [7000] train/contrast_loss = 7.825751
+I0924 12:16:00.537269 22532193106816 metrics.py:73] Step: [7000] train/contrast_acc = 0.706875
+I0924 12:16:00.540888 22532193106816 metrics.py:73] Step: [7000] train/contrast_entropy = 4.644601
+I0924 12:16:00.544956 22532193106816 metrics.py:73] Step: [7000] train/supervised_loss = 0.902448
+I0924 12:16:00.548824 22532193106816 metrics.py:73] Step: [7000] train/supervised_acc = 0.731055
+I0924 12:16:39.662801 22532193106816 run.py:662] Completed: 7100 / 10022 steps
+I0924 12:16:39.666131 22532193106816 metrics.py:73] Step: [7100] train/weight_decay = 0.016007
+I0924 12:16:39.669035 22532193106816 metrics.py:73] Step: [7100] train/total_loss = 8.599231
+I0924 12:16:39.671415 22532193106816 metrics.py:73] Step: [7100] train/contrast_loss = 7.823876
+I0924 12:16:39.673539 22532193106816 metrics.py:73] Step: [7100] train/contrast_acc = 0.710781
+I0924 12:16:39.675773 22532193106816 metrics.py:73] Step: [7100] train/contrast_entropy = 4.645522
+I0924 12:16:39.677919 22532193106816 metrics.py:73] Step: [7100] train/supervised_loss = 0.759347
+I0924 12:16:39.680162 22532193106816 metrics.py:73] Step: [7100] train/supervised_acc = 0.750000
+I0924 12:17:13.786926 22532193106816 run.py:662] Completed: 7200 / 10022 steps
+I0924 12:17:13.789759 22532193106816 metrics.py:73] Step: [7200] train/weight_decay = 0.015573
+I0924 12:17:13.792527 22532193106816 metrics.py:73] Step: [7200] train/total_loss = 8.553480
+I0924 12:17:13.794796 22532193106816 metrics.py:73] Step: [7200] train/contrast_loss = 7.809683
+I0924 12:17:13.797738 22532193106816 metrics.py:73] Step: [7200] train/contrast_acc = 0.717734
+I0924 12:17:13.800804 22532193106816 metrics.py:73] Step: [7200] train/contrast_entropy = 4.645893
+I0924 12:17:13.803881 22532193106816 metrics.py:73] Step: [7200] train/supervised_loss = 0.728225
+I0924 12:17:13.806889 22532193106816 metrics.py:73] Step: [7200] train/supervised_acc = 0.756836
+I0924 12:17:53.367109 22532193106816 run.py:662] Completed: 7300 / 10022 steps
+I0924 12:17:53.369790 22532193106816 metrics.py:73] Step: [7300] train/weight_decay = 0.015284
+I0924 12:17:53.372595 22532193106816 metrics.py:73] Step: [7300] train/total_loss = 8.566278
+I0924 12:17:53.374956 22532193106816 metrics.py:73] Step: [7300] train/contrast_loss = 7.810507
+I0924 12:17:53.377285 22532193106816 metrics.py:73] Step: [7300] train/contrast_acc = 0.718047
+I0924 12:17:53.379601 22532193106816 metrics.py:73] Step: [7300] train/contrast_entropy = 4.646525
+I0924 12:17:53.381935 22532193106816 metrics.py:73] Step: [7300] train/supervised_loss = 0.740488
+I0924 12:17:53.384340 22532193106816 metrics.py:73] Step: [7300] train/supervised_acc = 0.755469
+I0924 12:18:28.528161 22532193106816 run.py:662] Completed: 7400 / 10022 steps
+I0924 12:18:28.536633 22532193106816 metrics.py:73] Step: [7400] train/weight_decay = 0.014979
+I0924 12:18:28.547910 22532193106816 metrics.py:73] Step: [7400] train/total_loss = 8.537966
+I0924 12:18:28.558990 22532193106816 metrics.py:73] Step: [7400] train/contrast_loss = 7.807380
+I0924 12:18:28.564589 22532193106816 metrics.py:73] Step: [7400] train/contrast_acc = 0.722969
+I0924 12:18:28.569444 22532193106816 metrics.py:73] Step: [7400] train/contrast_entropy = 4.647186
+I0924 12:18:28.572396 22532193106816 metrics.py:73] Step: [7400] train/supervised_loss = 0.715607
+I0924 12:18:28.575333 22532193106816 metrics.py:73] Step: [7400] train/supervised_acc = 0.756016
+I0924 12:19:02.308473 22532193106816 run.py:662] Completed: 7500 / 10022 steps
+I0924 12:19:02.311411 22532193106816 metrics.py:73] Step: [7500] train/weight_decay = 0.014731
+I0924 12:19:02.314364 22532193106816 metrics.py:73] Step: [7500] train/total_loss = 8.520512
+I0924 12:19:02.316859 22532193106816 metrics.py:73] Step: [7500] train/contrast_loss = 7.803395
+I0924 12:19:02.319365 22532193106816 metrics.py:73] Step: [7500] train/contrast_acc = 0.725547
+I0924 12:19:02.321821 22532193106816 metrics.py:73] Step: [7500] train/contrast_entropy = 4.646790
+I0924 12:19:02.324220 22532193106816 metrics.py:73] Step: [7500] train/supervised_loss = 0.702382
+I0924 12:19:02.326631 22532193106816 metrics.py:73] Step: [7500] train/supervised_acc = 0.756562
+I0924 12:19:36.218950 22532193106816 run.py:662] Completed: 7600 / 10022 steps
+I0924 12:19:36.221727 22532193106816 metrics.py:73] Step: [7600] train/weight_decay = 0.014476
+I0924 12:19:36.224523 22532193106816 metrics.py:73] Step: [7600] train/total_loss = 8.498120
+I0924 12:19:36.226872 22532193106816 metrics.py:73] Step: [7600] train/contrast_loss = 7.813701
+I0924 12:19:36.229211 22532193106816 metrics.py:73] Step: [7600] train/contrast_acc = 0.716797
+I0924 12:19:36.231521 22532193106816 metrics.py:73] Step: [7600] train/contrast_entropy = 4.648072
+I0924 12:19:36.234173 22532193106816 metrics.py:73] Step: [7600] train/supervised_loss = 0.669944
+I0924 12:19:36.236745 22532193106816 metrics.py:73] Step: [7600] train/supervised_acc = 0.767617
+I0924 12:20:10.357048 22532193106816 run.py:662] Completed: 7700 / 10022 steps
+I0924 12:20:10.360737 22532193106816 metrics.py:73] Step: [7700] train/weight_decay = 0.014295
+I0924 12:20:10.364388 22532193106816 metrics.py:73] Step: [7700] train/total_loss = 8.510758
+I0924 12:20:10.368079 22532193106816 metrics.py:73] Step: [7700] train/contrast_loss = 7.802694
+I0924 12:20:10.371741 22532193106816 metrics.py:73] Step: [7700] train/contrast_acc = 0.723437
+I0924 12:20:10.375310 22532193106816 metrics.py:73] Step: [7700] train/contrast_entropy = 4.648581
+I0924 12:20:10.378873 22532193106816 metrics.py:73] Step: [7700] train/supervised_loss = 0.693768
+I0924 12:20:10.382211 22532193106816 metrics.py:73] Step: [7700] train/supervised_acc = 0.760352
+I0924 12:20:44.893390 22532193106816 run.py:662] Completed: 7800 / 10022 steps
+I0924 12:20:44.896095 22532193106816 metrics.py:73] Step: [7800] train/weight_decay = 0.014178
+I0924 12:20:44.898862 22532193106816 metrics.py:73] Step: [7800] train/total_loss = 8.533154
+I0924 12:20:44.901134 22532193106816 metrics.py:73] Step: [7800] train/contrast_loss = 7.800525
+I0924 12:20:44.903381 22532193106816 metrics.py:73] Step: [7800] train/contrast_acc = 0.720703
+I0924 12:20:44.905613 22532193106816 metrics.py:73] Step: [7800] train/contrast_entropy = 4.648203
+I0924 12:20:44.907821 22532193106816 metrics.py:73] Step: [7800] train/supervised_loss = 0.718449
+I0924 12:20:44.910048 22532193106816 metrics.py:73] Step: [7800] train/supervised_acc = 0.754883
+I0924 12:21:18.863476 22532193106816 run.py:662] Completed: 7900 / 10022 steps
+I0924 12:21:18.867995 22532193106816 metrics.py:73] Step: [7900] train/weight_decay = 0.014033
+I0924 12:21:18.873254 22532193106816 metrics.py:73] Step: [7900] train/total_loss = 8.476444
+I0924 12:21:18.877080 22532193106816 metrics.py:73] Step: [7900] train/contrast_loss = 7.797305
+I0924 12:21:18.880159 22532193106816 metrics.py:73] Step: [7900] train/contrast_acc = 0.726719
+I0924 12:21:18.883229 22532193106816 metrics.py:73] Step: [7900] train/contrast_entropy = 4.648363
+I0924 12:21:18.886208 22532193106816 metrics.py:73] Step: [7900] train/supervised_loss = 0.665106
+I0924 12:21:18.889063 22532193106816 metrics.py:73] Step: [7900] train/supervised_acc = 0.767852
+I0924 12:21:53.218567 22532193106816 run.py:662] Completed: 8000 / 10022 steps
+I0924 12:21:53.221225 22532193106816 metrics.py:73] Step: [8000] train/weight_decay = 0.013862
+I0924 12:21:53.223875 22532193106816 metrics.py:73] Step: [8000] train/total_loss = 8.452781
+I0924 12:21:53.226111 22532193106816 metrics.py:73] Step: [8000] train/contrast_loss = 7.790883
+I0924 12:21:53.228313 22532193106816 metrics.py:73] Step: [8000] train/contrast_acc = 0.728828
+I0924 12:21:53.230501 22532193106816 metrics.py:73] Step: [8000] train/contrast_entropy = 4.648645
+I0924 12:21:53.232681 22532193106816 metrics.py:73] Step: [8000] train/supervised_loss = 0.648037
+I0924 12:21:53.234858 22532193106816 metrics.py:73] Step: [8000] train/supervised_acc = 0.771250
+I0924 12:22:27.143514 22532193106816 run.py:662] Completed: 8100 / 10022 steps
+I0924 12:22:27.146592 22532193106816 metrics.py:73] Step: [8100] train/weight_decay = 0.013767
+I0924 12:22:27.150073 22532193106816 metrics.py:73] Step: [8100] train/total_loss = 8.503568
+I0924 12:22:27.152808 22532193106816 metrics.py:73] Step: [8100] train/contrast_loss = 7.785730
+I0924 12:22:27.155484 22532193106816 metrics.py:73] Step: [8100] train/contrast_acc = 0.738906
+I0924 12:22:27.158259 22532193106816 metrics.py:73] Step: [8100] train/contrast_entropy = 4.649312
+I0924 12:22:27.160878 22532193106816 metrics.py:73] Step: [8100] train/supervised_loss = 0.704070
+I0924 12:22:27.163526 22532193106816 metrics.py:73] Step: [8100] train/supervised_acc = 0.756094
+I0924 12:23:01.234165 22532193106816 run.py:662] Completed: 8200 / 10022 steps
+I0924 12:23:01.237536 22532193106816 metrics.py:73] Step: [8200] train/weight_decay = 0.013682
+I0924 12:23:01.240494 22532193106816 metrics.py:73] Step: [8200] train/total_loss = 8.463207
+I0924 12:23:01.242839 22532193106816 metrics.py:73] Step: [8200] train/contrast_loss = 7.793432
+I0924 12:23:01.245585 22532193106816 metrics.py:73] Step: [8200] train/contrast_acc = 0.729922
+I0924 12:23:01.248672 22532193106816 metrics.py:73] Step: [8200] train/contrast_entropy = 4.649721
+I0924 12:23:01.251764 22532193106816 metrics.py:73] Step: [8200] train/supervised_loss = 0.656091
+I0924 12:23:01.254997 22532193106816 metrics.py:73] Step: [8200] train/supervised_acc = 0.769922
+I0924 12:23:35.368878 22532193106816 run.py:662] Completed: 8300 / 10022 steps
+I0924 12:23:35.371261 22532193106816 metrics.py:73] Step: [8300] train/weight_decay = 0.013562
+I0924 12:23:35.373882 22532193106816 metrics.py:73] Step: [8300] train/total_loss = 8.475354
+I0924 12:23:35.376252 22532193106816 metrics.py:73] Step: [8300] train/contrast_loss = 7.796689
+I0924 12:23:35.378510 22532193106816 metrics.py:73] Step: [8300] train/contrast_acc = 0.729375
+I0924 12:23:35.380731 22532193106816 metrics.py:73] Step: [8300] train/contrast_entropy = 4.649204
+I0924 12:23:35.382932 22532193106816 metrics.py:73] Step: [8300] train/supervised_loss = 0.665102
+I0924 12:23:35.385139 22532193106816 metrics.py:73] Step: [8300] train/supervised_acc = 0.766992
+I0924 12:24:10.119399 22532193106816 run.py:662] Completed: 8400 / 10022 steps
+I0924 12:24:10.122362 22532193106816 metrics.py:73] Step: [8400] train/weight_decay = 0.013477
+I0924 12:24:10.125335 22532193106816 metrics.py:73] Step: [8400] train/total_loss = 8.424396
+I0924 12:24:10.128159 22532193106816 metrics.py:73] Step: [8400] train/contrast_loss = 7.786594
+I0924 12:24:10.130964 22532193106816 metrics.py:73] Step: [8400] train/contrast_acc = 0.730313
+I0924 12:24:10.134445 22532193106816 metrics.py:73] Step: [8400] train/contrast_entropy = 4.649364
+I0924 12:24:10.138216 22532193106816 metrics.py:73] Step: [8400] train/supervised_loss = 0.624324
+I0924 12:24:10.146323 22532193106816 metrics.py:73] Step: [8400] train/supervised_acc = 0.776328
+I0924 12:24:44.640417 22532193106816 run.py:662] Completed: 8500 / 10022 steps
+I0924 12:24:44.645154 22532193106816 metrics.py:73] Step: [8500] train/weight_decay = 0.013401
+I0924 12:24:44.648261 22532193106816 metrics.py:73] Step: [8500] train/total_loss = 8.417198
+I0924 12:24:44.650922 22532193106816 metrics.py:73] Step: [8500] train/contrast_loss = 7.788735
+I0924 12:24:44.653502 22532193106816 metrics.py:73] Step: [8500] train/contrast_acc = 0.731953
+I0924 12:24:44.655980 22532193106816 metrics.py:73] Step: [8500] train/contrast_entropy = 4.648525
+I0924 12:24:44.658453 22532193106816 metrics.py:73] Step: [8500] train/supervised_loss = 0.615063
+I0924 12:24:44.660828 22532193106816 metrics.py:73] Step: [8500] train/supervised_acc = 0.778437
+I0924 12:25:19.035027 22532193106816 run.py:662] Completed: 8600 / 10022 steps
+I0924 12:25:19.040159 22532193106816 metrics.py:73] Step: [8600] train/weight_decay = 0.013331
+I0924 12:25:19.044636 22532193106816 metrics.py:73] Step: [8600] train/total_loss = 8.422255
+I0924 12:25:19.047786 22532193106816 metrics.py:73] Step: [8600] train/contrast_loss = 7.785690
+I0924 12:25:19.051511 22532193106816 metrics.py:73] Step: [8600] train/contrast_acc = 0.737266
+I0924 12:25:19.055386 22532193106816 metrics.py:73] Step: [8600] train/contrast_entropy = 4.649209
+I0924 12:25:19.058761 22532193106816 metrics.py:73] Step: [8600] train/supervised_loss = 0.623232
+I0924 12:25:19.062404 22532193106816 metrics.py:73] Step: [8600] train/supervised_acc = 0.776992
+I0924 12:25:53.480823 22532193106816 run.py:662] Completed: 8700 / 10022 steps
+I0924 12:25:53.483485 22532193106816 metrics.py:73] Step: [8700] train/weight_decay = 0.013263
+I0924 12:25:53.486720 22532193106816 metrics.py:73] Step: [8700] train/total_loss = 8.423083
+I0924 12:25:53.489104 22532193106816 metrics.py:73] Step: [8700] train/contrast_loss = 7.784389
+I0924 12:25:53.491405 22532193106816 metrics.py:73] Step: [8700] train/contrast_acc = 0.733750
+I0924 12:25:53.493734 22532193106816 metrics.py:73] Step: [8700] train/contrast_entropy = 4.649570
+I0924 12:25:53.496059 22532193106816 metrics.py:73] Step: [8700] train/supervised_loss = 0.625429
+I0924 12:25:53.498392 22532193106816 metrics.py:73] Step: [8700] train/supervised_acc = 0.777305
+I0924 12:26:28.702129 22532193106816 run.py:662] Completed: 8800 / 10022 steps
+I0924 12:26:28.705703 22532193106816 metrics.py:73] Step: [8800] train/weight_decay = 0.013214
+I0924 12:26:28.710172 22532193106816 metrics.py:73] Step: [8800] train/total_loss = 8.412008
+I0924 12:26:28.713804 22532193106816 metrics.py:73] Step: [8800] train/contrast_loss = 7.787063
+I0924 12:26:28.717175 22532193106816 metrics.py:73] Step: [8800] train/contrast_acc = 0.735625
+I0924 12:26:28.720405 22532193106816 metrics.py:73] Step: [8800] train/contrast_entropy = 4.649692
+I0924 12:26:28.723556 22532193106816 metrics.py:73] Step: [8800] train/supervised_loss = 0.611730
+I0924 12:26:28.727014 22532193106816 metrics.py:73] Step: [8800] train/supervised_acc = 0.781172
+I0924 12:27:03.671995 22532193106816 run.py:662] Completed: 8900 / 10022 steps
+I0924 12:27:03.674306 22532193106816 metrics.py:73] Step: [8900] train/weight_decay = 0.013166
+I0924 12:27:03.676797 22532193106816 metrics.py:73] Step: [8900] train/total_loss = 8.401588
+I0924 12:27:03.679075 22532193106816 metrics.py:73] Step: [8900] train/contrast_loss = 7.778749
+I0924 12:27:03.681315 22532193106816 metrics.py:73] Step: [8900] train/contrast_acc = 0.740156
+I0924 12:27:03.683537 22532193106816 metrics.py:73] Step: [8900] train/contrast_entropy = 4.650133
+I0924 12:27:03.685773 22532193106816 metrics.py:73] Step: [8900] train/supervised_loss = 0.609672
+I0924 12:27:03.687983 22532193106816 metrics.py:73] Step: [8900] train/supervised_acc = 0.779961
+I0924 12:27:38.251393 22532193106816 run.py:662] Completed: 9000 / 10022 steps
+I0924 12:27:38.257428 22532193106816 metrics.py:73] Step: [9000] train/weight_decay = 0.013119
+I0924 12:27:38.262363 22532193106816 metrics.py:73] Step: [9000] train/total_loss = 8.405090
+I0924 12:27:38.265242 22532193106816 metrics.py:73] Step: [9000] train/contrast_loss = 7.783645
+I0924 12:27:38.268051 22532193106816 metrics.py:73] Step: [9000] train/contrast_acc = 0.734922
+I0924 12:27:38.270786 22532193106816 metrics.py:73] Step: [9000] train/contrast_entropy = 4.650929
+I0924 12:27:38.273463 22532193106816 metrics.py:73] Step: [9000] train/supervised_loss = 0.608327
+I0924 12:27:38.276130 22532193106816 metrics.py:73] Step: [9000] train/supervised_acc = 0.783594
+I0924 12:28:13.144388 22532193106816 run.py:662] Completed: 9100 / 10022 steps
+I0924 12:28:13.148666 22532193106816 metrics.py:73] Step: [9100] train/weight_decay = 0.013087
+I0924 12:28:13.153030 22532193106816 metrics.py:73] Step: [9100] train/total_loss = 8.390990
+I0924 12:28:13.155790 22532193106816 metrics.py:73] Step: [9100] train/contrast_loss = 7.779306
+I0924 12:28:13.158335 22532193106816 metrics.py:73] Step: [9100] train/contrast_acc = 0.741484
+I0924 12:28:13.160800 22532193106816 metrics.py:73] Step: [9100] train/contrast_entropy = 4.649842
+I0924 12:28:13.163202 22532193106816 metrics.py:73] Step: [9100] train/supervised_loss = 0.598595
+I0924 12:28:13.165478 22532193106816 metrics.py:73] Step: [9100] train/supervised_acc = 0.783516
+I0924 12:28:47.541508 22532193106816 run.py:662] Completed: 9200 / 10022 steps
+I0924 12:28:47.546034 22532193106816 metrics.py:73] Step: [9200] train/weight_decay = 0.013058
+I0924 12:28:47.550980 22532193106816 metrics.py:73] Step: [9200] train/total_loss = 8.389803
+I0924 12:28:47.555334 22532193106816 metrics.py:73] Step: [9200] train/contrast_loss = 7.778486
+I0924 12:28:47.559634 22532193106816 metrics.py:73] Step: [9200] train/contrast_acc = 0.741797
+I0924 12:28:47.564519 22532193106816 metrics.py:73] Step: [9200] train/contrast_entropy = 4.650006
+I0924 12:28:47.570072 22532193106816 metrics.py:73] Step: [9200] train/supervised_loss = 0.598257
+I0924 12:28:47.576772 22532193106816 metrics.py:73] Step: [9200] train/supervised_acc = 0.783789
+I0924 12:29:22.121197 22532193106816 run.py:662] Completed: 9300 / 10022 steps
+I0924 12:29:22.125039 22532193106816 metrics.py:73] Step: [9300] train/weight_decay = 0.013037
+I0924 12:29:22.127802 22532193106816 metrics.py:73] Step: [9300] train/total_loss = 8.388846
+I0924 12:29:22.130077 22532193106816 metrics.py:73] Step: [9300] train/contrast_loss = 7.778313
+I0924 12:29:22.132256 22532193106816 metrics.py:73] Step: [9300] train/contrast_acc = 0.735469
+I0924 12:29:22.134340 22532193106816 metrics.py:73] Step: [9300] train/contrast_entropy = 4.650368
+I0924 12:29:22.136468 22532193106816 metrics.py:73] Step: [9300] train/supervised_loss = 0.597496
+I0924 12:29:22.138515 22532193106816 metrics.py:73] Step: [9300] train/supervised_acc = 0.783906
+I0924 12:29:56.624878 22532193106816 run.py:662] Completed: 9400 / 10022 steps
+I0924 12:29:56.627433 22532193106816 metrics.py:73] Step: [9400] train/weight_decay = 0.013021
+I0924 12:29:56.630587 22532193106816 metrics.py:73] Step: [9400] train/total_loss = 8.389096
+I0924 12:29:56.634789 22532193106816 metrics.py:73] Step: [9400] train/contrast_loss = 7.785697
+I0924 12:29:56.641177 22532193106816 metrics.py:73] Step: [9400] train/contrast_acc = 0.730547
+I0924 12:29:56.645743 22532193106816 metrics.py:73] Step: [9400] train/contrast_entropy = 4.650267
+I0924 12:29:56.652050 22532193106816 metrics.py:73] Step: [9400] train/supervised_loss = 0.590378
+I0924 12:29:56.657212 22532193106816 metrics.py:73] Step: [9400] train/supervised_acc = 0.785703
+I0924 12:30:30.882903 22532193106816 run.py:662] Completed: 9500 / 10022 steps
+I0924 12:30:30.885529 22532193106816 metrics.py:73] Step: [9500] train/weight_decay = 0.013009
+I0924 12:30:30.888204 22532193106816 metrics.py:73] Step: [9500] train/total_loss = 8.376825
+I0924 12:30:30.890470 22532193106816 metrics.py:73] Step: [9500] train/contrast_loss = 7.775319
+I0924 12:30:30.892675 22532193106816 metrics.py:73] Step: [9500] train/contrast_acc = 0.739062
+I0924 12:30:30.894858 22532193106816 metrics.py:73] Step: [9500] train/contrast_entropy = 4.650471
+I0924 12:30:30.897079 22532193106816 metrics.py:73] Step: [9500] train/supervised_loss = 0.588497
+I0924 12:30:30.899182 22532193106816 metrics.py:73] Step: [9500] train/supervised_acc = 0.788398
+I0924 12:31:04.941609 22532193106816 run.py:662] Completed: 9600 / 10022 steps
+I0924 12:31:04.946499 22532193106816 metrics.py:73] Step: [9600] train/weight_decay = 0.012998
+I0924 12:31:04.952093 22532193106816 metrics.py:73] Step: [9600] train/total_loss = 8.376827
+I0924 12:31:04.955471 22532193106816 metrics.py:73] Step: [9600] train/contrast_loss = 7.773729
+I0924 12:31:04.958399 22532193106816 metrics.py:73] Step: [9600] train/contrast_acc = 0.743203
+I0924 12:31:04.961297 22532193106816 metrics.py:73] Step: [9600] train/contrast_entropy = 4.650612
+I0924 12:31:04.964205 22532193106816 metrics.py:73] Step: [9600] train/supervised_loss = 0.590100
+I0924 12:31:04.967519 22532193106816 metrics.py:73] Step: [9600] train/supervised_acc = 0.786406
+I0924 12:31:39.443226 22532193106816 run.py:662] Completed: 9700 / 10022 steps
+I0924 12:31:39.445528 22532193106816 metrics.py:73] Step: [9700] train/weight_decay = 0.012992
+I0924 12:31:39.448714 22532193106816 metrics.py:73] Step: [9700] train/total_loss = 8.376478
+I0924 12:31:39.452692 22532193106816 metrics.py:73] Step: [9700] train/contrast_loss = 7.777337
+I0924 12:31:39.456623 22532193106816 metrics.py:73] Step: [9700] train/contrast_acc = 0.738750
+I0924 12:31:39.464117 22532193106816 metrics.py:73] Step: [9700] train/contrast_entropy = 4.650468
+I0924 12:31:39.470358 22532193106816 metrics.py:73] Step: [9700] train/supervised_loss = 0.586152
+I0924 12:31:39.476661 22532193106816 metrics.py:73] Step: [9700] train/supervised_acc = 0.789180
+I0924 12:32:12.383884 22532193106816 run.py:662] Completed: 9800 / 10022 steps
+I0924 12:32:12.386860 22532193106816 metrics.py:73] Step: [9800] train/weight_decay = 0.012988
+I0924 12:32:12.389874 22532193106816 metrics.py:73] Step: [9800] train/total_loss = 8.373252
+I0924 12:32:12.392402 22532193106816 metrics.py:73] Step: [9800] train/contrast_loss = 7.773550
+I0924 12:32:12.394890 22532193106816 metrics.py:73] Step: [9800] train/contrast_acc = 0.744453
+I0924 12:32:12.397366 22532193106816 metrics.py:73] Step: [9800] train/contrast_entropy = 4.650376
+I0924 12:32:12.399832 22532193106816 metrics.py:73] Step: [9800] train/supervised_loss = 0.586714
+I0924 12:32:12.402304 22532193106816 metrics.py:73] Step: [9800] train/supervised_acc = 0.788555
+I0924 12:32:46.347486 22532193106816 run.py:662] Completed: 9900 / 10022 steps
+I0924 12:32:46.350458 22532193106816 metrics.py:73] Step: [9900] train/weight_decay = 0.012987
+I0924 12:32:46.353492 22532193106816 metrics.py:73] Step: [9900] train/total_loss = 8.363713
+I0924 12:32:46.356012 22532193106816 metrics.py:73] Step: [9900] train/contrast_loss = 7.774346
+I0924 12:32:46.358481 22532193106816 metrics.py:73] Step: [9900] train/contrast_acc = 0.743125
+I0924 12:32:46.360931 22532193106816 metrics.py:73] Step: [9900] train/contrast_entropy = 4.650595
+I0924 12:32:46.363368 22532193106816 metrics.py:73] Step: [9900] train/supervised_loss = 0.576381
+I0924 12:32:46.365801 22532193106816 metrics.py:73] Step: [9900] train/supervised_acc = 0.789688
+I0924 12:33:21.364624 22532193106816 run.py:662] Completed: 10000 / 10022 steps
+I0924 12:33:21.369375 22532193106816 metrics.py:73] Step: [10000] train/weight_decay = 0.012986
+I0924 12:33:21.373915 22532193106816 metrics.py:73] Step: [10000] train/total_loss = 8.368152
+I0924 12:33:21.377053 22532193106816 metrics.py:73] Step: [10000] train/contrast_loss = 7.771411
+I0924 12:33:21.380062 22532193106816 metrics.py:73] Step: [10000] train/contrast_acc = 0.742813
+I0924 12:33:21.382945 22532193106816 metrics.py:73] Step: [10000] train/contrast_entropy = 4.650169
+I0924 12:33:21.386176 22532193106816 metrics.py:73] Step: [10000] train/supervised_loss = 0.583754
+I0924 12:33:21.389262 22532193106816 metrics.py:73] Step: [10000] train/supervised_acc = 0.788281
+I0924 12:33:55.632976 22532193106816 run.py:662] Completed: 10100 / 10022 steps
+I0924 12:33:55.636720 22532193106816 metrics.py:73] Step: [10100] train/weight_decay = 0.012986
+I0924 12:33:55.642350 22532193106816 metrics.py:73] Step: [10100] train/total_loss = 8.372006
+I0924 12:33:55.647391 22532193106816 metrics.py:73] Step: [10100] train/contrast_loss = 7.770764
+I0924 12:33:55.651292 22532193106816 metrics.py:73] Step: [10100] train/contrast_acc = 0.748750
+I0924 12:33:55.654688 22532193106816 metrics.py:73] Step: [10100] train/contrast_entropy = 4.650111
+I0924 12:33:55.658291 22532193106816 metrics.py:73] Step: [10100] train/supervised_loss = 0.588257
+I0924 12:33:55.661175 22532193106816 metrics.py:73] Step: [10100] train/supervised_acc = 0.786133
+I0924 12:33:55.683721 22532193106816 run.py:671] Training complete...
+I0924 12:33:55.684474 22532193106816 data.py:59] Global batch size: 256
+I0924 12:33:55.684653 22532193106816 data.py:60] Per-replica batch size: 128
+I0924 12:33:56.083392 22532193106816 data.py:91] num_input_pipelines: 1
+WARNING:tensorflow:AutoGraph could not transform <function center_crop at 0x147de37c4b80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:33:56.223293 22532193106816 ag_logging.py:146] AutoGraph could not transform <function center_crop at 0x147de37c4b80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+I0924 12:33:56.310602 22532193106816 run.py:371] Restoring from /rds/general/user/hm808/home/repos/dist_18d_128b_2c/ckpt-10100
+I0924 12:33:56.566055 22532193106816 run.py:376] Performing eval at step 10100
+WARNING:tensorflow:AutoGraph could not transform <function perform_evaluation.<locals>.single_step at 0x147de15ea1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:33:56.764965 22525255870208 ag_logging.py:146] AutoGraph could not transform <function perform_evaluation.<locals>.single_step at 0x147de15ea1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+I0924 12:34:02.426389 22532193106816 run.py:399] Completed eval for 1 / 51 steps
+I0924 12:34:02.558466 22532193106816 run.py:399] Completed eval for 2 / 51 steps
+I0924 12:34:03.733158 22532193106816 run.py:399] Completed eval for 3 / 51 steps
+I0924 12:34:03.799918 22532193106816 run.py:399] Completed eval for 4 / 51 steps
+I0924 12:34:03.859660 22532193106816 run.py:399] Completed eval for 5 / 51 steps
+I0924 12:34:03.964820 22532193106816 run.py:399] Completed eval for 6 / 51 steps
+I0924 12:34:04.300960 22532193106816 run.py:399] Completed eval for 7 / 51 steps
+I0924 12:34:05.852565 22532193106816 run.py:399] Completed eval for 8 / 51 steps
+I0924 12:34:05.919657 22532193106816 run.py:399] Completed eval for 9 / 51 steps
+I0924 12:34:08.599693 22532193106816 run.py:399] Completed eval for 10 / 51 steps
+I0924 12:34:08.713906 22532193106816 run.py:399] Completed eval for 11 / 51 steps
+I0924 12:34:08.778000 22532193106816 run.py:399] Completed eval for 12 / 51 steps
+I0924 12:34:08.855034 22532193106816 run.py:399] Completed eval for 13 / 51 steps
+I0924 12:34:08.907503 22532193106816 run.py:399] Completed eval for 14 / 51 steps
+I0924 12:34:08.973543 22532193106816 run.py:399] Completed eval for 15 / 51 steps
+I0924 12:34:09.040430 22532193106816 run.py:399] Completed eval for 16 / 51 steps
+I0924 12:34:09.100362 22532193106816 run.py:399] Completed eval for 17 / 51 steps
+I0924 12:34:09.164312 22532193106816 run.py:399] Completed eval for 18 / 51 steps
+I0924 12:34:09.221211 22532193106816 run.py:399] Completed eval for 19 / 51 steps
+I0924 12:34:12.001554 22532193106816 run.py:399] Completed eval for 20 / 51 steps
+I0924 12:34:12.082886 22532193106816 run.py:399] Completed eval for 21 / 51 steps
+I0924 12:34:12.160332 22532193106816 run.py:399] Completed eval for 22 / 51 steps
+I0924 12:34:12.221265 22532193106816 run.py:399] Completed eval for 23 / 51 steps
+I0924 12:34:12.288849 22532193106816 run.py:399] Completed eval for 24 / 51 steps
+I0924 12:34:12.342686 22532193106816 run.py:399] Completed eval for 25 / 51 steps
+I0924 12:34:12.410637 22532193106816 run.py:399] Completed eval for 26 / 51 steps
+I0924 12:34:12.480114 22532193106816 run.py:399] Completed eval for 27 / 51 steps
+I0924 12:34:12.537760 22532193106816 run.py:399] Completed eval for 28 / 51 steps
+I0924 12:34:12.795881 22532193106816 run.py:399] Completed eval for 29 / 51 steps
+I0924 12:34:15.027795 22532193106816 run.py:399] Completed eval for 30 / 51 steps
+I0924 12:34:15.090373 22532193106816 run.py:399] Completed eval for 31 / 51 steps
+I0924 12:34:15.152770 22532193106816 run.py:399] Completed eval for 32 / 51 steps
+I0924 12:34:15.216312 22532193106816 run.py:399] Completed eval for 33 / 51 steps
+I0924 12:34:15.275443 22532193106816 run.py:399] Completed eval for 34 / 51 steps
+I0924 12:34:17.419234 22532193106816 run.py:399] Completed eval for 35 / 51 steps
+I0924 12:34:17.481701 22532193106816 run.py:399] Completed eval for 36 / 51 steps
+I0924 12:34:17.553872 22532193106816 run.py:399] Completed eval for 37 / 51 steps
+I0924 12:34:17.614527 22532193106816 run.py:399] Completed eval for 38 / 51 steps
+I0924 12:34:17.669815 22532193106816 run.py:399] Completed eval for 39 / 51 steps
+I0924 12:34:19.096929 22532193106816 run.py:399] Completed eval for 40 / 51 steps
+I0924 12:34:19.155094 22532193106816 run.py:399] Completed eval for 41 / 51 steps
+I0924 12:34:19.208791 22532193106816 run.py:399] Completed eval for 42 / 51 steps
+I0924 12:34:19.292403 22532193106816 run.py:399] Completed eval for 43 / 51 steps
+I0924 12:34:19.356484 22532193106816 run.py:399] Completed eval for 44 / 51 steps
+I0924 12:34:19.419572 22532193106816 run.py:399] Completed eval for 45 / 51 steps
+I0924 12:34:19.479735 22532193106816 run.py:399] Completed eval for 46 / 51 steps
+I0924 12:34:19.536474 22532193106816 run.py:399] Completed eval for 47 / 51 steps
+I0924 12:34:19.712516 22532193106816 run.py:399] Completed eval for 48 / 51 steps
+I0924 12:34:20.083222 22532193106816 run.py:399] Completed eval for 49 / 51 steps
+I0924 12:34:20.635749 22532193106816 run.py:399] Completed eval for 50 / 51 steps
+I0924 12:34:20.827209 22532193106816 run.py:399] Completed eval for 51 / 51 steps
+I0924 12:34:20.827507 22532193106816 run.py:400] Finished eval for /rds/general/user/hm808/home/repos/dist_18d_128b_2c/ckpt-10100
+I0924 12:34:20.830160 22532193106816 run.py:404] Writing summaries for 10100 step
+I0924 12:34:20.837392 22532193106816 metrics.py:73] Step: [10100] eval/regularization_loss = 0.012986
+I0924 12:34:20.846710 22532193106816 metrics.py:73] Step: [10100] eval/label_top_1_accuracy = 0.827129
+I0924 12:34:20.851320 22532193106816 metrics.py:73] Step: [10100] eval/label_top_5_accuracy = 0.997702
+I0924 12:34:20.861092 22532193106816 run.py:413] {'eval/regularization_loss': 0.012986145, 'eval/label_top_1_accuracy': 0.8271293, 'eval/label_top_5_accuracy': 0.9977022, 'global_step': 10100}
+WARNING:tensorflow:AutoGraph could not transform <model.Model object at 0x147de1ea9880> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:34:20.982725 22532193106816 ag_logging.py:146] AutoGraph could not transform <model.Model object at 0x147de1ea9880> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function get_salient_tensors_dict at 0x147e2e202160> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+W0924 12:34:22.927030 22532193106816 ag_logging.py:146] AutoGraph could not transform <function get_salient_tensors_dict at 0x147e2e202160> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2022-09-24 12:34:24.015116: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:Skipping full serialization of Keras layer <model.Model object at 0x147de1ea9880>, because it is not built.
+W0924 12:34:24.117379 22532193106816 save_impl.py:77] Skipping full serialization of Keras layer <model.Model object at 0x147de1ea9880>, because it is not built.
+W0924 12:34:31.555889 22532193106816 save.py:236] Found untraced functions such as resnet_layer_call_and_return_conditional_losses, resnet_layer_call_fn, projection_head_layer_call_and_return_conditional_losses, projection_head_layer_call_fn, head_supervised_layer_call_and_return_conditional_losses while saving (showing 5 of 490). These functions will not be directly callable after loading.
+W0924 12:34:31.743742 22532193106816 save.py:236] Found untraced functions such as resnet_layer_call_and_return_conditional_losses, resnet_layer_call_fn, projection_head_layer_call_and_return_conditional_losses, projection_head_layer_call_fn, head_supervised_layer_call_and_return_conditional_losses while saving (showing 5 of 490). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /rds/general/user/hm808/home/repos/dist_18d_128b_2c/saved_model/10100/assets
+I0924 12:34:33.222356 22532193106816 builder_impl.py:774] Assets written to: /rds/general/user/hm808/home/repos/dist_18d_128b_2c/saved_model/10100/assets

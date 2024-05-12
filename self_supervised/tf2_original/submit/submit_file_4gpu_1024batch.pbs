@@ -1,0 +1,19 @@
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=16:mem=96gb:ngpus=4:gpu_type=RTX6000
+#
+#
+module load anaconda3/personal
+conda init bash
+. ~/.bashrc
+
+conda activate simclr
+#
+cd $PBS_O_WORKDIR
+#
+#
+python run.py --train_mode=pretrain \
+  --train_batch_size=1024 --train_epochs=1000 \
+  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+  --dataset=cifar10 --image_size=32 --eval_split=test --resnet_depth=18 \
+  --use_blur=False --color_jitter_strength=0.5 \
+  --model_dir=/rds/general/user/hm808/home/repos/dist_18d_1024b --use_tpu=False

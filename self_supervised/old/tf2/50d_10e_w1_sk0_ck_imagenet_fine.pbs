@@ -1,0 +1,23 @@
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=32:mem=96gb:ngpus=2:gpu_type=RTX6000
+#
+#
+module load anaconda3/personal
+conda init bash
+. ~/.bashrc
+
+conda activate simclr2
+#
+cd $PBS_O_WORKDIR
+#
+#
+python run_finetune.py --mode=train_then_eval --train_mode=pretrain --train_batch_size=128 --train_epochs=100 --sk_ratio=0 \
+  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 \
+  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --fine_tune_after_block=2 --model_dir=/rds/general/user/hm808/home/repos/50d_w1_sk0_imagenet_ft_bl2 \
+  --checkpoint=/rds/general/user/hm808/home/code/simclr/convert_models/tf2/tf2-1 --use_tpu=False
+
+python run_finetune.py --mode=train_then_eval --train_mode=pretrain --train_batch_size=128 --train_epochs=100 --sk_ratio=0 \
+  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 \
+  --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --fine_tune_after_block=1 --model_dir=/rds/general/user/hm808/home/repos/50d_w1_sk0_imagenet_ft_bl1 \
+  --checkpoint=/rds/general/user/hm808/home/code/simclr/convert_models/tf2/tf2-1 --use_tpu=False
+

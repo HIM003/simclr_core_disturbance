@@ -1,0 +1,429 @@
+2022-07-21 11:58:53.307122: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-07-21 11:58:53.314916: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+W0721 11:59:53.259098 22605810865984 dataset_builder.py:764] Found a different version of the requested dataset:
+1.0.2
+Using ~/tensorflow_datasets/cifar10/3.0.2 instead.
+2022-07-21 11:59:53.292029: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Failed precondition: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+I0721 11:59:53.297140 22605810865984 dataset_builder.py:437] Generating dataset cifar10 (~/tensorflow_datasets/cifar10/3.0.2)
+Dl Completed...: 0 url [00:00, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[AI0721 11:59:54.534022 22605810865984 download_manager.py:342] Skipping download of https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz: File cached in /rds/general/user/hm808/home/tensorflow_datasets/downloads/cs.toronto.edu_kriz_cifar-10-binaryxKOMUKG8XzocVTfyFVq51o-fJese2Nnd2j2ymlm8od0.tar.gz
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:00<00:00, 188.50 url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:00<00:00, 183.14 url/s]
+Dl Size...:   0%|          | 0/170052171 [00:00<?, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:00<00:00, 178.70 url/s]
+Dl Size...: 100%|██████████| 170052171/170052171 [00:00<00:00, 30748857606.22 MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[AI0721 11:59:54.537080 22605810865984 download_manager.py:485] Reusing extraction of /rds/general/user/hm808/home/tensorflow_datasets/downloads/cs.toronto.edu_kriz_cifar-10-binaryxKOMUKG8XzocVTfyFVq51o-fJese2Nnd2j2ymlm8od0.tar.gz at /rds/general/user/hm808/home/tensorflow_datasets/downloads/extracted/TAR_GZ.cs.toronto.edu_kriz_cifar-10-binaryxKOMUKG8XzocVTfyFVq51o-fJese2Nnd2j2ymlm8od0.tar.gz.
+Extraction completed...: 0 file [00:00, ? file/s]
+Dl Size...: 100%|██████████| 170052171/170052171 [00:00<00:00, 20609411148.69 MiB/s]
+Dl Completed...: 100%|██████████| 1/1 [00:00<00:00, 118.49 url/s]
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][A2022-07-21 11:59:54.748024: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2022-07-21 11:59:54.830000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:a1:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2022-07-21 11:59:54.830278: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.830380: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842340: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842438: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842556: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842649: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842738: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842838: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2022-07-21 11:59:54.842862: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-07-21 11:59:54.843513: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-07-21 11:59:54.851136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-07-21 11:59:54.851212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      
+
+Generating train examples...: 1 examples [00:00,  3.18 examples/s][A
+Generating train examples...: 296 examples [00:00, 923.11 examples/s][A
+Generating train examples...: 592 examples [00:00, 1550.26 examples/s][A
+Generating train examples...: 892 examples [00:00, 1991.45 examples/s][A
+Generating train examples...: 1193 examples [00:00, 2300.13 examples/s][A
+Generating train examples...: 1496 examples [00:00, 2520.13 examples/s][A
+Generating train examples...: 1800 examples [00:00, 2676.67 examples/s][A
+Generating train examples...: 2103 examples [00:01, 2780.82 examples/s][A
+Generating train examples...: 2405 examples [00:01, 2852.31 examples/s][A
+Generating train examples...: 2706 examples [00:01, 2899.54 examples/s][A
+Generating train examples...: 3006 examples [00:01, 2929.32 examples/s][A
+Generating train examples...: 3306 examples [00:01, 2948.35 examples/s][A
+Generating train examples...: 3608 examples [00:01, 2966.86 examples/s][A
+Generating train examples...: 3909 examples [00:01, 2977.53 examples/s][A
+Generating train examples...: 4210 examples [00:01, 2986.35 examples/s][A
+Generating train examples...: 4510 examples [00:01, 2986.97 examples/s][A
+Generating train examples...: 4811 examples [00:01, 2991.02 examples/s][A
+Generating train examples...: 5111 examples [00:02, 2993.09 examples/s][A
+Generating train examples...: 5413 examples [00:02, 2999.27 examples/s][A
+Generating train examples...: 5714 examples [00:02, 2997.53 examples/s][A
+Generating train examples...: 6014 examples [00:02, 2992.40 examples/s][A
+Generating train examples...: 6315 examples [00:02, 2996.19 examples/s][A
+Generating train examples...: 6616 examples [00:02, 3000.11 examples/s][A
+Generating train examples...: 6917 examples [00:02, 2999.14 examples/s][A
+Generating train examples...: 7220 examples [00:02, 3007.22 examples/s][A
+Generating train examples...: 7521 examples [00:02, 2996.46 examples/s][A
+Generating train examples...: 7821 examples [00:02, 2995.19 examples/s][A
+Generating train examples...: 8122 examples [00:03, 2998.50 examples/s][A
+Generating train examples...: 8422 examples [00:03, 2998.74 examples/s][A
+Generating train examples...: 8722 examples [00:03, 2996.49 examples/s][A
+Generating train examples...: 9022 examples [00:03, 2991.74 examples/s][A
+Generating train examples...: 9322 examples [00:03, 2993.15 examples/s][A
+Generating train examples...: 9622 examples [00:03, 2994.27 examples/s][A
+Generating train examples...: 9925 examples [00:03, 3002.64 examples/s][A
+Generating train examples...: 10226 examples [00:03, 1748.57 examples/s][A
+Generating train examples...: 10526 examples [00:04, 1997.45 examples/s][A
+Generating train examples...: 10829 examples [00:04, 2224.95 examples/s][A
+Generating train examples...: 11132 examples [00:04, 2418.03 examples/s][A
+Generating train examples...: 11434 examples [00:04, 2570.44 examples/s][A
+Generating train examples...: 11737 examples [00:04, 2693.12 examples/s][A
+Generating train examples...: 12043 examples [00:04, 2792.44 examples/s][A
+Generating train examples...: 12342 examples [00:04, 2848.02 examples/s][A
+Generating train examples...: 12646 examples [00:04, 2902.77 examples/s][A
+Generating train examples...: 12952 examples [00:04, 2948.21 examples/s][A
+Generating train examples...: 13253 examples [00:04, 2965.10 examples/s][A
+Generating train examples...: 13557 examples [00:05, 2985.93 examples/s][A
+Generating train examples...: 13859 examples [00:05, 2992.03 examples/s][A
+Generating train examples...: 14162 examples [00:05, 3000.81 examples/s][A
+Generating train examples...: 14464 examples [00:05, 3005.58 examples/s][A
+Generating train examples...: 14769 examples [00:05, 3016.00 examples/s][A
+Generating train examples...: 15074 examples [00:05, 3023.84 examples/s][A
+Generating train examples...: 15379 examples [00:05, 3031.09 examples/s][A
+Generating train examples...: 15683 examples [00:05, 3030.04 examples/s][A
+Generating train examples...: 15987 examples [00:05, 3018.95 examples/s][A
+Generating train examples...: 16290 examples [00:05, 3017.06 examples/s][A
+Generating train examples...: 16595 examples [00:06, 3024.53 examples/s][A
+Generating train examples...: 16898 examples [00:06, 3025.25 examples/s][A
+Generating train examples...: 17203 examples [00:06, 3029.87 examples/s][A
+Generating train examples...: 17507 examples [00:06, 3024.43 examples/s][A
+Generating train examples...: 17810 examples [00:06, 3021.80 examples/s][A
+Generating train examples...: 18113 examples [00:06, 3023.46 examples/s][A
+Generating train examples...: 18416 examples [00:06, 3020.24 examples/s][A
+Generating train examples...: 18719 examples [00:06, 3017.72 examples/s][A
+Generating train examples...: 19022 examples [00:06, 3018.76 examples/s][A
+Generating train examples...: 19324 examples [00:06, 3017.44 examples/s][A
+Generating train examples...: 19628 examples [00:07, 3022.42 examples/s][A
+Generating train examples...: 19931 examples [00:07, 3024.64 examples/s][A
+Generating train examples...: 20234 examples [00:07, 2019.24 examples/s][A
+Generating train examples...: 20534 examples [00:07, 2236.10 examples/s][A
+Generating train examples...: 20836 examples [00:07, 2423.13 examples/s][A
+Generating train examples...: 21139 examples [00:07, 2577.59 examples/s][A
+Generating train examples...: 21441 examples [00:07, 2694.49 examples/s][A
+Generating train examples...: 21744 examples [00:07, 2787.14 examples/s][A
+Generating train examples...: 22047 examples [00:08, 2855.18 examples/s][A
+Generating train examples...: 22351 examples [00:08, 2908.17 examples/s][A
+Generating train examples...: 22655 examples [00:08, 2944.01 examples/s][A
+Generating train examples...: 22956 examples [00:08, 2960.63 examples/s][A
+Generating train examples...: 23260 examples [00:08, 2981.57 examples/s][A
+Generating train examples...: 23564 examples [00:08, 2996.26 examples/s][A
+Generating train examples...: 23868 examples [00:08, 3006.96 examples/s][A
+Generating train examples...: 24172 examples [00:08, 3015.87 examples/s][A
+Generating train examples...: 24475 examples [00:08, 3018.88 examples/s][A
+Generating train examples...: 24778 examples [00:08, 3014.77 examples/s][A
+Generating train examples...: 25081 examples [00:09, 3019.13 examples/s][A
+Generating train examples...: 25384 examples [00:09, 3010.10 examples/s][A
+Generating train examples...: 25688 examples [00:09, 3016.33 examples/s][A
+Generating train examples...: 25991 examples [00:09, 3019.58 examples/s][A
+Generating train examples...: 26294 examples [00:09, 3014.78 examples/s][A
+Generating train examples...: 26597 examples [00:09, 3018.89 examples/s][A
+Generating train examples...: 26901 examples [00:09, 3022.72 examples/s][A
+Generating train examples...: 27204 examples [00:09, 3020.23 examples/s][A
+Generating train examples...: 27507 examples [00:09, 3023.08 examples/s][A
+Generating train examples...: 27810 examples [00:09, 2983.49 examples/s][A
+Generating train examples...: 28111 examples [00:10, 2988.77 examples/s][A
+Generating train examples...: 28413 examples [00:10, 2996.29 examples/s][A
+Generating train examples...: 28716 examples [00:10, 3005.67 examples/s][A
+Generating train examples...: 29018 examples [00:10, 3009.28 examples/s][A
+Generating train examples...: 29323 examples [00:10, 3018.51 examples/s][A
+Generating train examples...: 29625 examples [00:10, 3018.47 examples/s][A
+Generating train examples...: 29927 examples [00:10, 3010.67 examples/s][A
+Generating train examples...: 30229 examples [00:10, 1927.44 examples/s][A
+Generating train examples...: 30533 examples [00:11, 2165.38 examples/s][A
+Generating train examples...: 30835 examples [00:11, 2365.66 examples/s][A
+Generating train examples...: 31137 examples [00:11, 2529.47 examples/s][A
+Generating train examples...: 31440 examples [00:11, 2660.64 examples/s][A
+Generating train examples...: 31742 examples [00:11, 2757.65 examples/s][A
+Generating train examples...: 32043 examples [00:11, 2826.24 examples/s][A
+Generating train examples...: 32347 examples [00:11, 2885.93 examples/s][A
+Generating train examples...: 32649 examples [00:11, 2924.79 examples/s][A
+Generating train examples...: 32954 examples [00:11, 2961.03 examples/s][A
+Generating train examples...: 33256 examples [00:11, 2977.04 examples/s][A
+Generating train examples...: 33559 examples [00:12, 2990.00 examples/s][A
+Generating train examples...: 33862 examples [00:12, 3001.48 examples/s][A
+Generating train examples...: 34166 examples [00:12, 3011.12 examples/s][A
+Generating train examples...: 34469 examples [00:12, 3009.21 examples/s][A
+Generating train examples...: 34771 examples [00:12, 3004.90 examples/s][A
+Generating train examples...: 35073 examples [00:12, 3008.15 examples/s][A
+Generating train examples...: 35375 examples [00:12, 2996.70 examples/s][A
+Generating train examples...: 35675 examples [00:12, 2990.69 examples/s][A
+Generating train examples...: 35975 examples [00:12, 2990.51 examples/s][A
+Generating train examples...: 36278 examples [00:12, 3000.22 examples/s][A
+Generating train examples...: 36579 examples [00:13, 2999.91 examples/s][A
+Generating train examples...: 36880 examples [00:13, 2997.92 examples/s][A
+Generating train examples...: 37183 examples [00:13, 3006.81 examples/s][A
+Generating train examples...: 37486 examples [00:13, 3012.66 examples/s][A
+Generating train examples...: 37789 examples [00:13, 3015.99 examples/s][A
+Generating train examples...: 38092 examples [00:13, 3019.58 examples/s][A
+Generating train examples...: 38394 examples [00:13, 3012.64 examples/s][A
+Generating train examples...: 38696 examples [00:13, 3009.13 examples/s][A
+Generating train examples...: 38999 examples [00:13, 3013.59 examples/s][A
+Generating train examples...: 39301 examples [00:13, 3013.46 examples/s][A
+Generating train examples...: 39603 examples [00:14, 3012.94 examples/s][A
+Generating train examples...: 39906 examples [00:14, 3015.92 examples/s][A
+Generating train examples...: 40208 examples [00:14, 1715.19 examples/s][A
+Generating train examples...: 40510 examples [00:14, 1969.40 examples/s][A
+Generating train examples...: 40812 examples [00:14, 2197.84 examples/s][A
+Generating train examples...: 41116 examples [00:14, 2397.34 examples/s][A
+Generating train examples...: 41413 examples [00:14, 2540.66 examples/s][A
+Generating train examples...: 41717 examples [00:15, 2671.48 examples/s][A
+Generating train examples...: 42019 examples [00:15, 2765.31 examples/s][A
+Generating train examples...: 42320 examples [00:15, 2832.20 examples/s][A
+Generating train examples...: 42622 examples [00:15, 2885.24 examples/s][A
+Generating train examples...: 42925 examples [00:15, 2927.29 examples/s][A
+Generating train examples...: 43227 examples [00:15, 2953.66 examples/s][A
+Generating train examples...: 43532 examples [00:15, 2979.88 examples/s][A
+Generating train examples...: 43834 examples [00:15, 2991.36 examples/s][A
+Generating train examples...: 44136 examples [00:15, 2998.57 examples/s][A
+Generating train examples...: 44440 examples [00:15, 3008.47 examples/s][A
+Generating train examples...: 44743 examples [00:16, 3014.49 examples/s][A
+Generating train examples...: 45046 examples [00:16, 3013.03 examples/s][A
+Generating train examples...: 45350 examples [00:16, 3018.25 examples/s][A
+Generating train examples...: 45654 examples [00:16, 3022.59 examples/s][A
+Generating train examples...: 45957 examples [00:16, 3018.21 examples/s][A
+Generating train examples...: 46262 examples [00:16, 3026.55 examples/s][A
+Generating train examples...: 46565 examples [00:16, 3022.82 examples/s][A
+Generating train examples...: 46868 examples [00:16, 3015.66 examples/s][A
+Generating train examples...: 47171 examples [00:16, 3017.47 examples/s][A
+Generating train examples...: 47473 examples [00:16, 3008.84 examples/s][A
+Generating train examples...: 47774 examples [00:17, 3007.51 examples/s][A
+Generating train examples...: 48078 examples [00:17, 3014.39 examples/s][A
+Generating train examples...: 48380 examples [00:17, 3000.44 examples/s][A
+Generating train examples...: 48681 examples [00:17, 2996.88 examples/s][A
+Generating train examples...: 48986 examples [00:17, 3009.98 examples/s][A
+Generating train examples...: 49288 examples [00:17, 3005.83 examples/s][A
+Generating train examples...: 49592 examples [00:17, 3013.72 examples/s][A
+Generating train examples...: 49895 examples [00:17, 3017.32 examples/s][A
+                                                                        [A
+Shuffling ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-train.tfrecord*...:   0%|          | 0/50000 [00:00<?, ? examples/s][A
+Shuffling ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-train.tfrecord*...:  27%|██▋       | 13716/50000 [00:00<00:00, 137150.97 examples/s][A
+Shuffling ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-train.tfrecord*...:  88%|████████▊ | 43827/50000 [00:00<00:00, 233586.46 examples/s][A
+                                                                                                                                                           [AI0721 12:00:12.519816 22605810865984 writer.py:333] Done writing ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-train.tfrecord*. Number of examples: 50000 (shards: [50000])
+Generating splits...:  50%|█████     | 1/2 [00:17<00:17, 17.99s/ splits]
+Generating test examples...: 0 examples [00:00, ? examples/s][A
+Generating test examples...: 1 examples [00:00,  3.26 examples/s][A
+Generating test examples...: 302 examples [00:00, 957.44 examples/s][A
+Generating test examples...: 606 examples [00:00, 1605.75 examples/s][A
+Generating test examples...: 904 examples [00:00, 2028.94 examples/s][A
+Generating test examples...: 1204 examples [00:00, 2324.66 examples/s][A
+Generating test examples...: 1505 examples [00:00, 2531.04 examples/s][A
+Generating test examples...: 1807 examples [00:00, 2678.50 examples/s][A
+Generating test examples...: 2108 examples [00:01, 2775.78 examples/s][A
+Generating test examples...: 2408 examples [00:01, 2842.98 examples/s][A
+Generating test examples...: 2710 examples [00:01, 2895.54 examples/s][A
+Generating test examples...: 3010 examples [00:01, 2926.09 examples/s][A
+Generating test examples...: 3312 examples [00:01, 2953.97 examples/s][A
+Generating test examples...: 3612 examples [00:01, 2966.27 examples/s][A
+Generating test examples...: 3912 examples [00:01, 2975.53 examples/s][A
+Generating test examples...: 4215 examples [00:01, 2989.91 examples/s][A
+Generating test examples...: 4516 examples [00:01, 2994.20 examples/s][A
+Generating test examples...: 4820 examples [00:01, 3005.34 examples/s][A
+Generating test examples...: 5122 examples [00:02, 3008.61 examples/s][A
+Generating test examples...: 5425 examples [00:02, 3012.34 examples/s][A
+Generating test examples...: 5728 examples [00:02, 3015.48 examples/s][A
+Generating test examples...: 6033 examples [00:02, 3023.20 examples/s][A
+Generating test examples...: 6337 examples [00:02, 3025.55 examples/s][A
+Generating test examples...: 6640 examples [00:02, 3013.16 examples/s][A
+Generating test examples...: 6946 examples [00:02, 3024.83 examples/s][A
+Generating test examples...: 7249 examples [00:02, 3013.99 examples/s][A
+Generating test examples...: 7554 examples [00:02, 3022.43 examples/s][A
+Generating test examples...: 7858 examples [00:02, 3026.52 examples/s][A
+Generating test examples...: 8161 examples [00:03, 3023.59 examples/s][A
+Generating test examples...: 8466 examples [00:03, 3028.87 examples/s][A
+Generating test examples...: 8770 examples [00:03, 3031.15 examples/s][A
+Generating test examples...: 9074 examples [00:03, 3019.66 examples/s][A
+Generating test examples...: 9377 examples [00:03, 3020.24 examples/s][A
+Generating test examples...: 9680 examples [00:03, 3020.31 examples/s][A
+Generating test examples...: 9983 examples [00:03, 3011.18 examples/s][A
+                                                                      [A
+Shuffling ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-test.tfrecord*...:   0%|          | 0/10000 [00:00<?, ? examples/s][A
+                                                                                                                                          [AI0721 12:00:16.202587 22605810865984 writer.py:333] Done writing ~/tensorflow_datasets/cifar10/3.0.2.incompleteM48DGU/cifar10-test.tfrecord*. Number of examples: 10000 (shards: [10000])
+Generating splits...: 100%|██████████| 2/2 [00:21<00:00,  9.57s/ splits]                                                                        I0721 12:00:16.208706 22605810865984 run.py:482] # train examples: 50000
+I0721 12:00:16.209057 22605810865984 run.py:483] # train_steps: 781251
+I0721 12:00:16.209098 22605810865984 run.py:484] # eval examples: 10000
+I0721 12:00:16.209133 22605810865984 run.py:485] # eval steps: 40
+WARNING:tensorflow:There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+W0721 12:00:16.209600 22605810865984 cross_device_ops.py:1387] There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+W0721 12:00:16.209728 22605810865984 mirrored_strategy.py:379] Collective ops is not configured at program startup. Some performance features may not be enabled.
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+I0721 12:00:16.325630 22605810865984 mirrored_strategy.py:369] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+I0721 12:00:16.326247 22605810865984 run.py:507] Running using MirroredStrategy on 1 replicas
+I0721 12:00:16.628921 22605810865984 data.py:46] Global batch size: 64
+I0721 12:00:16.629128 22605810865984 data.py:47] Per-replica batch size: 64
+I0721 12:00:16.629211 22605810865984 data.py:64] num_input_pipelines: 1
+I0721 12:00:16.629335 22605810865984 logging_logger.py:44] Constructing tf.data.Dataset cifar10 for split train, from ~/tensorflow_datasets/cifar10/3.0.2
+2022-07-21 12:00:18.301837: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2022-07-21 12:00:18.342912: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2250070000 Hz
+WARNING:tensorflow:From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+W0721 12:00:19.122449 22604470183680 deprecation.py:528] From /rds/general/user/hm808/home/anaconda3/envs/simclr/lib/python3.8/site-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+I0721 12:00:22.233816 22604470183680 api.py:446] Trainable variables:
+I0721 12:00:23.254910 22604470183680 api.py:446] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0721 12:00:23.278259 22604470183680 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0721 12:00:23.301327 22604470183680 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0721 12:00:23.325060 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0721 12:00:23.348467 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0721 12:00:23.371743 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0721 12:00:23.394712 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0721 12:00:23.418193 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0721 12:00:23.441146 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0721 12:00:23.464763 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0721 12:00:23.488126 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0721 12:00:23.511320 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0721 12:00:23.534329 22604470183680 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0721 12:00:23.557805 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0721 12:00:23.581420 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0721 12:00:23.604107 22604470183680 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0721 12:00:23.627122 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0721 12:00:23.650593 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0721 12:00:23.673272 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0721 12:00:23.696060 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0721 12:00:23.719019 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0721 12:00:23.741708 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0721 12:00:23.764754 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0721 12:00:23.787782 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0721 12:00:23.810682 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0721 12:00:23.833660 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0721 12:00:23.856351 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0721 12:00:23.879084 22604470183680 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0721 12:00:23.902070 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0721 12:00:23.924729 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0721 12:00:23.947769 22604470183680 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0721 12:00:23.974740 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0721 12:00:23.998317 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0721 12:00:24.021336 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0721 12:00:24.044620 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0721 12:00:24.068452 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0721 12:00:24.091040 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0721 12:00:24.113540 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0721 12:00:24.136692 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0721 12:00:24.160093 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0721 12:00:24.183058 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0721 12:00:24.205946 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0721 12:00:24.228725 22604470183680 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0721 12:00:24.251481 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0721 12:00:24.274236 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0721 12:00:24.296466 22604470183680 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0721 12:00:24.319068 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0721 12:00:24.340681 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0721 12:00:24.362025 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0721 12:00:24.383380 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0721 12:00:24.404647 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0721 12:00:24.426573 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0721 12:00:24.448890 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0721 12:00:24.471834 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0721 12:00:24.494393 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0721 12:00:24.516986 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0721 12:00:24.540397 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0721 12:00:24.562307 22604470183680 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0721 12:00:24.584729 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0721 12:00:24.606300 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0721 12:00:24.627828 22604470183680 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0721 12:00:24.649337 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0721 12:00:24.670645 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0721 12:00:24.691750 22604470183680 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0721 12:00:24.714109 22604470183680 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0721 12:00:24.736728 22604470183680 api.py:446] projection_head/nl_0/dense/kernel:0
+I0721 12:00:24.759516 22604470183680 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0721 12:00:24.782204 22604470183680 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0721 12:00:24.804846 22604470183680 api.py:446] projection_head/nl_1/dense_1/kernel:0
+I0721 12:00:24.827641 22604470183680 api.py:446] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0721 12:00:24.849746 22604470183680 api.py:446] projection_head/nl_2/dense_2/kernel:0
+I0721 12:00:24.871990 22604470183680 api.py:446] head_supervised/linear_layer/dense_3/kernel:0
+I0721 12:00:24.893584 22604470183680 api.py:446] head_supervised/linear_layer/dense_3/bias:0
+I0721 12:00:28.775497 22604470183680 api.py:446] Trainable variables:
+I0721 12:00:28.798660 22604470183680 api.py:446] resnet/conv2d_fixed_padding/conv2d/kernel:0
+I0721 12:00:28.821128 22604470183680 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/gamma:0
+I0721 12:00:28.842930 22604470183680 api.py:446] resnet/batch_norm_relu/sync_batch_normalization/beta:0
+I0721 12:00:28.865271 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_2/conv2d_2/kernel:0
+I0721 12:00:28.887847 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/gamma:0
+I0721 12:00:28.910534 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_2/sync_batch_normalization_2/beta:0
+I0721 12:00:28.933125 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_3/conv2d_3/kernel:0
+I0721 12:00:28.955063 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/gamma:0
+I0721 12:00:28.975963 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_3/sync_batch_normalization_3/beta:0
+I0721 12:00:28.997910 22604470183680 api.py:446] resnet/block_group1/residual_block/conv2d_fixed_padding_1/conv2d_1/kernel:0
+I0721 12:00:29.019530 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/gamma:0
+I0721 12:00:29.040686 22604470183680 api.py:446] resnet/block_group1/residual_block/batch_norm_relu_1/sync_batch_normalization_1/beta:0
+I0721 12:00:29.061804 22604470183680 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_4/conv2d_4/kernel:0
+I0721 12:00:29.082839 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/gamma:0
+I0721 12:00:29.103851 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_4/sync_batch_normalization_4/beta:0
+I0721 12:00:29.126298 22604470183680 api.py:446] resnet/block_group1/residual_block_1/conv2d_fixed_padding_5/conv2d_5/kernel:0
+I0721 12:00:29.149896 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/gamma:0
+I0721 12:00:29.172486 22604470183680 api.py:446] resnet/block_group1/residual_block_1/batch_norm_relu_5/sync_batch_normalization_5/beta:0
+I0721 12:00:29.195184 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_7/conv2d_7/kernel:0
+I0721 12:00:29.217859 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/gamma:0
+I0721 12:00:29.239529 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_7/sync_batch_normalization_7/beta:0
+I0721 12:00:29.260293 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_8/conv2d_8/kernel:0
+I0721 12:00:29.282253 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/gamma:0
+I0721 12:00:29.304000 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_8/sync_batch_normalization_8/beta:0
+I0721 12:00:29.325085 22604470183680 api.py:446] resnet/block_group2/residual_block_2/conv2d_fixed_padding_6/conv2d_6/kernel:0
+I0721 12:00:29.346067 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/gamma:0
+I0721 12:00:29.367062 22604470183680 api.py:446] resnet/block_group2/residual_block_2/batch_norm_relu_6/sync_batch_normalization_6/beta:0
+I0721 12:00:29.387976 22604470183680 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_9/conv2d_9/kernel:0
+I0721 12:00:29.409981 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/gamma:0
+I0721 12:00:29.432639 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_9/sync_batch_normalization_9/beta:0
+I0721 12:00:29.455129 22604470183680 api.py:446] resnet/block_group2/residual_block_3/conv2d_fixed_padding_10/conv2d_10/kernel:0
+I0721 12:00:29.477653 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/gamma:0
+I0721 12:00:29.499455 22604470183680 api.py:446] resnet/block_group2/residual_block_3/batch_norm_relu_10/sync_batch_normalization_10/beta:0
+I0721 12:00:29.520230 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_12/conv2d_12/kernel:0
+I0721 12:00:29.542225 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/gamma:0
+I0721 12:00:29.563766 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_12/sync_batch_normalization_12/beta:0
+I0721 12:00:29.585303 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_13/conv2d_13/kernel:0
+I0721 12:00:29.606579 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/gamma:0
+I0721 12:00:29.627737 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_13/sync_batch_normalization_13/beta:0
+I0721 12:00:29.648644 22604470183680 api.py:446] resnet/block_group3/residual_block_4/conv2d_fixed_padding_11/conv2d_11/kernel:0
+I0721 12:00:29.670863 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/gamma:0
+I0721 12:00:29.693843 22604470183680 api.py:446] resnet/block_group3/residual_block_4/batch_norm_relu_11/sync_batch_normalization_11/beta:0
+I0721 12:00:29.716515 22604470183680 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_14/conv2d_14/kernel:0
+I0721 12:00:29.739287 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/gamma:0
+I0721 12:00:29.762086 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_14/sync_batch_normalization_14/beta:0
+I0721 12:00:29.785072 22604470183680 api.py:446] resnet/block_group3/residual_block_5/conv2d_fixed_padding_15/conv2d_15/kernel:0
+I0721 12:00:29.806232 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/gamma:0
+I0721 12:00:29.828326 22604470183680 api.py:446] resnet/block_group3/residual_block_5/batch_norm_relu_15/sync_batch_normalization_15/beta:0
+I0721 12:00:29.850066 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_17/conv2d_17/kernel:0
+I0721 12:00:29.875742 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/gamma:0
+I0721 12:00:29.896937 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_17/sync_batch_normalization_17/beta:0
+I0721 12:00:29.918304 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_18/conv2d_18/kernel:0
+I0721 12:00:29.939736 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/gamma:0
+I0721 12:00:29.961583 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_18/sync_batch_normalization_18/beta:0
+I0721 12:00:29.984753 22604470183680 api.py:446] resnet/block_group4/residual_block_6/conv2d_fixed_padding_16/conv2d_16/kernel:0
+I0721 12:00:30.008295 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/gamma:0
+I0721 12:00:30.031265 22604470183680 api.py:446] resnet/block_group4/residual_block_6/batch_norm_relu_16/sync_batch_normalization_16/beta:0
+I0721 12:00:30.053760 22604470183680 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_19/conv2d_19/kernel:0
+I0721 12:00:30.075111 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/gamma:0
+I0721 12:00:30.097308 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_19/sync_batch_normalization_19/beta:0
+I0721 12:00:30.118780 22604470183680 api.py:446] resnet/block_group4/residual_block_7/conv2d_fixed_padding_20/conv2d_20/kernel:0
+I0721 12:00:30.140345 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/gamma:0
+I0721 12:00:30.161693 22604470183680 api.py:446] resnet/block_group4/residual_block_7/batch_norm_relu_20/sync_batch_normalization_20/beta:0
+I0721 12:00:30.182920 22604470183680 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/gamma:0
+I0721 12:00:30.203988 22604470183680 api.py:446] projection_head/nl_0/batch_norm_relu_21/sync_batch_normalization_21/beta:0
+I0721 12:00:30.225839 22604470183680 api.py:446] projection_head/nl_0/dense/kernel:0
+I0721 12:00:30.249242 22604470183680 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/gamma:0
+I0721 12:00:30.272454 22604470183680 api.py:446] projection_head/nl_1/batch_norm_relu_22/sync_batch_normalization_22/beta:0
+I0721 12:00:30.295506 22604470183680 api.py:446] projection_head/nl_1/dense_1/kernel:0
+I0721 12:00:30.318471 22604470183680 api.py:446] projection_head/nl_2/batch_norm_relu_23/sync_batch_normalization_23/gamma:0
+I0721 12:00:30.341274 22604470183680 api.py:446] projection_head/nl_2/dense_2/kernel:0
+I0721 12:00:30.362384 22604470183680 api.py:446] head_supervised/linear_layer/dense_3/kernel:0
+I0721 12:00:30.384327 22604470183680 api.py:446] head_supervised/linear_layer/dense_3/bias:0
+=>> PBS: job killed: ncpus 31.33 exceeded limit 4 (sum)

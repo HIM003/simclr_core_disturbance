@@ -1,0 +1,30 @@
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=4:mem=24gb:ngpus=1:gpu_type=RTX6000
+#
+#
+module load anaconda3/personal
+conda init bash
+. ~/.bashrc
+
+conda activate simclr
+#
+cd $PBS_O_WORKDIR
+#
+#
+#python run.py --train_mode=pretrain \
+#  --train_batch_size=4096 --train_epochs=1000 \
+#  --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 \
+#  --dataset=cifar10 --image_size=32 --eval_split=test --resnet_depth=18 \
+#  --use_blur=False --color_jitter_strength=0.5 \
+#  --model_dir=/rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch --use_tpu=False
+
+#  --variable_schema='(?!global_step|(?:.*/|^)Momentum|head)' \
+
+
+python run.py --mode=train_then_eval --train_mode=finetune \
+  --fine_tune_after_block=4 --zero_init_logits_layer=True --global_bn=False \
+  --optimizer=momentum --learning_rate=0.1 --weight_decay=0.0 \
+  --train_epochs=100 --train_batch_size=512 --warmup_epochs=0 \
+  --dataset=cifar10 --image_size=32 --eval_split=test --resnet_depth=18 \
+  --checkpoint=/rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch/ckpt-12216 \
+  --model_dir=/rds/general/user/hm808/home/repos/simclr_test_4gpu_4096batch_ft --use_tpu=False
