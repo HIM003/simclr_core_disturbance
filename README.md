@@ -9,7 +9,7 @@ Labelled datasets within Geoscience can often be small whilst deep learning algo
 This package uses the SimCLRv2 to classify images in a semi-supervised manner.  
 The code offers the following functionality:
 * Allows transfer learning (both supervised and self-supervised) of network trained on ImageNet
-* y
+* Allows fine tuning using task specific images during self-supervision
 * z
 
 
@@ -26,20 +26,25 @@ The code offers the following functionality:
 	
 
 
-Experiment 2:
+##### Fine tuning using task specific images during self-supervision (Experiment 2):
 
-1) Download models trained on ImageNet (self-supervised) from here: 
+1) Models trained on ImageNet (self-supervised) available to download here:  
 	https://console.cloud.google.com/storage/browser/simclr-checkpoints/simclrv2
 
-2) Using script below, freeze different ResNet blocks and train others under self-supervision: 
-	/jmain02/home/J2AD015/axf03/hxm18-axf03/repos/simclr/tf2_dist_finetune/run_finetune.py	
-	Other than hyperparameters, items that need specifying: number of classes, path of data, checkpoint, blocks to freeze and blocks to further train.
+2) Using script below, freeze different ResNet blocks and train others under self-supervision:
 	
-	--mode=train_then_eval --train_mode=finetune --train_batch_size=256 --train_epochs=50 --sk_ratio=0 --learning_rate=0.01 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --model_dir=/jmain02/home/J2AD015/axf03/hxm18-axf03/repos/50d_256b_100e_w1_sk0_100_10train_ft-1_lr01_e50 --use_tpu=False --num_of_classes=10 --image_dir=/jmain02/home/J2AD015/axf03/hxm18-axf03/images/tmp_10train/training --checkpoint=/jmain02/home/J2AD015/axf03/hxm18-axf03/repos/50d_256b_100e_w1_sk0_100/ckpt-7200 --fine_tune_after_block=-1 --labels="yep"
+ 	https://github.com/HIM003/simclr_core_disturbance/blob/main/self_supervised/tf2_dist_finetune/run_finetune.py
 	
+ 	Other than hyperparameters, items that need specifying: number of classes, path of data, checkpoint, blocks to freeze and blocks to further train.  See example below:
+	
+ 	```python
+	--mode=train_then_eval --train_mode=finetune --train_batch_size=256 --train_epochs=50 --sk_ratio=0 --learning_rate=0.01 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --model_dir=/some_path/50d_256b_100e_w1_sk0_100_10train_ft-1_lr01_e50 --use_tpu=False --num_of_classes=10 --image_dir=/some_path/images/tmp_10train/training --checkpoint=/some_path/50d_256b_100e_w1_sk0_100/ckpt-7200 --fine_tune_after_block=-1 --labels="yep"
+	```
 3) Using script below, the projection head can be fine-tuned using labelled data: 
-	/jmain02/home/J2AD015/axf03/hxm18-axf03/code/simclr_jade/TF2_finetuning.py 
-	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
+	
+	https://github.com/HIM003/simclr_core_disturbance/blob/main/fine_tune/TF2_finetuning.py
+ 
+ 	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
 
 
 Experiments 3, 4, 6:
