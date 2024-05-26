@@ -10,7 +10,7 @@ This package uses the SimCLRv2 to classify images in a semi-supervised manner.
 The code offers the following functionality:
 * Allows transfer learning (both supervised and self-supervised) of network trained on ImageNet
 * Allows fine tuning using task specific images during self-supervision
-* z
+* Allows training network under self-supervision with task-specific images
 
 
 ##### Transfer learning (both supervised and self-supervised) of network trained on ImageNet (Experiments 1, 5, 6):
@@ -47,15 +47,21 @@ The code offers the following functionality:
  	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
 
 
-Experiments 3, 4, 6:
+##### Training network under self-supervision with task-specific images (Experiments 3, 4, 6):
 
 1) Using script below, train model under self-supervision: 
-	/jmain02/home/J2AD015/axf03/hxm18-axf03/repos/simclr/tf2_dist_v3/run.py	
-	Other than hyperparameters, items that need specifying: number of classes, path of data & model path.	
 	
-	--mode=train_then_eval --train_mode=pretrain --train_batch_size=256 --train_epochs=100 --sk_ratio=0 --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --model_dir=/jmain02/home/J2AD015/axf03/hxm18-axf03/repos/50d_256b_100e_w1_sk0_80 --use_tpu=False --num_of_classes=10 --image_dir=/jmain02/home/J2AD015/axf03/hxm18-axf03/images/for_training80
+ 	https://github.com/HIM003/simclr_core_disturbance/blob/main/self_supervised/tf2_dist_v3/run.py	
 	
+ 	Other than hyperparameters, items that need specifying: number of classes, path of data & model path.  See example below:
+	
+ 	```python	
+	--mode=train_then_eval --train_mode=pretrain --train_batch_size=256 --train_epochs=100 --sk_ratio=0 --learning_rate=1.0 --weight_decay=1e-4 --temperature=0.5 --dataset=imagenet2012 --image_size=224 --eval_split=validation --resnet_depth=50 --use_blur=False --color_jitter_strength=0.5 --width_multiplier=1 --model_dir=/some_path/50d_256b_100e_w1_sk0_80 --use_tpu=False --num_of_classes=10 --image_dir=/some_path/images/for_training80
+	```
+  
 2) Using script below, the projection head can be fine-tuned using labelled data: 
-	/jmain02/home/J2AD015/axf03/hxm18-axf03/code/simclr_jade/TF2_finetuning.py 
-	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
+
+   	https://github.com/HIM003/simclr_core_disturbance/blob/main/fine_tune/TF2_finetuning.py
+	
+ 	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
 
