@@ -66,3 +66,22 @@ The code offers the following functionality:
 	
  	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
 
+
+
+### Licence
+This package is released under the MIT licence.
+
+### Citation
+If you use this package, please cite the following paper:
+```
+@misc{}
+```
+
+## Acknowledgement
+This code is part of Hisham Mamode's PhD work and you can [visit his GitHub repository](https://github.com/HIM003) where the primary version of this code resides. The work was carried out under the supervision of [Cédric John](https://github.com/cedricmjohn) and all code from the research group can be found in the [John Lab GitHub repository](https://github.com/johnlab-research).
+
+<a href="https://www.john-lab.org">
+<img src="https://www.john-lab.org/wp-content/uploads/2023/01/footer_small_logo.png" style="width:220px">
+</a>
+
+#### References
