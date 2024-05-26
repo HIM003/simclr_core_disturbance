@@ -14,6 +14,8 @@ The code offers the following functionality:
 
 ### Usage
 
+This code is designed to be executed on the command line using Python 3.8.  The exact dependencies can be found in the yml file.
+
 #### Transfer learning (both supervised and self-supervised) of network trained on ImageNet (Experiments 1, 5, 6):
 
 1) Models trained on ImageNet available to download here: 
