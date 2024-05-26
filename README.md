@@ -16,7 +16,7 @@ The code offers the following functionality:
 
 This code is designed to be executed on the command line using Python 3.8.  The exact dependencies can be found in the yml file.
 
-#### Transfer learning (both supervised and self-supervised) of network trained on ImageNet (Experiments 1, 5, 6):
+#### _Transfer learning (both supervised and self-supervised) of network trained on ImageNet (Experiments 1, 5, 6):_
 
 1) Models trained on ImageNet available to download here: 
 	https://console.cloud.google.com/storage/browser/simclr-checkpoints/simclrv2
@@ -29,7 +29,7 @@ This code is designed to be executed on the command line using Python 3.8.  The 
 	
 
 
-#### Fine tuning using task specific images during self-supervision (Experiment 2):
+#### _Fine tuning using task specific images during self-supervision (Experiment 2)_:
 
 1) Models trained on ImageNet (self-supervised) available to download here:  
 	https://console.cloud.google.com/storage/browser/simclr-checkpoints/simclrv2
@@ -50,7 +50,7 @@ This code is designed to be executed on the command line using Python 3.8.  The 
  	Specify following: number of classes, path of model, path of data (Train, Validation & Test)
 
 
-#### Training network under self-supervision with task-specific images (Experiments 3, 4, 6):
+#### _Training network under self-supervision with task-specific images (Experiments 3, 4, 6)_:
 
 1) Using script below, train model under self-supervision: 
 	
