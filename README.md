@@ -87,3 +87,5 @@ This code is part of Hisham Mamode's PhD work and you can [visit his GitHub repo
 </a>
 
 #### References
+1. Chen, T., Kornblith, S., Norouzi, M. and Hinton, G., 2020-a, November. A simple framework for contrastive learning of visual representations. In International conference on machine learning (pp. 1597-1607). PMLR.
+2. Chen, T., Kornblith, S., Swersky, K., Norouzi, M. and Hinton, G.E., 2020-b. Big self-supervised models are strong semi-supervised learners. Advances in neural information processing systems, 33, pp.22243-22255.
